@@ -2,7 +2,7 @@ import { escapeHtml } from "../util.js";
 import { categoryMeta, isClosedToday } from "../categories.js";
 
 let placesCache = null;
-const state = { category: "all", topPicksOnly: false, search: "" };
+const state = { category: "all", topPicksOnly: false, search: "", selectedId: null };
 
 export async function render(container) {
   container.innerHTML = `<section class="explore"><h1>Explore</h1><p class="view-empty__hint">Loading places…</p></section>`;
@@ -11,7 +11,8 @@ export async function render(container) {
     const res = await fetch("./data/places.json");
     placesCache = await res.json();
   }
-  renderChrome(container);
+  if (state.selectedId) renderDetail(container);
+  else renderChrome(container);
 }
 
 // Rebuilds the whole view, including the search input and filter chips.
@@ -77,6 +78,77 @@ function renderList(container) {
   container.querySelector(".place-list").innerHTML = filtered.length
     ? filtered.map(placeCardHtml).join("")
     : `<p class="view-empty__hint">No places match — try clearing a filter.</p>`;
+
+  container.querySelectorAll(".place-card[data-id]").forEach((card) => {
+    const open = () => {
+      state.selectedId = card.dataset.id;
+      renderDetail(container);
+    };
+    card.addEventListener("click", open);
+    card.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        open();
+      }
+    });
+  });
+}
+
+function renderDetail(container) {
+  const p = placesCache.find((place) => place.id === state.selectedId);
+  if (!p) {
+    state.selectedId = null;
+    renderChrome(container);
+    return;
+  }
+
+  const meta = categoryMeta(p.category);
+  const closed = isClosedToday(p);
+  // drive_time_range is the raw doc string and often already embeds the
+  // distance (e.g. "10 min (4.4 km)") — distance_km is the same figure
+  // parsed out separately for comparisons, not a second value to display.
+  const drive = p.drive_time_range ? escapeHtml(p.drive_time_range) : "";
+  const tags = (p.tags || []).map((t) => `<span class="chip">${escapeHtml(t)}</span>`).join("");
+
+  container.innerHTML = `
+    <section class="explore explore--detail">
+      <button type="button" class="back-button">← Back to Explore</button>
+      <div class="detail-header">
+        <div class="place-card__badge tag-${meta.group}">${meta.emoji}</div>
+        <div>
+          <h1>${escapeHtml(p.name)}</h1>
+          <p class="place-card__meta">${drive}${drive && p.location_area ? " · " : ""}${escapeHtml(p.location_area || "")}</p>
+        </div>
+      </div>
+
+      <div class="detail-chips">
+        ${p.rating ? `<span class="chip chip--rating">★ ${p.rating}${p.review_count ? ` (${p.review_count})` : ""}</span>` : ""}
+        ${closed ? `<span class="chip chip--closed">Closed today</span>` : ""}
+        ${p.booking_required ? `<span class="chip">Booking recommended</span>` : ""}
+        ${p.top_pick ? `<span class="chip chip--rating">🏆 Top Pick</span>` : ""}
+      </div>
+
+      ${p.description ? `<p class="detail-text">${escapeHtml(p.description)}</p>` : ""}
+      ${p.why_it_fits ? `<p class="detail-text detail-text--why"><strong>Why it fits:</strong> ${escapeHtml(p.why_it_fits)}</p>` : ""}
+      ${p.top_pick_reason ? `<p class="detail-text detail-text--why"><strong>Top Pick because:</strong> ${escapeHtml(p.top_pick_reason)}</p>` : ""}
+
+      ${p.closed_days ? `<p class="detail-text">Closed: ${escapeHtml((p.closed_days || []).join(", "))}</p>` : ""}
+      ${tags ? `<div class="detail-chips">${tags}</div>` : ""}
+
+      <div class="detail-actions">
+        ${p.maps_url ? `<a class="detail-action" href="${p.maps_url}" target="_blank" rel="noopener">📍 Open in Maps</a>` : ""}
+        ${p.phone ? `<a class="detail-action" href="tel:${p.phone.replace(/[^+\d]/g, "")}">📞 ${escapeHtml(p.phone)}</a>` : ""}
+      </div>
+
+      ${p.address ? `<p class="detail-text detail-text--meta">${escapeHtml(p.address)}</p>` : ""}
+      ${p.last_verified_date ? `<p class="detail-text detail-text--meta">Last verified: ${escapeHtml(p.last_verified_date)}</p>` : ""}
+    </section>
+  `;
+
+  container.querySelector(".back-button").addEventListener("click", () => {
+    state.selectedId = null;
+    renderChrome(container);
+  });
 }
 
 function placeCardHtml(p) {
@@ -87,7 +159,7 @@ function placeCardHtml(p) {
   const drive = p.drive_time_range ? `${escapeHtml(p.drive_time_range)} · ` : "";
 
   return `
-    <article class="place-card">
+    <article class="place-card" data-id="${escapeHtml(p.id)}" role="button" tabindex="0">
       <div class="place-card__badge tag-${meta.group}">${meta.emoji}</div>
       <div class="place-card__body">
         <h3>${escapeHtml(p.name)}</h3>

@@ -215,6 +215,42 @@ h1 { font-size: 1.4rem; margin: 0 0 0.75rem; }
 .chip--rating { color: var(--accent-primary); font-weight: 600; }
 .chip--closed { background: var(--tag-food-bg); color: var(--tag-food-text); }
 
+.place-card { cursor: pointer; }
+.place-card:focus-visible { outline: 2px solid var(--accent-secondary); outline-offset: 2px; }
+
+/* Place detail (§10 step 4, part 2) */
+.back-button {
+  background: none;
+  border: none;
+  color: var(--accent-secondary);
+  font-size: 0.9rem;
+  padding: 0;
+  margin-bottom: 0.9rem;
+}
+
+.detail-header { display: flex; gap: 0.9rem; align-items: flex-start; margin-bottom: 0.8rem; }
+.detail-header h1 { font-size: 1.25rem; margin: 0 0 0.2rem; }
+.detail-header .place-card__badge { width: 3rem; height: 3rem; font-size: 1.5rem; }
+
+.detail-chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.8rem; }
+
+.detail-text { line-height: 1.5; margin: 0 0 0.8rem; }
+.detail-text--why { color: var(--text2); }
+.detail-text--meta { font-size: 0.82rem; color: var(--text2); }
+
+.detail-actions { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 0.8rem; }
+.detail-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  background: var(--accent-primary);
+  color: white;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
 /* sync-status pill, per §9.7 — never red; amber only once retries are exhausted */
 .sync-pill {
   position: fixed;
