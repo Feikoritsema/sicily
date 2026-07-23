@@ -7,10 +7,13 @@ import { TRIP_DATES } from "../constants.js";
 import { loadPlaces } from "../places-data.js";
 import { customPlacesStore } from "../custom-places.js";
 import { fallbackPhotoFor } from "../photo-fallback.js";
+import { renderSwipe } from "./explore-swipe.js";
 
 let placesCache = null;
 let listenersAttached = false;
-const state = { category: "all", topPicksOnly: false, search: "", selectedId: null };
+// mode: "list" | "detail" | "swipe" — swipe mode manages its own rendering
+// entirely (see openSwipeMode), so refresh()/render() just leave it alone.
+const state = { category: "all", topPicksOnly: false, search: "", selectedId: null, mode: "list" };
 
 // Doc-sourced places (static, read-only) + user-added ones (Supabase-backed)
 // merged into one list — a custom place is deliberately the same shape, so
@@ -35,7 +38,8 @@ export async function render(container) {
     // DOM that's no longer there (mirrors the guard in dayplan.js's renderDay).
     const refresh = () => {
       if (!container.querySelector(".explore")) return;
-      if (state.selectedId) renderDetail(container);
+      if (state.mode === "swipe") return; // swipe mode owns its own DOM; don't touch it mid-session
+      if (state.mode === "detail") renderDetail(container);
       else renderList(container);
     };
     votesStore.onChange(refresh);
@@ -43,13 +47,36 @@ export async function render(container) {
     customPlacesStore.onChange(refresh);
   }
 
-  if (state.selectedId) renderDetail(container);
+  if (state.mode === "swipe") openSwipeMode(container);
+  else if (state.mode === "detail") renderDetail(container);
   else renderChrome(container);
 }
 
 // Rebuilds the whole view, including the search input and filter chips.
 // Only called on tab entry or when a filter chip is clicked — never on
 // every keystroke, so the search input never loses focus mid-typing.
+// Queue = every place the current user hasn't voted on yet, respecting
+// whatever category filter was active when the button was pressed (lets
+// someone swipe through just "the wineries" instead of everything).
+function openSwipeMode(container) {
+  const personName = localStore.getProfileName();
+  const candidates = allPlaces().filter((p) => {
+    if (state.category !== "all" && p.category !== state.category) return false;
+    return !personName || votesStore.myVoteFor(p.id, personName) === 0;
+  });
+
+  renderSwipe(container, {
+    places: candidates,
+    onVote: (placeId, value) => {
+      if (personName) votesStore.cast(placeId, personName, value);
+    },
+    onExit: () => {
+      state.mode = "list";
+      renderChrome(container);
+    },
+  });
+}
+
 function renderChrome(container) {
   const categories = [...new Set(allPlaces().map((p) => p.category))];
 
@@ -72,12 +99,18 @@ function renderChrome(container) {
       </div>
       <div class="explore-actions-row">
         <button type="button" class="add-place-toggle">➕ Add a place</button>
+        <button type="button" class="swipe-mode-toggle">⚡ Swipe & Vote</button>
       </div>
       <div class="add-place-form" hidden></div>
       <p class="explore__count"></p>
       <div class="place-list"></div>
     </section>
   `;
+
+  container.querySelector(".swipe-mode-toggle").addEventListener("click", () => {
+    state.mode = "swipe";
+    openSwipeMode(container);
+  });
 
   container.querySelector(".explore__search").addEventListener("input", (e) => {
     state.search = e.target.value;
@@ -119,6 +152,7 @@ function renderList(container) {
   container.querySelectorAll(".place-card[data-id]").forEach((card) => {
     const open = () => {
       state.selectedId = card.dataset.id;
+      state.mode = "detail";
       renderDetail(container);
     };
     card.addEventListener("click", open);
@@ -138,6 +172,7 @@ function renderDetail(container) {
   const p = allPlaces().find((place) => place.id === state.selectedId);
   if (!p) {
     state.selectedId = null;
+    state.mode = "list";
     renderChrome(container);
     return;
   }
@@ -195,6 +230,7 @@ function renderDetail(container) {
 
   container.querySelector(".back-button").addEventListener("click", () => {
     state.selectedId = null;
+    state.mode = "list";
     renderChrome(container);
   });
 

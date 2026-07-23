@@ -25,6 +25,7 @@ const PRECACHE_URLS = [
   "./js/photo-fallback.js",
   "./js/views/today.js",
   "./js/views/explore.js",
+  "./js/views/explore-swipe.js",
   "./js/views/dayplan.js",
   "./js/views/lists.js",
   "./js/views/info.js",
