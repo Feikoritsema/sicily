@@ -73,6 +73,17 @@ export const sharedItemsStore = {
       syncQueue.enqueue({ table: "sharedItemClaims", op: "update", match: { id }, payload: { claimed_by: claimedBy } });
     }
   },
+
+  async remove(id) {
+    applyChange({ eventType: "DELETE", old: { id } });
+    notify();
+
+    try {
+      await dataService.remove("sharedItemClaims", { id });
+    } catch {
+      syncQueue.enqueue({ table: "sharedItemClaims", op: "delete", match: { id } });
+    }
+  },
 };
 
 function applyChange(payload) {

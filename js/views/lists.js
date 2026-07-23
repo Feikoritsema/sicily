@@ -16,8 +16,15 @@ const CATEGORY_ORDER = Object.keys(CATEGORY_LABELS);
 
 const SOURCE_LABEL = { bring: "Bring", buy_on_arrival: "Buy on arrival" };
 
+const SUBTABS = [
+  ["packing", "🎒 Packing"],
+  ["shared", "🤝 Shared"],
+  ["shopping", "🛒 Shopping"],
+];
+
 let templateCache = null;
 let listenersAttached = false;
+let activeTab = "packing";
 
 export async function render(container) {
   container.innerHTML = `<section class="view-empty"><h1>Lists</h1><p class="view-empty__hint">Loading…</p></section>`;
@@ -30,14 +37,26 @@ export async function render(container) {
   await shoppingListStore.load();
   ensureSeeded();
 
+  const tabButtons = SUBTABS.map(([key, label]) => `<button type="button" class="lists-subtab ${activeTab === key ? "is-active" : ""}" data-tab="${key}">${label}</button>`).join("");
+
   container.innerHTML = `
     <section class="lists">
       <h1>Lists</h1>
+      <div class="lists-subtabs">${tabButtons}</div>
       <div class="packing-section"></div>
       <div class="shared-section"></div>
       <div class="shopping-section"></div>
     </section>
   `;
+
+  container.querySelectorAll(".lists-subtab").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      activeTab = btn.dataset.tab;
+      render(container);
+    });
+  });
+
+  showActiveTab(container);
 
   if (!listenersAttached) {
     listenersAttached = true;
@@ -54,6 +73,12 @@ export async function render(container) {
   renderPacking(container.querySelector(".packing-section"));
   renderShared(container.querySelector(".shared-section"));
   renderShopping(container.querySelector(".shopping-section"));
+}
+
+function showActiveTab(container) {
+  container.querySelector(".packing-section").hidden = activeTab !== "packing";
+  container.querySelector(".shared-section").hidden = activeTab !== "shared";
+  container.querySelector(".shopping-section").hidden = activeTab !== "shopping";
 }
 
 // Seeds localStorage from the bundled template exactly once — a user's
@@ -150,7 +175,7 @@ function renderShared(section) {
       const claimAction = item.claimed_by
         ? claimedByMe
           ? `<button type="button" class="shared-claim-btn" data-id="${item.id}" data-action="unclaim">Unclaim</button>`
-          : `<span class="view-empty__hint">Claimed by ${escapeHtml(item.claimed_by)}</span>`
+          : `<span class="chip chip--claimed">✅ Already claimed by ${escapeHtml(item.claimed_by)}</span>`
         : `<button type="button" class="shared-claim-btn" data-id="${item.id}" data-action="claim">Claim</button>`;
 
       const buyNote =
@@ -164,7 +189,10 @@ function renderShared(section) {
             <div>${escapeHtml(item.name)} <span class="chip">${SOURCE_LABEL[item.source] || item.source}</span></div>
             ${buyNote}
           </div>
-          ${claimAction}
+          <div class="shared-item__actions">
+            ${claimAction}
+            <button type="button" class="list-item-remove" data-id="${item.id}" aria-label="Remove item">🗑</button>
+          </div>
         </li>`;
     })
     .join("");
@@ -202,6 +230,10 @@ function renderShared(section) {
       sharedItemsStore.setClaimedBy(btn.dataset.id, btn.dataset.action === "claim" ? personName : null);
     });
   });
+
+  section.querySelectorAll(".list-item-remove").forEach((btn) => {
+    btn.addEventListener("click", () => sharedItemsStore.remove(btn.dataset.id));
+  });
 }
 
 function renderShopping(section) {
@@ -217,6 +249,7 @@ function renderShopping(section) {
             ${escapeHtml(item.item)}${item.quantity ? ` <span class="chip">${escapeHtml(item.quantity)}</span>` : ""}
             ${item.requested_by ? `<span class="view-empty__hint"> — ${escapeHtml(item.requested_by)}</span>` : ""}
           </label>
+          <button type="button" class="list-item-remove" data-id="${item.id}" aria-label="Remove item">🗑</button>
         </li>`
     )
     .join("");
@@ -256,6 +289,10 @@ function renderShopping(section) {
 
   section.querySelectorAll(".shopping-check").forEach((cb) => {
     cb.addEventListener("change", () => shoppingListStore.setChecked(cb.dataset.id, cb.checked));
+  });
+
+  section.querySelectorAll(".list-item-remove").forEach((btn) => {
+    btn.addEventListener("click", () => shoppingListStore.remove(btn.dataset.id));
   });
 
   section.querySelector(".shopping-clear-checked")?.addEventListener("click", () => shoppingListStore.clearChecked());

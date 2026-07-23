@@ -42,6 +42,48 @@
 
 * { box-sizing: border-box; }
 
+/* Modernize native form controls app-wide, instead of the raw browser
+   defaults (a plain gray checkbox, a system select with no consistent
+   affordance, no visible focus state). */
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: var(--accent-primary);
+  width: 1.05rem;
+  height: 1.05rem;
+  cursor: pointer;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%);
+  background-position: calc(100% - 1.1rem) center, calc(100% - 0.75rem) center;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  color: inherit;
+  padding-right: 1.8rem !important;
+  cursor: pointer;
+}
+
+input:not([type="checkbox"], [type="radio"]),
+select,
+textarea,
+button {
+  font-family: inherit;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--accent-secondary);
+  outline-offset: 2px;
+}
+
+button { cursor: pointer; }
+button:active { transform: scale(0.97); }
+
 html, body {
   margin: 0;
   height: 100%;
@@ -390,6 +432,31 @@ h1 { font-size: 1.4rem; margin: 0 0 0.75rem; }
 }
 
 /* Lists (§10 step 6) */
+.lists-subtabs {
+  display: flex;
+  gap: 0.3rem;
+  background: color-mix(in srgb, var(--text) 6%, transparent);
+  border-radius: 10px;
+  padding: 0.25rem;
+  margin-bottom: 1rem;
+}
+.lists-subtab {
+  flex: 1;
+  padding: 0.5rem 0.5rem;
+  border-radius: 8px;
+  border: none;
+  background: none;
+  color: var(--text2);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+.lists-subtab.is-active {
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 1px 3px color-mix(in srgb, var(--text) 15%, transparent);
+}
+
 .lists-heading { font-size: 1.1rem; margin: 0.5rem 0 0.2rem; }
 
 .packing-add {
@@ -445,6 +512,7 @@ h1 { font-size: 1.4rem; margin: 0 0 0.75rem; }
 }
 
 .shared-item { align-items: flex-start; justify-content: space-between; gap: 0.6rem; }
+.shared-item__actions { display: flex; align-items: center; gap: 0.5rem; flex: 0 0 auto; }
 .shared-claim-btn {
   flex: 0 0 auto;
   padding: 0.3rem 0.7rem;
@@ -454,6 +522,18 @@ h1 { font-size: 1.4rem; margin: 0 0 0.75rem; }
   color: var(--accent-secondary);
   font-size: 0.82rem;
 }
+.chip--claimed { background: var(--tag-nature-bg); color: var(--tag-nature-text); white-space: nowrap; }
+
+.list-item-remove {
+  flex: 0 0 auto;
+  background: none;
+  border: none;
+  font-size: 0.95rem;
+  padding: 0.2rem;
+  color: var(--text2);
+  opacity: 0.7;
+}
+.list-item-remove:hover { opacity: 1; }
 
 .shopping-add { display: flex; gap: 0.4rem; margin: 0.6rem 0 1rem; }
 .shopping-add input {
