@@ -317,6 +317,15 @@ h1 { font-size: 1.4rem; margin: 0 0 0.75rem; }
   color: var(--text2);
   margin-bottom: 1rem;
 }
+.today-banner {
+  font-size: 0.85rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  background: var(--tag-culture-bg);
+  color: var(--tag-culture-text);
+  margin-bottom: 0.5rem;
+}
+
 .driver-select {
   padding: 0.35rem 0.6rem;
   border-radius: 8px;
