@@ -12,6 +12,7 @@ const TABLES = {
   dayPlanAssignments: "day_plan_assignments",
   tripSettings: "trip_settings",
   people: "people",
+  customPlaces: "custom_places",
 };
 
 async function selectAll(table) {

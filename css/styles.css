@@ -186,6 +186,46 @@ h1 { font-size: 1.4rem; margin: 0 0 0.75rem; }
 
 .explore__count { color: var(--text2); font-size: 0.82rem; margin: 0 0 0.6rem; }
 
+.explore-actions-row { margin-bottom: 0.5rem; }
+.add-place-toggle {
+  background: none;
+  border: 1px dashed color-mix(in srgb, var(--accent-primary) 60%, transparent);
+  border-radius: 999px;
+  color: var(--accent-primary);
+  padding: 0.4rem 0.9rem;
+  font-size: 0.85rem;
+}
+.add-place-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 26rem;
+  margin-bottom: 0.8rem;
+  padding: 0.8rem;
+  border-radius: 10px;
+  background: var(--surface);
+}
+.add-place-fields input,
+.add-place-fields select,
+.add-place-fields textarea {
+  padding: 0.5rem 0.7rem;
+  border-radius: 8px;
+  border: 1px solid color-mix(in srgb, var(--text) 20%, transparent);
+  background: var(--bg);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+.add-place-fields textarea { min-height: 3.5rem; resize: vertical; }
+.add-place-fields button[type="submit"] {
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent-primary);
+  color: white;
+}
+
 .place-list { display: flex; flex-direction: column; gap: 0.75rem; }
 
 .place-card {

@@ -1,14 +1,22 @@
 import { escapeHtml } from "../util.js";
-import { categoryMeta, isClosedToday } from "../categories.js";
+import { categoryMeta, isClosedToday, CATEGORY_META } from "../categories.js";
 import { votesStore } from "../votes.js";
 import { dayPlanStore } from "../day-plan.js";
 import { localStore } from "../local-store.js";
 import { TRIP_DATES } from "../constants.js";
 import { loadPlaces } from "../places-data.js";
+import { customPlacesStore } from "../custom-places.js";
 
 let placesCache = null;
 let listenersAttached = false;
 const state = { category: "all", topPicksOnly: false, search: "", selectedId: null };
+
+// Doc-sourced places (static, read-only) + user-added ones (Supabase-backed)
+// merged into one list — a custom place is deliberately the same shape, so
+// every existing filter/search/vote/day-assign code path works unchanged.
+function allPlaces() {
+  return [...placesCache, ...customPlacesStore.all()];
+}
 
 export async function render(container) {
   container.innerHTML = `<section class="explore"><h1>Explore</h1><p class="view-empty__hint">Loading places…</p></section>`;
@@ -16,6 +24,7 @@ export async function render(container) {
   placesCache = await loadPlaces();
   await votesStore.load();
   await dayPlanStore.load();
+  await customPlacesStore.load();
 
   if (!listenersAttached) {
     listenersAttached = true;
@@ -30,6 +39,7 @@ export async function render(container) {
     };
     votesStore.onChange(refresh);
     dayPlanStore.onChange(refresh);
+    customPlacesStore.onChange(refresh);
   }
 
   if (state.selectedId) renderDetail(container);
@@ -40,7 +50,7 @@ export async function render(container) {
 // Only called on tab entry or when a filter chip is clicked — never on
 // every keystroke, so the search input never loses focus mid-typing.
 function renderChrome(container) {
-  const categories = [...new Set(placesCache.map((p) => p.category))];
+  const categories = [...new Set(allPlaces().map((p) => p.category))];
 
   const categoryChips = [
     `<button type="button" class="filter-chip ${state.category === "all" ? "is-active" : ""}" data-cat="all">All</button>`,
@@ -59,6 +69,10 @@ function renderChrome(container) {
         ${categoryChips}
         <button type="button" class="filter-chip tag-wine ${state.topPicksOnly ? "is-active" : ""}" data-toppicks="1">🏆 Top Picks</button>
       </div>
+      <div class="explore-actions-row">
+        <button type="button" class="add-place-toggle">➕ Add a place</button>
+      </div>
+      <div class="add-place-form" hidden></div>
       <p class="explore__count"></p>
       <div class="place-list"></div>
     </section>
@@ -78,6 +92,7 @@ function renderChrome(container) {
     state.topPicksOnly = !state.topPicksOnly;
     renderChrome(container);
   });
+  wireAddPlaceForm(container);
 
   renderList(container);
 }
@@ -85,7 +100,7 @@ function renderChrome(container) {
 // Updates only the count + card list — leaves the search input and filter
 // chips untouched so typing doesn't get interrupted by a DOM rebuild.
 function renderList(container) {
-  const filtered = placesCache.filter((p) => {
+  const filtered = allPlaces().filter((p) => {
     if (state.category !== "all" && p.category !== state.category) return false;
     if (state.topPicksOnly && !p.top_pick) return false;
     if (state.search) {
@@ -119,7 +134,7 @@ function renderList(container) {
 }
 
 function renderDetail(container) {
-  const p = placesCache.find((place) => place.id === state.selectedId);
+  const p = allPlaces().find((place) => place.id === state.selectedId);
   if (!p) {
     state.selectedId = null;
     renderChrome(container);
@@ -150,6 +165,7 @@ function renderDetail(container) {
         ${closed ? `<span class="chip chip--closed">Closed today</span>` : ""}
         ${p.booking_required ? `<span class="chip">Booking recommended</span>` : ""}
         ${p.top_pick ? `<span class="chip chip--rating">🏆 Top Pick</span>` : ""}
+        ${p.added_by ? `<span class="chip">➕ Added by ${escapeHtml(p.added_by)}</span>` : ""}
       </div>
 
       ${voteRowHtml(p.id)}
@@ -188,14 +204,19 @@ function placeCardHtml(p) {
   const closedBadge = closed ? `<span class="chip chip--closed">Closed today</span>` : "";
   const drive = p.drive_time_range ? `${escapeHtml(p.drive_time_range)} · ` : "";
 
+  // Custom places don't have why_it_fits (that's a doc-specific field) —
+  // description is their equivalent one-line summary on the card.
+  const summary = p.why_it_fits || p.description;
+  const addedBy = p.added_by ? `<span class="chip">➕ ${escapeHtml(p.added_by)}</span>` : "";
+
   return `
     <article class="place-card" data-id="${escapeHtml(p.id)}" role="button" tabindex="0">
       <div class="place-card__badge tag-${meta.group}">${meta.emoji}</div>
       <div class="place-card__body">
         <h3>${escapeHtml(p.name)}</h3>
         <p class="place-card__meta">${drive}${escapeHtml(p.location_area || "")}</p>
-        ${p.why_it_fits ? `<p class="place-card__why">${escapeHtml(p.why_it_fits)}</p>` : ""}
-        <div class="place-card__footer">${rating}${closedBadge}${voteRowHtml(p.id)}</div>
+        ${summary ? `<p class="place-card__why">${escapeHtml(summary)}</p>` : ""}
+        <div class="place-card__footer">${rating}${closedBadge}${addedBy}${voteRowHtml(p.id)}</div>
         <div class="place-card__day-assign">${dayAssignHtml(p.id)}</div>
       </div>
     </article>
@@ -288,5 +309,57 @@ function wireDayAssignWidgets(container) {
     widget.querySelectorAll(".day-assign-remove").forEach((btn) => {
       btn.addEventListener("click", () => dayPlanStore.remove(btn.dataset.assignmentId));
     });
+  });
+}
+
+// Category is a <select> constrained to the existing taxonomy (not free
+// text) so a user-added place slots into the same filter/color-group
+// system as every doc-sourced one — no "unknown category" fallback needed.
+function wireAddPlaceForm(container) {
+  const toggle = container.querySelector(".add-place-toggle");
+  const formHost = container.querySelector(".add-place-form");
+
+  toggle.addEventListener("click", () => {
+    formHost.hidden = !formHost.hidden;
+    if (!formHost.hidden && !formHost.innerHTML) renderAddPlaceForm(formHost);
+  });
+}
+
+function renderAddPlaceForm(formHost) {
+  const categoryOptions = Object.entries(CATEGORY_META)
+    .map(([key, meta]) => `<option value="${key}">${meta.emoji} ${escapeHtml(meta.label)}</option>`)
+    .join("");
+
+  formHost.innerHTML = `
+    <form class="add-place-fields">
+      <input type="text" name="name" placeholder="Name" required />
+      <select name="category">${categoryOptions}</select>
+      <input type="text" name="location_area" placeholder="Location (e.g. Marzamemi)" />
+      <textarea name="description" placeholder="Why add this? What's it like?"></textarea>
+      <input type="url" name="maps_url" placeholder="Google Maps link (optional)" />
+      <input type="tel" name="phone" placeholder="Phone (optional)" />
+      <button type="submit">Add place</button>
+    </form>
+  `;
+
+  formHost.querySelector(".add-place-fields").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+    const name = data.get("name").trim();
+    if (!name) return;
+
+    customPlacesStore.add({
+      name,
+      category: data.get("category"),
+      location_area: data.get("location_area").trim() || null,
+      description: data.get("description").trim() || null,
+      maps_url: data.get("maps_url").trim() || null,
+      phone: data.get("phone").trim() || null,
+      added_by: localStore.getProfileName(),
+    });
+
+    form.reset();
+    formHost.hidden = true;
   });
 }
