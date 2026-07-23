@@ -645,14 +645,32 @@ h1 { font-size: 1.4rem; margin: 0 0 0.75rem; }
   user-select: none;
 }
 .swipe-card__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
+.swipe-info-btn {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  z-index: 1;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  border: none;
+  background: color-mix(in srgb, black 45%, transparent);
+  color: white;
+  font-size: 1rem;
+}
 .swipe-card__overlay {
   position: absolute;
   left: 0; right: 0; bottom: 0;
+  max-height: 100%;
+  overflow-y: auto;
   padding: 1rem;
-  background: linear-gradient(to top, color-mix(in srgb, black 80%, transparent), transparent);
+  background: linear-gradient(to top, color-mix(in srgb, black 80%, transparent) 60%, transparent);
 }
 .swipe-card__overlay h1 { color: white; font-size: 1.3rem; margin: 0 0 0.15rem; }
 .swipe-card__summary { color: rgba(255,255,255,0.9); font-size: 0.9rem; margin: 0.4rem 0 0; }
+.swipe-card__extra { margin-top: 0.6rem; padding-top: 0.6rem; border-top: 1px solid rgba(255,255,255,0.2); }
+.swipe-card__extra .chip { background: rgba(255,255,255,0.15); color: white; }
+.swipe-card__links { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.5rem; }
 
 .swipe-actions { display: flex; justify-content: center; gap: 1.5rem; padding: 1rem 0; }
 .swipe-btn {
