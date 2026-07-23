@@ -6,6 +6,7 @@ import { localStore } from "../local-store.js";
 import { TRIP_DATES } from "../constants.js";
 import { loadPlaces } from "../places-data.js";
 import { customPlacesStore } from "../custom-places.js";
+import { fallbackPhotoFor } from "../photo-fallback.js";
 
 let placesCache = null;
 let listenersAttached = false;
@@ -148,15 +149,19 @@ function renderDetail(container) {
   // parsed out separately for comparisons, not a second value to display.
   const drive = p.drive_time_range ? escapeHtml(p.drive_time_range) : "";
   const tags = (p.tags || []).map((t) => `<span class="chip">${escapeHtml(t)}</span>`).join("");
+  const fallbackPhoto = fallbackPhotoFor(meta.group);
+  const heroPhoto = p.photo_url || fallbackPhoto;
 
   container.innerHTML = `
     <section class="explore explore--detail">
-      <button type="button" class="back-button">← Back to Explore</button>
-      <div class="detail-header">
-        <div class="place-card__badge tag-${meta.group}">${meta.emoji}</div>
-        <div>
+      <div class="detail-hero">
+        <img class="detail-hero__img" src="${escapeHtml(heroPhoto)}" alt=""
+             onerror="this.onerror=null; this.src='${escapeHtml(fallbackPhoto)}';" />
+        <button type="button" class="back-button back-button--on-hero">← Back to Explore</button>
+        <div class="detail-hero__overlay">
+          <p class="detail-hero__category">${meta.emoji} ${escapeHtml(meta.label)}</p>
           <h1>${escapeHtml(p.name)}</h1>
-          <p class="place-card__meta">${drive}${drive && p.location_area ? " · " : ""}${escapeHtml(p.location_area || "")}</p>
+          <p class="detail-hero__meta">${drive}${drive && p.location_area ? " · " : ""}${escapeHtml(p.location_area || "")}</p>
         </div>
       </div>
 
@@ -338,6 +343,7 @@ function renderAddPlaceForm(formHost) {
       <textarea name="description" placeholder="Why add this? What's it like?"></textarea>
       <input type="url" name="maps_url" placeholder="Google Maps link (optional)" />
       <input type="tel" name="phone" placeholder="Phone (optional)" />
+      <input type="url" name="photo_url" placeholder="Photo URL (optional)" />
       <button type="submit">Add place</button>
     </form>
   `;
@@ -356,6 +362,7 @@ function renderAddPlaceForm(formHost) {
       description: data.get("description").trim() || null,
       maps_url: data.get("maps_url").trim() || null,
       phone: data.get("phone").trim() || null,
+      photo_url: data.get("photo_url").trim() || null,
       added_by: localStore.getProfileName(),
     });
 
