@@ -172,4 +172,16 @@ export const dayPlanDaysStore = {
       syncQueue.enqueue({ table: "dayPlanDays", op: "update", match: { date }, payload: { notes } });
     }
   },
+
+  async setDesignatedDriver(date, designatedDriver) {
+    const idx = days.findIndex((d) => d.date === date);
+    if (idx >= 0) days[idx] = { ...days[idx], designated_driver: designatedDriver || null };
+    notifyDays();
+
+    try {
+      await dataService.update("dayPlanDays", { date }, { designated_driver: designatedDriver || null });
+    } catch {
+      syncQueue.enqueue({ table: "dayPlanDays", op: "update", match: { date }, payload: { designated_driver: designatedDriver || null } });
+    }
+  },
 };

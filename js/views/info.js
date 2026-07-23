@@ -59,6 +59,7 @@ function renderEmergency(section) {
     </ul>
     <p class="dayplan-slot">Insurance</p>
     <ul class="packing-list">${insuranceRows}</ul>
+    <a class="edit-group-info-link" href="#profile">✏️ Edit my info in Group Info</a>
   `;
 }
 

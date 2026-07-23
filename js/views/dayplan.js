@@ -3,6 +3,7 @@ import { escapeHtml } from "../util.js";
 import { loadPlaces, placesById } from "../places-data.js";
 import { categoryMeta, isClosedOnDate } from "../categories.js";
 import { dayPlanStore, dayPlanDaysStore } from "../day-plan.js";
+import { peopleStore } from "../people.js";
 
 const SLOT_ORDER = ["morning", "afternoon", "evening", ""];
 const SLOT_LABEL = { morning: "Morning", afternoon: "Afternoon", evening: "Evening", "": "Unscheduled" };
@@ -16,6 +17,7 @@ export async function render(container) {
   await loadPlaces();
   await dayPlanStore.load();
   await dayPlanDaysStore.load();
+  await peopleStore.load();
 
   if (!state.date) state.date = pickDefaultDate();
 
@@ -24,6 +26,7 @@ export async function render(container) {
     const refresh = () => renderDay(container);
     dayPlanStore.onChange(refresh);
     dayPlanDaysStore.onChange(refresh);
+    peopleStore.onChange(refresh);
   }
 
   renderChrome(container);
@@ -79,11 +82,16 @@ function renderDay(container) {
 
   body.innerHTML = `
     <textarea class="dayplan-note" placeholder="Notes for this day…">${escapeHtml(day.notes || "")}</textarea>
+    ${driverWidgetHtml(day)}
     ${listHtml}
   `;
 
   body.querySelector(".dayplan-note").addEventListener("blur", (e) => {
     dayPlanDaysStore.setNotes(date, e.target.value);
+  });
+
+  body.querySelector(".driver-select")?.addEventListener("change", (e) => {
+    dayPlanDaysStore.setDesignatedDriver(date, e.target.value);
   });
 
   body.querySelector("[data-jump-explore]")?.addEventListener("click", () => {
@@ -96,6 +104,25 @@ function renderDay(container) {
   body.querySelectorAll(".assignment-booked").forEach((cb) => {
     cb.addEventListener("change", () => dayPlanStore.setBooked(cb.dataset.assignmentId, cb.checked));
   });
+}
+
+function driverWidgetHtml(day) {
+  const candidates = peopleStore.all().filter((p) => p.comfortable_night_driving);
+
+  if (!candidates.length) {
+    return `<p class="view-empty__hint">Nobody's flagged themselves as comfortable driving at night yet — see Group Info.</p>`;
+  }
+
+  const options = [`<option value="">— Pick a driver —</option>`]
+    .concat(candidates.map((p) => `<option value="${escapeHtml(p.name)}" ${day.designated_driver === p.name ? "selected" : ""}>${escapeHtml(p.name)}</option>`))
+    .join("");
+
+  return `
+    <label class="driver-widget">
+      🚗 Designated driver tonight
+      <select class="driver-select">${options}</select>
+    </label>
+  `;
 }
 
 function sectionHtml(slot, items, date) {

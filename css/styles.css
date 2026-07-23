@@ -309,6 +309,22 @@ h1 { font-size: 1.4rem; margin: 0 0 0.75rem; }
   font-size: 0.82rem;
 }
 
+.driver-widget {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text2);
+  margin-bottom: 1rem;
+}
+.driver-select {
+  padding: 0.35rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid color-mix(in srgb, var(--text) 20%, transparent);
+  background: var(--surface);
+  color: var(--text);
+}
+
 /* Lists (§10 step 6) */
 .lists-heading { font-size: 1.1rem; margin: 0.5rem 0 0.2rem; }
 
@@ -405,6 +421,7 @@ h1 { font-size: 1.4rem; margin: 0 0 0.75rem; }
 
 /* Info (§10 step 7) */
 .emergency-heading { color: var(--accent-primary); }
+.edit-group-info-link { display: inline-block; margin-top: 0.5rem; color: var(--accent-secondary); font-size: 0.85rem; }
 .detail-action--inline {
   display: inline-flex;
   padding: 0.2rem 0.6rem;
@@ -430,6 +447,30 @@ h1 { font-size: 1.4rem; margin: 0 0 0.75rem; }
 .practical-body p { margin: 0 0 0.6rem; }
 .practical-body ul { margin: 0 0 0.6rem; padding-left: 1.2rem; }
 .practical-body a { color: var(--accent-secondary); }
+
+/* Group Info (§10 step 7, part 2) */
+.my-info-form { display: flex; flex-direction: column; gap: 0.7rem; max-width: 24rem; margin-bottom: 1rem; }
+.my-info-field { display: flex; flex-direction: column; gap: 0.25rem; font-size: 0.85rem; color: var(--text2); }
+.my-info-field input {
+  padding: 0.5rem 0.7rem;
+  border-radius: 8px;
+  border: 1px solid color-mix(in srgb, var(--text) 20%, transparent);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.95rem;
+}
+.my-info-checkbox { display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; }
+.my-info-form button[type="submit"] {
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent-primary);
+  color: white;
+}
+
+.grocery-options { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem; }
+.grocery-option { display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; }
 
 /* Place detail (§10 step 4, part 2) */
 .back-button {
