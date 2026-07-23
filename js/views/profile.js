@@ -1,5 +1,6 @@
 import { localStore } from "../local-store.js";
 import { KNOWN_NAMES } from "../constants.js";
+import { escapeHtml } from "../util.js";
 
 export function render(container, { onNamePicked } = {}) {
   const currentName = localStore.getProfileName();
@@ -41,8 +42,4 @@ function renderNamePicker() {
       <button type="submit">Continue</button>
     </form>
   `;
-}
-
-function escapeHtml(s) {
-  return s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 }
