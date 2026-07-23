@@ -1,0 +1,38 @@
+[
+  {
+    "id": "bluetooth-speaker",
+    "name": "Portable Bluetooth speaker",
+    "source": "bring",
+    "description": "The villa doesn't list one among its amenities, and it'll get used constantly — pool days, BBQ nights, getting ready to go out."
+  },
+  {
+    "id": "cards-and-games",
+    "name": "Deck of cards + one or two compact group games",
+    "source": "bring",
+    "description": "Good options for this group size: Cards Against Humanity-style party games, Codenames, Sushi Go, or a simple poker set given the group's fine-dining/adventurous vibe suggests they wouldn't mind a bit of gambling for fun."
+  },
+  {
+    "id": "pool-float",
+    "name": "Inflatable pool float(s)",
+    "source": "buy_on_arrival",
+    "description": "Not worth checking a bag over — a cheap (€5-10) buy from a Noto shop or supermarket (ARD Discount / Sisa) once you're there."
+  },
+  {
+    "id": "cooler-cool-bag",
+    "name": "Cooler / cool bag",
+    "source": "buy_on_arrival",
+    "description": "Useful for beach days (drinks, the fish you buy at the Saturday market) and for BBQ nights — often cheap to pick up locally rather than pack."
+  },
+  {
+    "id": "bocce-petanque-set",
+    "name": "Bocce / pétanque set",
+    "source": "buy_on_arrival",
+    "description": "The villa's garden is described as spacious and Mediterranean — a small set makes for an easy after-dinner activity and is cheap and available locally."
+  },
+  {
+    "id": "frisbee-spikeball-set",
+    "name": "Frisbee or spikeball set",
+    "source": "bring",
+    "description": "For the beach days — doesn't take much suitcase space."
+  }
+]

@@ -1,0 +1,153 @@
+/* implementation_plan.md §9 — design tokens, light default */
+:root {
+  --bg: #F7F1E3;
+  --surface: #FFFDF7;
+  --text: #2B211A;
+  --text2: #6B5D4F;
+  --accent-primary: #7A2438;
+  --accent-secondary: #1D5C73;
+
+  /* §9.3 category tag colors */
+  --tag-coast-bg: #DCEEF2;    --tag-coast-text: #145066;
+  --tag-food-bg: #F7DFC9;     --tag-food-text: #8A4A1E;
+  --tag-wine-bg: #F0DCE0;     --tag-wine-text: #6B1F2A;
+  --tag-culture-bg: #F3E5B8;  --tag-culture-text: #7A5B12;
+  --tag-nature-bg: #E1E8D3;   --tag-nature-text: #43581F;
+  --tag-nightlife-bg: #E6DCEE; --tag-nightlife-text: #4A2A6B;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1C1712;
+    --surface: #262019;
+    --text: #F2ECE2;
+    --text2: #B8A992;
+    --accent-primary: #C15A70;
+    --accent-secondary: #4E93AC;
+
+    --tag-coast-bg: #163541;    --tag-coast-text: #8FD3E8;
+    --tag-food-bg: #3D2A16;     --tag-food-text: #EFB27E;
+    --tag-wine-bg: #331A20;     --tag-wine-text: #E39CA8;
+    --tag-culture-bg: #362B10;  --tag-culture-text: #E8CD7A;
+    --tag-nature-bg: #232C15;   --tag-nature-text: #B3C98A;
+    --tag-nightlife-bg: #2A2032; --tag-nightlife-text: #CBA9E3;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+}
+
+#app {
+  min-height: 100%;
+  padding: 1.5rem 1.25rem calc(5.5rem + env(safe-area-inset-bottom));
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+#app.is-visible { opacity: 1; transform: translateY(0); }
+
+@media (prefers-reduced-motion: reduce) {
+  #app { transition: none; }
+}
+
+h1 { font-size: 1.4rem; margin: 0 0 0.75rem; }
+
+.view-empty__hint {
+  color: var(--text2);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.bottom-nav[hidden] { display: none; }
+
+.bottom-nav {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 0.25rem calc(0.5rem + env(safe-area-inset-bottom));
+  background: color-mix(in srgb, var(--surface) 82%, transparent);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid color-mix(in srgb, var(--text) 10%, transparent);
+}
+
+.bottom-nav button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  font-size: 0.65rem;
+  background: none;
+  border: none;
+  color: var(--text2);
+  padding: 0.25rem 0.5rem;
+}
+.bottom-nav button span { font-size: 0.65rem; }
+.bottom-nav button.is-active { color: var(--accent-primary); font-weight: 600; }
+
+/* name picker */
+#name-picker-form { display: flex; flex-direction: column; gap: 0.6rem; max-width: 320px; }
+.name-picker__list { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.name-picker__list button {
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--accent-secondary);
+  background: var(--surface);
+  color: var(--accent-secondary);
+}
+#name-picker-form input {
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid color-mix(in srgb, var(--text) 20%, transparent);
+  background: var(--surface);
+  color: var(--text);
+}
+#name-picker-form button[type="submit"] {
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent-primary);
+  color: white;
+  font-weight: 600;
+}
+
+/* Day Planner's 9 day-tabs — horizontal scroll-snap, per §9.7 */
+.day-tabs {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 0.5rem;
+}
+.day-tab {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--text) 15%, transparent);
+  background: var(--surface);
+  color: var(--text);
+}
+
+/* sync-status pill, per §9.7 — never red; amber only once retries are exhausted */
+.sync-pill {
+  position: fixed;
+  left: 50%;
+  bottom: calc(4.75rem + env(safe-area-inset-bottom));
+  transform: translateX(-50%);
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: var(--surface);
+  color: var(--text2);
+  box-shadow: 0 1px 4px color-mix(in srgb, var(--text) 15%, transparent);
+}
+.sync-pill.is-stuck { color: #8A4A1E; }

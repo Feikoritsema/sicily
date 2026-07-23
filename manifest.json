@@ -1,0 +1,17 @@
+{
+  "name": "Sicily Trip 2026",
+  "short_name": "Sicily '26",
+  "description": "Trip companion for Villa Suq, Noto — Sept 25 – Oct 3, 2026",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F7F1E3",
+  "theme_color": "#F7F1E3",
+  "icons": [
+    { "src": "icon-any-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icon-any-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

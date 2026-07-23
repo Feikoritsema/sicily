@@ -1,0 +1,16 @@
+name: Supabase heartbeat
+
+on:
+  schedule:
+    - cron: '0 8 * * *'   # once daily — keeps the free-tier project from auto-pausing after 7 days idle
+  workflow_dispatch: {}    # allow manual trigger too
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Supabase
+        run: |
+          curl -sf "https://${{ secrets.SUPABASE_PROJECT_REF }}.supabase.co/rest/v1/trip_settings?select=id" \
+            -H "apikey: ${{ secrets.SUPABASE_ANON_KEY }}" \
+            -H "Authorization: Bearer ${{ secrets.SUPABASE_ANON_KEY }}"

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "san-michele-canicattini",
+    "name": "Festa di San Michele Arcangelo",
+    "date": "2026-09-29",
+    "location": "Canicattini Bagni",
+    "in_window": true,
+    "description": "The patron saint feast of Canicattini Bagni — a genuinely traditional, non-touristy Sicilian religious festival. At noon, the statue of the \"Angelo Combattente\" (Warrior Angel) is carried out of the church to fireworks and a colorful paper confetti toss (\"sciuta\"), followed by a solemn morning procession and a second evening procession with civil/military authorities. Part of a month-long \"Festival del Mediterraneo\" with concerts, food stalls, and cultural events running through September. Go for the evening procession (~8pm) and stay for the atmosphere in the piazza afterward; it's a Tuesday, so plan dinner around it rather than instead of it. Confirmed unchanged for 2026 by the 2026-07-21 fact-check addendum — the doc's separate claim that the preceding \"Palio\" street-games portion wraps by ~Sept 19-20 could not be verified (one source instead puts the Palio at Sept 4-6, 2026), but either way that's well before this feast date and doesn't affect it.",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Canicattini+Bagni"
+  },
+  {
+    "id": "avola-saturday-market-sep-26",
+    "name": "Avola Saturday Market",
+    "date": "2026-09-26",
+    "location": "Avola, Piazza San Sebastiano",
+    "in_window": true,
+    "description": "The weekly farmers'/general market in Avola's Piazza San Sebastiano — fresh fish (swordfish, prawns), vegetables, cheese, plus clothing/household stalls. Good for BBQ shopping if planning a villa grill night. Runs roughly 8:00am–1:00pm (corrected by the 2026-07-21 fact-check addendum — the original research listed 7:00am–1:00pm; current sources agree on the later start time). One of two in-window dates for this market — see also the October 3 occurrence.",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Avola+Saturday+market+Piazza+S+Sebastiano+Avola"
+  },
+  {
+    "id": "avola-saturday-market-oct-3",
+    "name": "Avola Saturday Market",
+    "date": "2026-10-03",
+    "location": "Avola, Piazza San Sebastiano",
+    "in_window": true,
+    "description": "The weekly farmers'/general market in Avola's Piazza San Sebastiano — fresh fish (swordfish, prawns), vegetables, cheese, plus clothing/household stalls. Good for BBQ shopping if planning a villa grill night. Runs roughly 8:00am–1:00pm (corrected by the 2026-07-21 fact-check addendum — the original research listed 7:00am–1:00pm; current sources agree on the later start time). Second of two in-window dates for this market — see also the September 26 occurrence.",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Avola+Saturday+market+Piazza+S+Sebastiano+Avola"
+  },
+  {
+    "id": "ortigia-film-festival",
+    "name": "Ortigia Film Festival (OFF18)",
+    "date": "2026-09-25",
+    "location": "Ortigia, Syracuse",
+    "in_window": true,
+    "description": "An established Syracuse film festival running across Ortigia island, 18th edition, Sept 20–26, 2026 — overlapping the first two days of the trip window (Sept 25–26), which is the date used here. Exact 2026 program not yet published at time of research; dates confirmed via the festival's official site and cross-confirmed via search aggregation. Relevant either as a bonus (screenings/evening buzz if an Ortigia day lands early in the week) or as a scheduling consideration — extra crowds and parking pressure in Ortigia on those specific evenings, on top of the existing ZTL/parking advice. Worth a quick check of the published program closer to the date.",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Piazza+Duomo+Siracusa"
+  },
+  {
+    "id": "vision-2030-festival-cinema-sostenibile",
+    "name": "Vision 2030 — Festival del Cinema Sostenibile",
+    "date": "2026-09-25",
+    "location": "Noto (historic center)",
+    "in_window": true,
+    "description": "Noto's own sustainable-cinema festival — screenings, talks, and eco-focused street-art/performance events through the historic center, aligned with the UN's Agenda 2030 themes. 5th edition, running Sept 21–27, 2026 (vision2030noto.it) — the festival itself starts before the trip, but overlaps the first two to three days of the trip window (Sept 25–27), which is the date used here. Confirmed directly on the festival's own site for both English and Italian versions. Unlike the Ortigia Film Festival (35–40 min away), this one happens in Noto itself, a 10-minute drive or an evening walk from the villa. Zero extra travel cost to check out — if a screening or street event lines up with an evening you're already in Noto for dinner, it's a genuinely easy, low-effort way to catch some local cultural energy on arrival days rather than just wandering the piazza again. Booking appears to go through the program page closer to the date; worth a look once the full 2026 schedule is published.",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Piazza+del+Duomo+Noto"
+  }
+]

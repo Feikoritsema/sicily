@@ -1,0 +1,47 @@
+{
+  "documents_money": [
+    "Passport/ID, driver's license (+ International Driving Permit if you're a non-EU visitor — see Practical Info → Connectivity & Money)",
+    "Rental car booking confirmation + credit card the booking was made on (many rental counters require it)",
+    "Travel insurance details (policy number + assistance line, saved on phone and printed/screenshotted)",
+    "Villa booking confirmation, host contact (+39 333 2631840)",
+    "A physical backup of your accommodation address in Italian, for taxi drivers/emergencies: Via San Michele Arcangelo 24, 96017 Noto (SR)",
+    "Some euro cash (see Practical Info → Connectivity & Money for notes on unreliable ATMs and cash-preferred spots)",
+    "EU plug adapters if coming from outside continental Europe"
+  ],
+  "beach_water_gear": [
+    "Swimsuits (bring 2 each — hard to fully dry overnight with daily beach use)",
+    "Water shoes — Eloro and Calamosche both have rocky entry points, also useful for snorkeling",
+    "Snorkel mask if you have your own preferred fit (boat tours provide gear, but personal masks fit better)",
+    "Quick-dry beach towels — separate from villa towels, since you'll want these damp in the car, not the bathroom",
+    "A collapsible/pop-up beach shade or umbrella — Calamosche, Marianelli, Eloro, and Vendicari have zero shade infrastructure",
+    "Dry bag — for phones/wallets on the boat trip or wild beaches",
+    "Reef-safe sunscreen (considerate for the marine reserves you'll be swimming in), and after-sun/aloe",
+    "Underwater phone case or an old phone, if you want boat/snorkel photos without risking your main one"
+  ],
+  "hiking_gear": [
+    "Real hiking shoes or trail runners — Cava Grande's descent is steep and loose underfoot, sandals aren't enough",
+    "A daypack per couple/person for water + snacks on hikes",
+    "Refillable water bottles — bring more than feels necessary, both hike write-ups specifically warn about the climb back up in heat",
+    "Mosquito repellent — Vendicari reserve is a wetland, reviews mention mosquitoes at dusk",
+    "A hat/cap and sunglasses with a strap (useful for both hiking and the boat)"
+  ],
+  "clothing": [
+    "Lightweight, breathable daywear (linen/cotton) — daytime highs 25-29°C",
+    "A light layer or cardigan for evenings — nights cool to ~18-20°C even on hot days (2026-07-21 addendum: climatological data for the exact trip window suggests evenings may run cooler than that, possibly low-to-mid teens °C by early October — pack slightly warmer than this estimate to be safe; see Practical Info → Rainy / Windy Day Backup Options for the fuller note)",
+    "One \"nice\" outfit each for the Michelin-starred dinners (Crocifisso, Cortile Spirito Santo, Duomo) — smart-casual is fine, none of these are strict black-tie, but Duomo in particular skews a bit dressier (Accursio in Modica lost its Michelin star for the 2026 guide and is no longer a tasting-menu venue — see the Radici entry in Explore — so it no longer needs this outfit)",
+    "Something you don't mind getting dusty/scraped for the hikes",
+    "A wind-resistant layer for the boat trip — it's noticeably breezier on the water, even on a warm day"
+  ],
+  "health_toiletries": [
+    "Personal medications (enough for the full week + a couple of spare days)",
+    "Basic first-aid — plasters, antiseptic, motion sickness tablets (for the boat), rehydration salts",
+    "Sunscreen (face + body, high SPF — the group skews \"very adventurous,\" which hopefully extends to reapplying)",
+    "Any allergy medication if relevant"
+  ],
+  "electronics": [
+    "EU-compatible chargers/adapters",
+    "A portable power bank — useful for full beach/boat days away from outlets",
+    "Offline maps downloaded (Google Maps offline area for southeastern Sicily) in case of patchy rural signal",
+    "SIM/eSIM sorted before or on arrival (see Practical Info → Connectivity & Money)"
+  ]
+}
