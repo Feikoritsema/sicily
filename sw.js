@@ -15,6 +15,7 @@ const PRECACHE_URLS = [
   "./js/categories.js",
   "./js/votes.js",
   "./js/day-plan.js",
+  "./js/places-data.js",
   "./js/views/today.js",
   "./js/views/explore.js",
   "./js/views/dayplan.js",

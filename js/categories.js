@@ -26,3 +26,14 @@ export function isClosedToday(place, date = new Date()) {
   const weekday = WEEKDAYS[date.getDay()];
   return Array.isArray(place.closed_days) && place.closed_days.includes(weekday);
 }
+
+// For a "YYYY-MM-DD" trip date (as stored in day_plan_days/day_plan_assignments)
+// rather than "today" — parsed at noon local time so no timezone can roll it
+// onto the adjacent day the way midnight-UTC parsing sometimes does.
+export function isClosedOnDate(place, dateStr) {
+  return isClosedToday(place, new Date(`${dateStr}T12:00:00`));
+}
+
+export function weekdayName(dateStr) {
+  return WEEKDAYS[new Date(`${dateStr}T12:00:00`).getDay()];
+}

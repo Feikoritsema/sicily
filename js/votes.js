@@ -11,7 +11,17 @@ let unsubscribe = null;
 const listeners = new Set();
 
 function notify() {
-  for (const fn of listeners) fn();
+  // A listener throwing (e.g. a view re-rendering DOM that's no longer
+  // mounted) must never abort the caller — cast() calls notify() *before*
+  // its network write, so an uncaught exception here would silently skip
+  // the write for every listener, not just the one that errored.
+  for (const fn of listeners) {
+    try {
+      fn();
+    } catch (err) {
+      console.error("votesStore listener error", err);
+    }
+  }
 }
 
 export const votesStore = {

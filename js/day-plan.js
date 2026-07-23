@@ -10,7 +10,15 @@ let unsubscribe = null;
 const listeners = new Set();
 
 function notify() {
-  for (const fn of listeners) fn();
+  // See votes.js's notify() for why this must never let a listener's
+  // exception abort the caller (it would silently skip the network write).
+  for (const fn of listeners) {
+    try {
+      fn();
+    } catch (err) {
+      console.error("dayPlanStore listener error", err);
+    }
+  }
 }
 
 export const dayPlanStore = {
@@ -41,6 +49,24 @@ export const dayPlanStore = {
 
   assignmentsFor(placeId) {
     return (assignments || []).filter((a) => a.place_id === placeId);
+  },
+
+  assignmentsForDate(date) {
+    return (assignments || []).filter((a) => a.date === date);
+  },
+
+  async setBooked(id, booked) {
+    const idx = assignments?.findIndex((a) => a.id === id);
+    if (idx == null || idx < 0) return;
+    const previous = { ...assignments[idx] };
+    applyChange({ eventType: "UPSERT", new: { ...previous, booked } });
+    notify();
+
+    try {
+      await dataService.update("dayPlanAssignments", { id }, { booked });
+    } catch {
+      syncQueue.enqueue({ table: "dayPlanAssignments", op: "update", match: { id }, payload: { booked } });
+    }
   },
 
   async add(date, placeId, timeSlot) {
@@ -85,3 +111,65 @@ function applyChange(payload) {
   if (idx >= 0) assignments[idx] = row;
   else assignments.push(row);
 }
+
+// day_plan_days: one row per trip date, already seeded (implementation_plan.md
+// §6 step 2) — so this store only ever updates existing rows, never inserts.
+let days = null;
+let daysUnsubscribe = null;
+const dayListeners = new Set();
+
+function notifyDays() {
+  for (const fn of dayListeners) {
+    try {
+      fn();
+    } catch (err) {
+      console.error("dayPlanDaysStore listener error", err);
+    }
+  }
+}
+
+export const dayPlanDaysStore = {
+  onChange(fn) {
+    dayListeners.add(fn);
+    return () => dayListeners.delete(fn);
+  },
+
+  async load() {
+    if (days) return days;
+    try {
+      days = await dataService.list("dayPlanDays");
+      localStore.setCachedTable("dayPlanDays", days);
+    } catch {
+      days = localStore.getCachedTable("dayPlanDays") || [];
+    }
+    this.subscribe();
+    return days;
+  },
+
+  subscribe() {
+    if (daysUnsubscribe) return;
+    daysUnsubscribe = dataService.subscribe("dayPlanDays", (payload) => {
+      const row = payload.new;
+      const idx = days.findIndex((d) => d.date === row.date);
+      if (idx >= 0) days[idx] = row;
+      else days.push(row);
+      notifyDays();
+    });
+  },
+
+  get(date) {
+    return days?.find((d) => d.date === date) || { date, notes: null, designated_driver: null };
+  },
+
+  async setNotes(date, notes) {
+    const idx = days.findIndex((d) => d.date === date);
+    if (idx >= 0) days[idx] = { ...days[idx], notes };
+    notifyDays();
+
+    try {
+      await dataService.update("dayPlanDays", { date }, { notes });
+    } catch {
+      syncQueue.enqueue({ table: "dayPlanDays", op: "update", match: { date }, payload: { notes } });
+    }
+  },
+};

@@ -140,6 +140,11 @@ h1 { font-size: 1.4rem; margin: 0 0 0.75rem; }
   background: var(--surface);
   color: var(--text);
 }
+.day-tab.is-active {
+  background: var(--accent-primary);
+  color: white;
+  border-color: transparent;
+}
 
 /* Explore (§2 item 3, §9.7) */
 .explore__search {
@@ -263,6 +268,45 @@ h1 { font-size: 1.4rem; margin: 0 0 0.75rem; }
   border: none;
   background: var(--accent-primary);
   color: white;
+}
+
+/* Day Planner (§10 step 5) */
+.dayplan-note {
+  width: 100%;
+  min-height: 3rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid color-mix(in srgb, var(--text) 20%, transparent);
+  background: var(--surface);
+  color: var(--text);
+  font-family: inherit;
+  margin-bottom: 1rem;
+  resize: vertical;
+}
+
+.dayplan-slot {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text2);
+  margin: 1rem 0 0.5rem;
+}
+
+.assignment-note {
+  font-size: 0.8rem;
+  color: var(--text2);
+  margin: 0.2rem 0;
+}
+.assignment-note--warn { color: var(--tag-food-text); }
+
+.assignment-booked-label { font-size: 0.85rem; display: flex; align-items: center; gap: 0.3rem; }
+
+.assignment-remove {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: var(--accent-secondary);
+  font-size: 0.82rem;
 }
 
 /* Place detail (§10 step 4, part 2) */

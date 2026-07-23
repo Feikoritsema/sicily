@@ -4,6 +4,7 @@ import { votesStore } from "../votes.js";
 import { dayPlanStore } from "../day-plan.js";
 import { localStore } from "../local-store.js";
 import { TRIP_DATES } from "../constants.js";
+import { loadPlaces } from "../places-data.js";
 
 let placesCache = null;
 let listenersAttached = false;
@@ -12,16 +13,18 @@ const state = { category: "all", topPicksOnly: false, search: "", selectedId: nu
 export async function render(container) {
   container.innerHTML = `<section class="explore"><h1>Explore</h1><p class="view-empty__hint">Loading places…</p></section>`;
 
-  if (!placesCache) {
-    const res = await fetch("./data/places.json");
-    placesCache = await res.json();
-  }
+  placesCache = await loadPlaces();
   await votesStore.load();
   await dayPlanStore.load();
 
   if (!listenersAttached) {
     listenersAttached = true;
+    // Store subscriptions live for the app's lifetime, but #app gets
+    // overwritten every time the user switches tabs — if Explore isn't the
+    // currently-mounted view, skip the re-render rather than crashing on
+    // DOM that's no longer there (mirrors the guard in dayplan.js's renderDay).
     const refresh = () => {
+      if (!container.querySelector(".explore")) return;
       if (state.selectedId) renderDetail(container);
       else renderList(container);
     };
