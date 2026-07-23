@@ -1,10 +1,12 @@
 import { escapeHtml } from "../util.js";
 import { categoryMeta, isClosedToday } from "../categories.js";
 import { votesStore } from "../votes.js";
+import { dayPlanStore } from "../day-plan.js";
 import { localStore } from "../local-store.js";
+import { TRIP_DATES } from "../constants.js";
 
 let placesCache = null;
-let votesListenerAttached = false;
+let listenersAttached = false;
 const state = { category: "all", topPicksOnly: false, search: "", selectedId: null };
 
 export async function render(container) {
@@ -15,13 +17,16 @@ export async function render(container) {
     placesCache = await res.json();
   }
   await votesStore.load();
+  await dayPlanStore.load();
 
-  if (!votesListenerAttached) {
-    votesListenerAttached = true;
-    votesStore.onChange(() => {
+  if (!listenersAttached) {
+    listenersAttached = true;
+    const refresh = () => {
       if (state.selectedId) renderDetail(container);
       else renderList(container);
-    });
+    };
+    votesStore.onChange(refresh);
+    dayPlanStore.onChange(refresh);
   }
 
   if (state.selectedId) renderDetail(container);
@@ -107,6 +112,7 @@ function renderList(container) {
   });
 
   wireVoteButtons(container);
+  wireDayAssignWidgets(container);
 }
 
 function renderDetail(container) {
@@ -144,6 +150,7 @@ function renderDetail(container) {
       </div>
 
       ${voteRowHtml(p.id)}
+      ${dayAssignHtml(p.id)}
 
       ${p.description ? `<p class="detail-text">${escapeHtml(p.description)}</p>` : ""}
       ${p.why_it_fits ? `<p class="detail-text detail-text--why"><strong>Why it fits:</strong> ${escapeHtml(p.why_it_fits)}</p>` : ""}
@@ -168,6 +175,7 @@ function renderDetail(container) {
   });
 
   wireVoteButtons(container);
+  wireDayAssignWidgets(container);
 }
 
 function placeCardHtml(p) {
@@ -185,6 +193,7 @@ function placeCardHtml(p) {
         <p class="place-card__meta">${drive}${escapeHtml(p.location_area || "")}</p>
         ${p.why_it_fits ? `<p class="place-card__why">${escapeHtml(p.why_it_fits)}</p>` : ""}
         <div class="place-card__footer">${rating}${closedBadge}${voteRowHtml(p.id)}</div>
+        <div class="place-card__day-assign">${dayAssignHtml(p.id)}</div>
       </div>
     </article>
   `;
@@ -214,6 +223,67 @@ function wireVoteButtons(container) {
         if (!personName) return;
         votesStore.cast(placeId, personName, Number(btn.dataset.voteValue));
       });
+    });
+  });
+}
+
+const TIME_SLOTS = [
+  ["", "Any time"],
+  ["morning", "Morning"],
+  ["afternoon", "Afternoon"],
+  ["evening", "Evening"],
+];
+
+function dayAssignHtml(placeId) {
+  const assigned = dayPlanStore.assignmentsFor(placeId);
+  const chips = assigned
+    .map(
+      (a) => `
+      <span class="chip day-assign-chip">
+        ${escapeHtml(a.date.slice(5))}${a.time_slot ? ` · ${escapeHtml(a.time_slot)}` : ""}
+        <button type="button" class="day-assign-remove" data-assignment-id="${a.id}" aria-label="Remove">×</button>
+      </span>`
+    )
+    .join("");
+
+  const dateOptions = TRIP_DATES.map((d) => `<option value="${d}">${d.slice(5)}</option>`).join("");
+  const slotOptions = TIME_SLOTS.map(([v, label]) => `<option value="${v}">${label}</option>`).join("");
+
+  return `
+    <div class="day-assign" data-place-id="${escapeHtml(placeId)}">
+      <div class="day-assign-chips">${chips}</div>
+      <button type="button" class="day-assign-toggle">+ Day</button>
+      <div class="day-assign-form" hidden>
+        <select class="day-assign-date">${dateOptions}</select>
+        <select class="day-assign-slot">${slotOptions}</select>
+        <button type="button" class="day-assign-submit">Add</button>
+      </div>
+    </div>
+  `;
+}
+
+function wireDayAssignWidgets(container) {
+  container.querySelectorAll(".day-assign[data-place-id]").forEach((widget) => {
+    // Stop every interaction inside the widget from bubbling up to the
+    // card's own click handler (which would otherwise open the detail view).
+    widget.addEventListener("click", (e) => e.stopPropagation());
+
+    const placeId = widget.dataset.placeId;
+    const form = widget.querySelector(".day-assign-form");
+
+    widget.querySelector(".day-assign-toggle").addEventListener("click", () => {
+      form.hidden = !form.hidden;
+    });
+
+    widget.querySelector(".day-assign-submit").addEventListener("click", () => {
+      const date = widget.querySelector(".day-assign-date").value;
+      const slot = widget.querySelector(".day-assign-slot").value;
+      dayPlanStore.add(date, placeId, slot);
+      form.hidden = true;
+    });
+
+    widget.querySelectorAll(".day-assign-remove").forEach((btn) => {
+      btn.addEventListener("click", () => dayPlanStore.remove(btn.dataset.assignmentId));
     });
   });
 }
