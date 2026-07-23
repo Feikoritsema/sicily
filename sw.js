@@ -13,6 +13,7 @@ const PRECACHE_URLS = [
   "./js/local-store.js",
   "./js/util.js",
   "./js/categories.js",
+  "./js/votes.js",
   "./js/views/today.js",
   "./js/views/explore.js",
   "./js/views/dayplan.js",

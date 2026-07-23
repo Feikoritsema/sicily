@@ -218,6 +218,18 @@ h1 { font-size: 1.4rem; margin: 0 0 0.75rem; }
 .place-card { cursor: pointer; }
 .place-card:focus-visible { outline: 2px solid var(--accent-secondary); outline-offset: 2px; }
 
+.vote-row { display: flex; align-items: center; gap: 0.35rem; margin-left: auto; }
+.vote-btn {
+  background: none;
+  border: 1px solid color-mix(in srgb, var(--text) 15%, transparent);
+  border-radius: 999px;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.85rem;
+  line-height: 1;
+}
+.vote-btn.is-active { border-color: var(--accent-primary); background: var(--tag-wine-bg); }
+.vote-tally { font-size: 0.8rem; color: var(--text2); min-width: 1.2em; text-align: center; }
+
 /* Place detail (§10 step 4, part 2) */
 .back-button {
   background: none;

@@ -1,7 +1,10 @@
 import { escapeHtml } from "../util.js";
 import { categoryMeta, isClosedToday } from "../categories.js";
+import { votesStore } from "../votes.js";
+import { localStore } from "../local-store.js";
 
 let placesCache = null;
+let votesListenerAttached = false;
 const state = { category: "all", topPicksOnly: false, search: "", selectedId: null };
 
 export async function render(container) {
@@ -11,6 +14,16 @@ export async function render(container) {
     const res = await fetch("./data/places.json");
     placesCache = await res.json();
   }
+  await votesStore.load();
+
+  if (!votesListenerAttached) {
+    votesListenerAttached = true;
+    votesStore.onChange(() => {
+      if (state.selectedId) renderDetail(container);
+      else renderList(container);
+    });
+  }
+
   if (state.selectedId) renderDetail(container);
   else renderChrome(container);
 }
@@ -92,6 +105,8 @@ function renderList(container) {
       }
     });
   });
+
+  wireVoteButtons(container);
 }
 
 function renderDetail(container) {
@@ -128,6 +143,8 @@ function renderDetail(container) {
         ${p.top_pick ? `<span class="chip chip--rating">🏆 Top Pick</span>` : ""}
       </div>
 
+      ${voteRowHtml(p.id)}
+
       ${p.description ? `<p class="detail-text">${escapeHtml(p.description)}</p>` : ""}
       ${p.why_it_fits ? `<p class="detail-text detail-text--why"><strong>Why it fits:</strong> ${escapeHtml(p.why_it_fits)}</p>` : ""}
       ${p.top_pick_reason ? `<p class="detail-text detail-text--why"><strong>Top Pick because:</strong> ${escapeHtml(p.top_pick_reason)}</p>` : ""}
@@ -149,6 +166,8 @@ function renderDetail(container) {
     state.selectedId = null;
     renderChrome(container);
   });
+
+  wireVoteButtons(container);
 }
 
 function placeCardHtml(p) {
@@ -165,8 +184,36 @@ function placeCardHtml(p) {
         <h3>${escapeHtml(p.name)}</h3>
         <p class="place-card__meta">${drive}${escapeHtml(p.location_area || "")}</p>
         ${p.why_it_fits ? `<p class="place-card__why">${escapeHtml(p.why_it_fits)}</p>` : ""}
-        <div class="place-card__footer">${rating}${closedBadge}</div>
+        <div class="place-card__footer">${rating}${closedBadge}${voteRowHtml(p.id)}</div>
       </div>
     </article>
   `;
+}
+
+function voteRowHtml(placeId) {
+  const tally = votesStore.tallyFor(placeId);
+  const personName = localStore.getProfileName();
+  const myVote = personName ? votesStore.myVoteFor(placeId, personName) : 0;
+
+  return `
+    <div class="vote-row" data-vote-place="${escapeHtml(placeId)}">
+      <button type="button" class="vote-btn ${myVote === 1 ? "is-active" : ""}" data-vote-value="1" aria-label="Thumbs up">👍</button>
+      <span class="vote-tally">${tally}</span>
+      <button type="button" class="vote-btn ${myVote === -1 ? "is-active" : ""}" data-vote-value="-1" aria-label="Thumbs down">👎</button>
+    </div>
+  `;
+}
+
+function wireVoteButtons(container) {
+  const personName = localStore.getProfileName();
+  container.querySelectorAll(".vote-row[data-vote-place]").forEach((row) => {
+    const placeId = row.dataset.votePlace;
+    row.querySelectorAll(".vote-btn").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation(); // don't also open the card's detail view
+        if (!personName) return;
+        votesStore.cast(placeId, personName, Number(btn.dataset.voteValue));
+      });
+    });
+  });
 }
