@@ -17,3 +17,7 @@ export const VILLA = {
 // 5 travelers, so the profile view's name picker starts empty and falls back
 // to "type your name" until people have picked once (see js/views/profile.js).
 export const KNOWN_NAMES = [];
+
+// Egbert's birthday falls during the trip (Oct 2, day 8 of 9) — shown on
+// Today as its own small countdown alongside the main trip status.
+export const SPECIAL_OCCASIONS = [{ person: "Egbert", label: "birthday", date: "2026-10-02", emoji: "🎂" }];

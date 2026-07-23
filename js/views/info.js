@@ -22,8 +22,7 @@ export async function render(container) {
     <section class="info">
       <h1>Info</h1>
       <div class="emergency-section"></div>
-      <div class="events-section"></div>
-      <div class="practical-section"></div>
+      <div class="accordion-section"></div>
     </section>
   `;
 
@@ -36,8 +35,7 @@ export async function render(container) {
   }
 
   renderEmergency(container.querySelector(".emergency-section"));
-  renderEvents(container.querySelector(".events-section"));
-  renderPractical(container.querySelector(".practical-section"));
+  renderAccordion(container.querySelector(".accordion-section"));
 }
 
 function renderEmergency(section) {
@@ -63,7 +61,10 @@ function renderEmergency(section) {
   `;
 }
 
-function renderEvents(section) {
+// Events used to be its own always-expanded section; Feiko asked for it to
+// behave like every other Info topic — a collapsed-by-default accordion
+// item, not a special case.
+function eventsAccordionItem() {
   const events = [...eventsCache].sort((a, b) => a.date.localeCompare(b.date));
 
   const rows = events
@@ -80,16 +81,19 @@ function renderEvents(section) {
     )
     .join("");
 
-  section.innerHTML = `
-    <h2 class="lists-heading">Events</h2>
-    <ul class="packing-list">${rows || `<li class="view-empty__hint">No events in this window.</li>`}</ul>
-  `;
+  return `
+    <details class="practical-item">
+      <summary class="lists-heading">📅 Events</summary>
+      <div class="practical-body">
+        <ul class="packing-list">${rows || `<li class="view-empty__hint">No events in this window.</li>`}</ul>
+      </div>
+    </details>`;
 }
 
-function renderPractical(section) {
+function renderAccordion(section) {
   const sorted = [...practicalCache].sort((a, b) => a.order - b.order);
 
-  section.innerHTML = sorted
+  const practicalItems = sorted
     .map(
       (item) => `
       <details class="practical-item">
@@ -98,4 +102,6 @@ function renderPractical(section) {
       </details>`
     )
     .join("");
+
+  section.innerHTML = eventsAccordionItem() + practicalItems;
 }

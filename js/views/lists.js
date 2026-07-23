@@ -22,11 +22,22 @@ const SUBTABS = [
   ["shopping", "🛒 Shopping"],
 ];
 
+// The day before the flight out (per Feiko: "the 24th, when we leave") is
+// the natural cutover from packing-prep mode to trip mode — Shopping (villa
+// groceries, BBQ nights) becomes the more useful default from that point on.
+const SHOPPING_DEFAULT_FROM = "2026-09-24";
+
 let templateCache = null;
 let listenersAttached = false;
-let activeTab = "packing";
+let activeTab = null; // set on first render only — see pickDefaultTab()
+
+function pickDefaultTab() {
+  const today = new Date().toISOString().slice(0, 10);
+  return today >= SHOPPING_DEFAULT_FROM ? "shopping" : "packing";
+}
 
 export async function render(container) {
+  if (activeTab === null) activeTab = pickDefaultTab();
   container.innerHTML = `<section class="view-empty"><h1>Lists</h1><p class="view-empty__hint">Loading…</p></section>`;
 
   if (!templateCache) {
@@ -102,7 +113,9 @@ function renderPacking(section) {
 
   const categorySections = CATEGORY_ORDER.filter((c) => (packing[c] || []).length > 0)
     .map((category) => {
-      const items = packing[category]
+      const items = packing[category];
+      const checkedCount = items.filter((i) => i.checked).length;
+      const itemsHtml = items
         .map(
           (item) => `
           <li class="packing-item">
@@ -114,7 +127,11 @@ function renderPacking(section) {
           </li>`
         )
         .join("");
-      return `<h3 class="dayplan-slot">${escapeHtml(CATEGORY_LABELS[category])}</h3><ul class="packing-list">${items}</ul>`;
+      return `
+        <details class="practical-item">
+          <summary class="lists-heading">${escapeHtml(CATEGORY_LABELS[category])} <span class="chip">${checkedCount}/${items.length}</span></summary>
+          <ul class="packing-list">${itemsHtml}</ul>
+        </details>`;
     })
     .join("");
 

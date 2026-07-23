@@ -1,8 +1,9 @@
-import { TRIP_START, TRIP_END, TRIP_DATES } from "../constants.js";
+import { TRIP_START, TRIP_END, TRIP_DATES, SPECIAL_OCCASIONS } from "../constants.js";
 import { escapeHtml } from "../util.js";
 import { loadPlaces, placesById } from "../places-data.js";
 import { categoryMeta, isClosedOnDate } from "../categories.js";
 import { dayPlanStore, dayPlanDaysStore } from "../day-plan.js";
+import { randomFunFact } from "../fun-facts.js";
 
 const SLOT_ORDER = ["morning", "afternoon", "evening", ""];
 const SLOT_LABEL = { morning: "Morning", afternoon: "Afternoon", evening: "Evening", "": "Unscheduled" };
@@ -43,6 +44,16 @@ function tripStatus(now) {
   return { label: "Trip complete", todayDate: null };
 }
 
+function specialOccasionLines(now) {
+  const msPerDay = 24 * 60 * 60 * 1000;
+  return SPECIAL_OCCASIONS.map((occ) => {
+    const diffDays = Math.ceil((new Date(occ.date) - now) / msPerDay);
+    if (diffDays < 0) return null;
+    if (diffDays === 0) return `${occ.emoji} Happy ${occ.label}, ${occ.person}! 🎉`;
+    return `${occ.emoji} ${diffDays} day${diffDays === 1 ? "" : "s"} until ${occ.person}'s ${occ.label}`;
+  }).filter(Boolean);
+}
+
 function siestaOrSundayBanner(now) {
   const hour = now.getHours();
   const banners = [];
@@ -58,12 +69,20 @@ function siestaOrSundayBanner(now) {
 function renderContent(container) {
   const now = new Date();
   const { label, todayDate } = tripStatus(now);
+  const occasionLines = specialOccasionLines(now);
 
   if (!todayDate) {
     container.innerHTML = `
       <section class="view-empty">
         <h1>Today</h1>
         <p class="today__status">${label}</p>
+        ${occasionLines.map((l) => `<p class="today__status today__status--occasion">${l}</p>`).join("")}
+
+        <div class="fun-fact-card">
+          <p class="fun-fact-card__label">🍋 Did you know?</p>
+          <p class="fun-fact-card__text">${escapeHtml(randomFunFact())}</p>
+        </div>
+
         <a class="edit-group-info-link" href="#info">🆘 Emergency card</a>
       </section>
     `;
@@ -93,6 +112,7 @@ function renderContent(container) {
     <section class="today">
       <h1>Today</h1>
       <p class="today__status">${label}</p>
+      ${occasionLines.map((l) => `<p class="today__status today__status--occasion">${l}</p>`).join("")}
 
       ${banners.map((b) => `<p class="today-banner">${b}</p>`).join("")}
 

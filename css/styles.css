@@ -4,6 +4,18 @@
    the whole bug class instead of patching it per component. */
 [hidden] { display: none !important; }
 
+/* Self-hosted display font for headings only (§9.5) — body/UI text stays on
+   the system font stack for zero-network-dependency offline reliability;
+   this one variable file (~66KB, latin subset) is precached by the service
+   worker so it's never a live-network dependency either. */
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 300 900;
+  font-display: swap;
+  src: url("fonts/fraunces-variable-latin.woff2") format("woff2");
+}
+
 /* implementation_plan.md §9 — design tokens, light default */
 :root {
   --bg: #F7F1E3;
@@ -28,7 +40,7 @@
     --surface: #262019;
     --text: #F2ECE2;
     --text2: #B8A992;
-    --accent-primary: #C15A70;
+    --accent-primary: #96324A;
     --accent-secondary: #4E93AC;
 
     --tag-coast-bg: #163541;    --tag-coast-text: #8FD3E8;
@@ -105,6 +117,11 @@ html, body {
   #app { transition: none; }
 }
 
+h1, h2, .lists-heading, .emergency-heading {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
 h1 { font-size: 1.4rem; margin: 0 0 0.75rem; }
 
 .view-empty__hint {
@@ -422,6 +439,27 @@ h1 { font-size: 1.4rem; margin: 0 0 0.75rem; }
   color: var(--tag-culture-text);
   margin-bottom: 0.5rem;
 }
+
+.today__status { font-size: 1.05rem; font-weight: 600; margin: 0.2rem 0 0.6rem; }
+.today__status--occasion {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--tag-wine-text);
+  background: var(--tag-wine-bg);
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  margin: 0 0 0.6rem;
+}
+
+.fun-fact-card {
+  margin-top: 1.5rem;
+  padding: 1.1rem 1.2rem;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--tag-food-bg), var(--tag-wine-bg));
+}
+.fun-fact-card__label { font-size: 0.8rem; font-weight: 600; color: var(--tag-food-text); margin: 0 0 0.4rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.fun-fact-card__text { font-size: 1rem; line-height: 1.5; color: var(--text); margin: 0; }
 
 .driver-select {
   padding: 0.35rem 0.6rem;
@@ -764,3 +802,56 @@ h1 { font-size: 1.4rem; margin: 0 0 0.75rem; }
 .swipe-btn--yes { border-color: var(--accent-primary); }
 
 .swipe-done { text-align: center; margin-top: 3rem; }
+
+/* Consolidated modern treatment for every solid-fill primary button —
+   was flat, uniformly-sharp-cornered, no depth or interaction feedback,
+   which read as dated ("1990s"). One shared rule instead of repeating
+   this per button, and it means new buttons inherit the same look for
+   free just by reusing one of these selectors. Pills (.detail-action,
+   .day-tab.is-active) keep their 999px radius; the more rectangular
+   form-submit buttons get a standardized, slightly rounder corner. */
+#name-picker-form button[type="submit"],
+.add-place-fields button[type="submit"],
+.day-assign-submit,
+.packing-add button,
+.shared-add button,
+.shopping-add button,
+.my-info-form button[type="submit"],
+.detail-action,
+.day-tab.is-active {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  box-shadow: 0 1px 2px color-mix(in srgb, black 20%, transparent), 0 3px 8px color-mix(in srgb, var(--accent-primary) 35%, transparent);
+  transition: transform 120ms ease, box-shadow 120ms ease, filter 120ms ease;
+}
+#name-picker-form button[type="submit"],
+.add-place-fields button[type="submit"],
+.day-assign-submit,
+.packing-add button,
+.shared-add button,
+.shopping-add button,
+.my-info-form button[type="submit"] {
+  border-radius: 10px;
+}
+#name-picker-form button[type="submit"]:hover,
+.add-place-fields button[type="submit"]:hover,
+.day-assign-submit:hover,
+.packing-add button:hover,
+.shared-add button:hover,
+.shopping-add button:hover,
+.my-info-form button[type="submit"]:hover,
+.detail-action:hover {
+  filter: brightness(1.08);
+  box-shadow: 0 2px 4px color-mix(in srgb, black 25%, transparent), 0 4px 10px color-mix(in srgb, var(--accent-primary) 45%, transparent);
+}
+#name-picker-form button[type="submit"]:active,
+.add-place-fields button[type="submit"]:active,
+.day-assign-submit:active,
+.packing-add button:active,
+.shared-add button:active,
+.shopping-add button:active,
+.my-info-form button[type="submit"]:active,
+.detail-action:active {
+  filter: brightness(0.95);
+  box-shadow: 0 1px 2px color-mix(in srgb, black 20%, transparent);
+}
