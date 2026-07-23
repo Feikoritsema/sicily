@@ -403,6 +403,34 @@ h1 { font-size: 1.4rem; margin: 0 0 0.75rem; }
   color: var(--text2);
 }
 
+/* Info (§10 step 7) */
+.emergency-heading { color: var(--accent-primary); }
+.detail-action--inline {
+  display: inline-flex;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.82rem;
+  border-radius: 999px;
+  background: var(--accent-primary);
+  color: white;
+  text-decoration: none;
+}
+
+.event-item { flex-direction: column; align-items: stretch; }
+
+.practical-item {
+  border-bottom: 1px solid color-mix(in srgb, var(--text) 10%, transparent);
+  padding: 0.4rem 0;
+}
+.practical-item summary { cursor: pointer; list-style: none; }
+.practical-item summary::-webkit-details-marker { display: none; }
+.practical-item summary::before { content: "▸ "; color: var(--text2); }
+.practical-item[open] summary::before { content: "▾ "; }
+.practical-body { padding: 0.5rem 0 0.5rem 1.2rem; line-height: 1.55; }
+.practical-body h3 { font-size: 0.95rem; margin: 0.8rem 0 0.3rem; }
+.practical-body p { margin: 0 0 0.6rem; }
+.practical-body ul { margin: 0 0 0.6rem; padding-left: 1.2rem; }
+.practical-body a { color: var(--accent-secondary); }
+
 /* Place detail (§10 step 4, part 2) */
 .back-button {
   background: none;
