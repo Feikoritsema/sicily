@@ -26,7 +26,8 @@
     "source_section": "🏖️ BEACH CLUBS",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/ac/f1/71/lido-azzurro.jpg"
   },
   {
     "id": "abbronzatissima-beach-club",
@@ -53,7 +54,8 @@
     "source_section": "🏖️ BEACH CLUBS",
     "last_verified_date": "2026-07-21",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://media-cdn.tripadvisor.com/media/photo-o/13/b1/e9/60/20180706-155828-largejpg.jpg"
   },
   {
     "id": "lido-beach-agua",
@@ -87,7 +89,8 @@
     "source_section": "🏖️ BEACH CLUBS",
     "last_verified_date": "2026-07-23",
     "top_pick": true,
-    "top_pick_reason": "Best-reviewed lido on this whole stretch of coast (4.4★, ~5,000 reviews)"
+    "top_pick_reason": "Best-reviewed lido on this whole stretch of coast (4.4★, ~5,000 reviews)",
+    "photo_url": "https://media-cdn.tripadvisor.com/media/photo-o/10/b8/3f/f3/palme.jpg"
   },
   {
     "id": "flamingo-coco-beach-gallina",
@@ -114,7 +117,8 @@
     "source_section": "🏖️ BEACH CLUBS",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": null
   },
   {
     "id": "calamosche",
@@ -144,7 +148,8 @@
     "source_section": "🌊 WILD / FREE BEACHES",
     "last_verified_date": "2026-07",
     "top_pick": true,
-    "top_pick_reason": "The iconic one — go early"
+    "top_pick_reason": "The iconic one — go early",
+    "photo_url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/20/56/8f/img-20160927-wa0003-largejpg.jpg"
   },
   {
     "id": "vendicari-reserve-main-entrance",
@@ -175,7 +180,8 @@
     "source_section": "🌊 WILD / FREE BEACHES",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://media-cdn.tripadvisor.com/media/photo-o/04/70/53/98/oasi-faunistica-di-vendicari.jpg"
   },
   {
     "id": "marianelli",
@@ -205,7 +211,8 @@
     "source_section": "🌊 WILD / FREE BEACHES",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://media-cdn.tripadvisor.com/media/photo-o/10/67/ce/57/spiaggia-marianelli.jpg"
   },
   {
     "id": "eloro",
@@ -234,7 +241,8 @@
     "source_section": "🌊 WILD / FREE BEACHES",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://media-cdn.tripadvisor.com/media/photo-o/14/94/e2/90/20180911-125208-largejpg.jpg"
   },
   {
     "id": "isola-delle-correnti",
@@ -265,7 +273,8 @@
     "source_section": "🌊 WILD / FREE BEACHES",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://media-cdn.tripadvisor.com/media/photo-o/08/e9/a4/79/camping-captain.jpg"
   },
   {
     "id": "fontane-bianche",
@@ -294,7 +303,8 @@
     "source_section": "🌊 WILD / FREE BEACHES",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://media-cdn.tripadvisor.com/media/photo-o/05/c4/09/c6/fontane-bianche.jpg"
   },
   {
     "id": "sicily-boats-marzamemi",
@@ -309,7 +319,7 @@
     "drive_time_range": "22–25 min (14.3 km)",
     "drive_minutes_max": 25,
     "distance_km": 14.3,
-    "rating": 5.0,
+    "rating": 5,
     "review_count": 143,
     "price_level": null,
     "closed_days": null,
@@ -325,7 +335,8 @@
     "source_section": "🚤 BOAT TRIPS & WATER ACTIVITIES",
     "last_verified_date": "2026-07",
     "top_pick": true,
-    "top_pick_reason": "Perfect 5.0★ rating, closest to the villa of the two operators"
+    "top_pick_reason": "Perfect 5.0★ rating, closest to the villa of the two operators",
+    "photo_url": "https://www.sicilyboats.it/wp-content/uploads/2025/05/Sicily-Boats-2025-MV-White-e-Skipper-LQ-F1.jpg"
   },
   {
     "id": "shark-escursioni-in-barca",
@@ -355,7 +366,8 @@
     "source_section": "🚤 BOAT TRIPS & WATER ACTIVITIES",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://shark-srl.com/wp-content/uploads/2018/07/shark-srl-3.jpg"
   },
   {
     "id": "roman-columns-snorkel",
@@ -382,7 +394,8 @@
     "source_section": "🚤 BOAT TRIPS & WATER ACTIVITIES",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://enjoysicilia.it/imgs/attrazioni/relitto-colonne-marzamemi.jpg"
   },
   {
     "id": "diving-plemmirio-marine-reserve",
@@ -411,7 +424,8 @@
     "source_section": "🚤 BOAT TRIPS & WATER ACTIVITIES",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://media-cdn.tripadvisor.com/media/photo-o/04/54/e1/56/parco-marino-del-plemmirio.jpg"
   },
   {
     "id": "cortile-arabo",
@@ -441,7 +455,8 @@
     "source_section": "🍝 CASUAL RESTAURANTS & TRATTORIE",
     "last_verified_date": "2026-07-21",
     "top_pick": true,
-    "top_pick_reason": "Sits exactly at your \"casual but appreciate fine dining\" sweet spot — reviewers repeatedly compare it to Michelin level without Michelin pricing"
+    "top_pick_reason": "Sits exactly at your \"casual but appreciate fine dining\" sweet spot — reviewers repeatedly compare it to Michelin level without Michelin pricing",
+    "photo_url": "https://www.cortilearabo.it/wp-content/uploads/2025/04/copertina_home.webp"
   },
   {
     "id": "taverna-la-cialoma",
@@ -468,7 +483,8 @@
     "source_section": "🍝 CASUAL RESTAURANTS & TRATTORIE",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/c6/aa/c5/img-20160327-135503-largejpg.jpg"
   },
   {
     "id": "ristorante-campisi",
@@ -499,7 +515,8 @@
     "source_section": "🍝 CASUAL RESTAURANTS & TRATTORIE",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://media-cdn.tripadvisor.com/media/photo-o/23/20/fc/5e/le-terrazze-del-ristorante.jpg"
   },
   {
     "id": "tannur",
@@ -530,7 +547,8 @@
     "source_section": "🍝 CASUAL RESTAURANTS & TRATTORIE",
     "last_verified_date": "2026-07",
     "top_pick": true,
-    "top_pick_reason": "Closest great meal to the villa, unpretentious, closed Sundays only"
+    "top_pick_reason": "Closest great meal to the villa, unpretentious, closed Sundays only",
+    "photo_url": "https://media-cdn.tripadvisor.com/media/photo-o/10/72/91/ff/img-20170816-220114-largejpg.jpg"
   },
   {
     "id": "retablo",
@@ -559,7 +577,8 @@
     "source_section": "🍝 CASUAL RESTAURANTS & TRATTORIE",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://www.retablonoto.it/wp-content/uploads/2019/08/Copertina_Fb_Retablo_2.png"
   },
   {
     "id": "osteria-villadorata",
@@ -588,7 +607,8 @@
     "source_section": "🍝 CASUAL RESTAURANTS & TRATTORIE",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://www.osteriavilladorata.com/wp-content/uploads/2025/04/osteria-villadorata-ph-victoria-10.jpg"
   },
   {
     "id": "ristorante-al-carmine",
@@ -617,7 +637,8 @@
     "source_section": "🍝 CASUAL RESTAURANTS & TRATTORIE",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://ristorantealcarmine.it/images/og-image.jpg"
   },
   {
     "id": "la-prua",
@@ -648,7 +669,8 @@
     "source_section": "🍝 CASUAL RESTAURANTS & TRATTORIE",
     "last_verified_date": "2026-07-21",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/e7/60/81/20160909-213435-largejpg.jpg"
   },
   {
     "id": "crocifisso",
@@ -680,7 +702,8 @@
     "source_section": "⭐ FINE DINING",
     "last_verified_date": "2026-07-21",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://ristorantecrocifisso.it/wp-content/uploads/2024/01/home1.jpg"
   },
   {
     "id": "cortile-spirito-santo",
@@ -713,7 +736,8 @@
     "source_section": "⭐ FINE DINING",
     "last_verified_date": "2026-07-21",
     "top_pick": true,
-    "top_pick_reason": "Most consistently five-star reviews of any restaurant in this doc, and folds naturally into an Ortigia day/night out — less of a special trek than Duomo"
+    "top_pick_reason": "Most consistently five-star reviews of any restaurant in this doc, and folds naturally into an Ortigia day/night out — less of a special trek than Duomo",
+    "photo_url": "https://photos.smugmug.com/Sicilia/Syracuse/Restaurants-Syracuse/Restaurant-Cortile-Spirito-Santo/i-szCpqqW/0/KGFptnvqjnrFWwzHS2TRfsTnhGpCQmgMZgqjfvmsJ/L/inside-restaurant-cortile-spirito-santo-syracuse-L.jpg"
   },
   {
     "id": "duomo-ragusa-ibla",
@@ -747,7 +771,8 @@
     "source_section": "⭐ FINE DINING",
     "last_verified_date": "2026-07-21",
     "top_pick": true,
-    "top_pick_reason": "If you want one truly iconic \"this is the trip's big meal\" night, this is it — pair with an afternoon in Ragusa Ibla"
+    "top_pick_reason": "If you want one truly iconic \"this is the trip's big meal\" night, this is it — pair with an afternoon in Ragusa Ibla",
+    "photo_url": "https://www.cicciosultano.it/wp17/wp-content/themes/yootheme/cache/cb/Duomo-Interior-2_%C2%A9-Benedetto-Tarantino-scaled-cbb8f134.jpeg"
   },
   {
     "id": "accursio-modica",
@@ -779,7 +804,8 @@
     "source_section": "⭐ FINE DINING",
     "last_verified_date": "2026-07-21",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://accursioradici.it/cms/wp-content/uploads/2025/06/Accursio-Radici-Ospitalita.png"
   },
   {
     "id": "verga-courtyard-cortile-verga",
@@ -809,7 +835,8 @@
     "source_section": "🍷 BARS, APERITIVO & NIGHTLIFE",
     "last_verified_date": "2026-07",
     "top_pick": true,
-    "top_pick_reason": "Most distinctive setting (former aristocratic palace courtyard)"
+    "top_pick_reason": "Most distinctive setting (former aristocratic palace courtyard)",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlF_Wi-Ar6OA6jOt0RK-pUFY2r8F7_GLwAr0FJNQYb79NMhgDcFVCchZ_ov1h2R0Ec7TxeEJd3E1VBVJ2oDn9QdgYm2O6e4efI2s-KFFVAmsMWb5rpDrB1yugN8oYYGT6KSJkZV-g=w1200-h900-k-no"
   },
   {
     "id": "kaleido-terrace",
@@ -836,7 +863,8 @@
     "source_section": "🍷 BARS, APERITIVO & NIGHTLIFE",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlF6IiGuESECLU2hGvl9X8BJhVHf1SWUb2X0gvphpvUWKCBSHmcyxK6p5vMHJ-jPuudQLfTwbYQODNo5PfGBGR36E65EeVjXjzO5c0-43YjiRqtNGXmOenyd2AeGoDilJNOaxE=w1200-h900-k-no"
   },
   {
     "id": "le-vin-de-lassassin",
@@ -865,7 +893,8 @@
     "source_section": "🍷 BARS, APERITIVO & NIGHTLIFE",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl8mxccPQ4_3U_8XNuaI_8N37uKGMAWgA3gwQ3fjLR9I2qjIrJAjGoFpshD3R89WvM64YE4YK51sHCZ3pHPSQydxISs6LWFB-eHW0Dsr7DgHNkMphYOLAfqIci473Bdt7JyXWo=w1200-h1600-k-no"
   },
   {
     "id": "cortiletto-cortile-arabo",
@@ -892,7 +921,8 @@
     "source_section": "🍷 BARS, APERITIVO & NIGHTLIFE",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://www.cortilearabo.it/wp-content/uploads/2025/04/33A9593-2000x1334.webp"
   },
   {
     "id": "piazza-regina-margherita-evening",
@@ -921,7 +951,8 @@
     "source_section": "🍷 BARS, APERITIVO & NIGHTLIFE",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://www.enjoysicilia.it/imgs/attrazioni/piazza-regina-margherita-marzamemi.jpg"
   },
   {
     "id": "feudo-ramaddini",
@@ -954,7 +985,8 @@
     "source_section": "🍇 WINE TASTINGS & WINERIES",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnmYH2r-3K9PilDLwZ4cGyu_Cmn4Vn4OoIMhsSrZQVd8r3pO1m1uQ5gGEh9gKXm3Ikp9KXaVM2f--TjzXNQktPQ9n7-1G5kmbWL4UhM3q2Ybq6Cu0pnetYNVfjawRAqIjNyoztc=w1200-h800-k-no"
   },
   {
     "id": "feudo-maccari",
@@ -985,7 +1017,8 @@
     "source_section": "🍇 WINE TASTINGS & WINERIES",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn3CNxCmHVg1K7RCKDVbD5GQrjK9_zhe7pZT1gGu9rx_vK11R8auYHf0rHcy5awFC7xySYdghsMTg_ttsAhBwBXMDzChGfS9NdwYwCGDeS7yOeO6KdpfBL1rAxUehBltDjyDQiG9A=w1200-h900-k-no"
   },
   {
     "id": "planeta-buonivini",
@@ -1016,7 +1049,8 @@
     "source_section": "🍇 WINE TASTINGS & WINERIES",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlyoBbGWPSgpO25hZ70VuvUEERTZbLLQIOqDzJ7jdLf7AuLiHwSXBGSg5tOZxJpJrvO7qBnfz3n0p8T4BWS-QJyk_ciAhguQlnlmvis_6p1KZYRc9EQEWVPAc6FLTw5zX3QkHo7=w1200-h800-k-no"
   },
   {
     "id": "cantina-marilina",
@@ -1047,7 +1081,8 @@
     "source_section": "✨ MORE THINGS TO DO",
     "last_verified_date": "2026-07-21",
     "top_pick": true,
-    "top_pick_reason": "Small, family-run, natural/organic wines, repeatedly described as \"not touristy\" — the most authentic option over the more polished Planeta"
+    "top_pick_reason": "Small, family-run, natural/organic wines, repeatedly described as \"not touristy\" — the most authentic option over the more polished Planeta",
+    "photo_url": "https://www.cantinamarilina.com/wp-content/uploads/2023/07/DSC0528-scaled.jpg"
   },
   {
     "id": "farm-to-fork-cooking-class-noto",
@@ -1077,7 +1112,8 @@
     "source_section": "👩‍🍳 COOKING CLASSES & FOOD EXPERIENCES",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://theabroadguide.com/wp-content/uploads/2025/05/1_noto-farm-to-fork-in-sicily-cooking-class-in-a-farm.jpg"
   },
   {
     "id": "cesarine-home-hosted-classes",
@@ -1107,7 +1143,8 @@
     "source_section": "👩‍🍳 COOKING CLASSES & FOOD EXPERIENCES",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://ucarecdn.com/a1c7cf98-6526-48ec-ba94-fd697b8ae1e3/-/format/auto/-/stretch/off/-/progressive/yes/-/resize/3000x/-/quality/smart/"
   },
   {
     "id": "antica-dolceria-bonajuto-modica-chocolate",
@@ -1138,7 +1175,8 @@
     "source_section": "👩‍🍳 COOKING CLASSES & FOOD EXPERIENCES",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://www.bonajuto.it/wp-content/themes/bonajuto-2021/images/homepage/antica-dolceria-bonajuto-interno.jpg"
   },
   {
     "id": "noto-piazza-del-duomo",
@@ -1165,7 +1203,8 @@
     "source_section": "🏛️ BAROQUE TOWNS & CULTURE",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlvxFDm3TThFGCVGQT6GME-CbIpULaa48vtCk5EjOUNB23sEQYPTqPiaJqbRKL8ERp_Gy1NmivCSO1xQQEYPI1SRjocCinuL_GNz2vhXvEOP4Oev2723UFyhriBOtbSGvYyy9VH6g=w1200-h900-k-no"
   },
   {
     "id": "ortigia-syracuse-old-town",
@@ -1194,7 +1233,8 @@
     "source_section": "🏛️ BAROQUE TOWNS & CULTURE",
     "last_verified_date": "2026-07-21",
     "top_pick": true,
-    "top_pick_reason": "Market, ruins, old town, bars, dinner — does the most in one trip"
+    "top_pick_reason": "Market, ruins, old town, bars, dinner — does the most in one trip",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWk7dRZAcdqpeEUCqraL13MyfgiVoDcXnmZ0khhtr4m0wIMPTw2sWSA2WO6dVr37_fLc6GiNf08ralm4iVDu9N0SxXq5Gr3QlB1ry6OiGz5j5DyVNZ8sjuvSQbkgL6BihlyBLhH5=w1200-h900-k-no"
   },
   {
     "id": "ortigia-street-market",
@@ -1226,7 +1266,8 @@
     "source_section": "🏛️ BAROQUE TOWNS & CULTURE",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl8kXiE5ccpqXrnWsvsc7a6diXMgI3Tat5KOaPUsUtfBU5OcFLdOTTQmpyAuOcX7yf3_Qa7c5F6b8p5kdS6HJCWfZnpsx4lIG0qXvctCsYieNS2NCFMf4PtpkiDPNuOepfsiWJA6dXV_X_W=w1200-h900-k-no"
   },
   {
     "id": "neapolis-archaeological-park",
@@ -1253,7 +1294,8 @@
     "source_section": "🏛️ BAROQUE TOWNS & CULTURE",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmNv7MVsQehOdiFUHy8_DOpyvWeGM9sSOSay76Y1UXiCfjIqRhB0gTa1hS49BGNvSZ7b8v1ET_ZqTA_ApCI0FemcZJ6HkQhOddkXn3kcF7n8Zm2vFTbJfwNx3QKJmRFLwTSg4sva00axp5m=w1200-h900-k-no"
   },
   {
     "id": "ragusa-ibla",
@@ -1282,7 +1324,8 @@
     "source_section": "🏛️ BAROQUE TOWNS & CULTURE",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnQwa2uy16-3VRTjAH6IyAB2xovWsWWrCRO_hVk44Pl01ml4KeQO52q9nxLfhivFgHELLjMT16zbT6WKfVOH68xZr4ReNunMcFj-dOTNYLudtcCkplOSwzeMYBm9fb6lBI6IcpI=w1200-h900-k-no"
   },
   {
     "id": "modica",
@@ -1311,7 +1354,8 @@
     "source_section": "🏛️ BAROQUE TOWNS & CULTURE",
     "last_verified_date": "2026-07-21",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlkN6JB9kKBHhLqjDacDOS1mKRP-Fp3z0EElkt2ePgKDdgO1iuks4YM0F7WJnaOdDiB8hgf4MDwilCCbxXO5500C6Mk93Q09EPLyv6C_Thvi2x3EDDhKJHfEWz6fYNzWdTgvR0=w1200-h900-k-no"
   },
   {
     "id": "scicli",
@@ -1340,7 +1384,8 @@
     "source_section": "🏛️ BAROQUE TOWNS & CULTURE",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Scicli%2C_Ragusa%2C_Italy.jpg/250px-Scicli%2C_Ragusa%2C_Italy.jpg"
   },
   {
     "id": "noto-antica",
@@ -1369,7 +1414,8 @@
     "source_section": "🏛️ BAROQUE TOWNS & CULTURE",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Panorama_da_Noto_Antica.JPG"
   },
   {
     "id": "opera-dei-pupi",
@@ -1401,7 +1447,8 @@
     "source_section": "✨ MORE THINGS TO DO",
     "last_verified_date": "2026-07-21",
     "top_pick": true,
-    "top_pick_reason": "Genuinely unique, 4.8★, nothing else on this list is like it"
+    "top_pick_reason": "Genuinely unique, 4.8★, nothing else on this list is like it",
+    "photo_url": "https://www.teatrodeipupisiracusa.it/wp-content/uploads/2025/01/Teatro-dei-pupi-page-1024x538.jpg"
   },
   {
     "id": "castello-maniace",
@@ -1428,7 +1475,8 @@
     "source_section": "✨ MORE THINGS TO DO",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Castello_Maniace_viewed_from_the_seaward_side_of_the_Marina_Grande.JPG/250px-Castello_Maniace_viewed_from_the_seaward_side_of_the_Marina_Grande.JPG"
   },
   {
     "id": "fonte-aretusa",
@@ -1458,7 +1506,8 @@
     "source_section": "✨ MORE THINGS TO DO",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Syrakus_BW_2012-10-06_14-48-35_stitch_2.jpg/250px-Syrakus_BW_2012-10-06_14-48-35_stitch_2.jpg"
   },
   {
     "id": "catacombe-di-san-giovanni",
@@ -1488,7 +1537,8 @@
     "source_section": "✨ MORE THINGS TO DO",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Catacombe_di_San_Giovanni.jpg/250px-Catacombe_di_San_Giovanni.jpg"
   },
   {
     "id": "sicily-water-experience-ognina",
@@ -1503,7 +1553,7 @@
     "drive_time_range": "~30–35 min",
     "drive_minutes_max": 35,
     "distance_km": null,
-    "rating": 5.0,
+    "rating": 5,
     "review_count": null,
     "price_level": null,
     "closed_days": null,
@@ -1517,7 +1567,8 @@
     "source_section": "✨ MORE THINGS TO DO",
     "last_verified_date": "2026-07-21",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://static.wixstatic.com/media/301cc4_0241abb5a0fd44ef9a3a357b9df59713~mv2.jpg"
   },
   {
     "id": "ceramics-workshop-maioliche-alemanna",
@@ -1547,7 +1598,8 @@
     "source_section": "✨ MORE THINGS TO DO",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://www.ceramichealemanna.it/wp-content/uploads/2023/09/Alemanna-artigianato-ceramiche-di-Caltagirone.jpg"
   },
   {
     "id": "vespa-vintage-car-tour",
@@ -1576,7 +1628,8 @@
     "source_section": "✨ MORE THINGS TO DO",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": null
   },
   {
     "id": "e-bike-tours-val-di-noto",
@@ -1606,7 +1659,8 @@
     "source_section": "✨ MORE THINGS TO DO",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://www.etnabiketours.com/wp-content/uploads/2021/05/Noto-Antica-1.jpg"
   },
   {
     "id": "caffe-costanzo",
@@ -1637,7 +1691,8 @@
     "source_section": "🍋 FOOD & DRINK MUSTS",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://aziende.valdinoto.it/wp-content/uploads/sites/19/2017/04/caffè-costanzo-granite.jpg"
   },
   {
     "id": "vendicari-nature-reserve-walk",
@@ -1667,7 +1722,8 @@
     "source_section": "🥾 NATURE & HIKING",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://travelmademedoit.com/wp-content/uploads/2024/08/beck-on-vendicari-nature-reserve-walk.jpg"
   },
   {
     "id": "cavagrande-del-cassibile",
@@ -1697,7 +1753,8 @@
     "source_section": "🥾 NATURE & HIKING",
     "last_verified_date": "2026-07",
     "top_pick": true,
-    "top_pick_reason": "Best match for \"young and fit\" — steep hike, freshwater swim payoff"
+    "top_pick_reason": "Best match for \"young and fit\" — steep hike, freshwater swim payoff",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Avola_antica_-_Cavagrande_del_Cassibile.jpg/330px-Avola_antica_-_Cavagrande_del_Cassibile.jpg"
   },
   {
     "id": "necropoli-di-pantalica",
@@ -1724,7 +1781,8 @@
     "source_section": "🥾 NATURE & HIKING",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Nekropolis_von_Pantalica.jpg/330px-Nekropolis_von_Pantalica.jpg"
   },
   {
     "id": "mount-etna-rifugio-sapienza",
@@ -1755,7 +1813,8 @@
     "source_section": "🚗 DAY TRIPS FURTHER AFIELD",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Mount_Etna_-_Rifugio_Sapienza.jpg/330px-Mount_Etna_-_Rifugio_Sapienza.jpg"
   },
   {
     "id": "catania-la-pescheria-fish-market",
@@ -1787,7 +1846,8 @@
     "source_section": "🚗 DAY TRIPS FURTHER AFIELD",
     "last_verified_date": "2026-07",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://www.apartmentincatania.com/wp-content/uploads/2026/05/catania-fish-market-stalls-pescheria.webp"
   },
   {
     "id": "centro-ippico-faldino",
@@ -1802,7 +1862,7 @@
     "drive_time_range": "8 min (3.3 km)",
     "drive_minutes_max": 8,
     "distance_km": 3.3,
-    "rating": 5.0,
+    "rating": 5,
     "review_count": null,
     "price_level": null,
     "closed_days": [
@@ -1816,7 +1876,8 @@
     "source_section": "🐴 MORE ACTIVE / ADVENTURE OPTIONS",
     "last_verified_date": "2026-07-21",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": null
   },
   {
     "id": "cittadella-dei-maccari",
@@ -1846,7 +1907,8 @@
     "source_section": "🌊 WILD / FREE BEACHES",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://www.enjoysicilia.it/imgs/attrazioni/spiaggia-cittadella-maccari.jpg"
   },
   {
     "id": "calabernardo",
@@ -1876,7 +1938,8 @@
     "source_section": "🌊 WILD / FREE BEACHES",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://www.enjoysicilia.it/imgs/attrazioni/spiaggia-calabernardo-noto.jpg"
   },
   {
     "id": "avola-boat-tours",
@@ -1907,7 +1970,8 @@
     "source_section": "🚤 BOAT TRIPS & WATER ACTIVITIES",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://cdn.holidoit.com/media/experiences/1048/images/600/mattinata-in-barca-lungo-la-costa-di-marzamemi-da-avola-20804.webp"
   },
   {
     "id": "nostro-sud-escursioni",
@@ -1939,7 +2003,8 @@
     "source_section": "🚤 BOAT TRIPS & WATER ACTIVITIES",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://nostrosudescursioni.it/wp-content/uploads/2025/02/barca-front.jpeg"
   },
   {
     "id": "fishing-sea-urchin-tasting-boat-trip",
@@ -1971,7 +2036,8 @@
     "source_section": "🚤 BOAT TRIPS & WATER ACTIVITIES",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": null
   },
   {
     "id": "military-wreck-roman-column-snorkeling",
@@ -2002,7 +2068,8 @@
     "source_section": "🚤 BOAT TRIPS & WATER ACTIVITIES",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://www.visitsicily.info/wp-content/uploads/2024/04/Itinerario-subacqueo-Colonne-romane-di-Marzamemi_photo-Salvo-Emma-Soprintendenza-del-Mare.jpg"
   },
   {
     "id": "freedome-boat-tour-aggregator",
@@ -2031,7 +2098,8 @@
     "source_section": "🚤 BOAT TRIPS & WATER ACTIVITIES",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": null
   },
   {
     "id": "abbunnanzia",
@@ -2046,7 +2114,7 @@
     "drive_time_range": "~10 min (4.5 km, estimated)",
     "drive_minutes_max": 10,
     "distance_km": 4.5,
-    "rating": 4.0,
+    "rating": 4,
     "review_count": 1200,
     "price_level": null,
     "closed_days": null,
@@ -2060,7 +2128,8 @@
     "source_section": "🍝 CASUAL RESTAURANTS & TRATTORIE",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://img02.restaurantguru.com/cce4-Restaurant-Abbunnanzia-a-Noto-facade.jpg"
   },
   {
     "id": "sabbinirica-bistrot",
@@ -2089,7 +2158,8 @@
     "source_section": "🍝 CASUAL RESTAURANTS & TRATTORIE",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://img02.restaurantguru.com/cd29-Sabbinirica-a-putia-dercole-interior.jpg"
   },
   {
     "id": "trattoria-al-buco",
@@ -2104,7 +2174,7 @@
     "drive_time_range": "~10 min (4.5 km, estimated)",
     "drive_minutes_max": 10,
     "distance_km": 4.5,
-    "rating": 4.0,
+    "rating": 4,
     "review_count": 3315,
     "price_level": null,
     "closed_days": null,
@@ -2118,7 +2188,8 @@
     "source_section": "🍝 CASUAL RESTAURANTS & TRATTORIE",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://www.trattoriaalbuco.it/wp-content/uploads/2022/07/Al-Buco-dal-1957-1.jpg"
   },
   {
     "id": "savino",
@@ -2147,7 +2218,8 @@
     "source_section": "🍝 CASUAL RESTAURANTS & TRATTORIE",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://img02.restaurantguru.com/c30c-Restaurant-Savino-Noto-interior.jpg"
   },
   {
     "id": "mangia-e-taci",
@@ -2176,7 +2248,8 @@
     "source_section": "🍝 CASUAL RESTAURANTS & TRATTORIE",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://menu.sluurpy.it/foto-g/174981/3069221.jpg"
   },
   {
     "id": "manna",
@@ -2209,7 +2282,8 @@
     "source_section": "🍝 CASUAL RESTAURANTS & TRATTORIE",
     "last_verified_date": "2026-07-23",
     "top_pick": true,
-    "top_pick_reason": "~5–8 min away (closer than Tannur) — an atmospheric farm-to-table dinner in a converted 18th-century wine-press building, a few hundred metres from the beach; pricier and more special-occasion than Tannur, but genuinely walkable-adjacent to the villa's own stretch of coast"
+    "top_pick_reason": "~5–8 min away (closer than Tannur) — an atmospheric farm-to-table dinner in a converted 18th-century wine-press building, a few hundred metres from the beach; pricier and more special-occasion than Tannur, but genuinely walkable-adjacent to the villa's own stretch of coast",
+    "photo_url": "https://img02.restaurantguru.com/c43e-Restaurant-Ristorante-Manna-Noto-interior.jpg"
   },
   {
     "id": "villa-felicia",
@@ -2238,7 +2312,8 @@
     "source_section": "🍝 CASUAL RESTAURANTS & TRATTORIE",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://www.villa-felicia.it/new/wp-content/uploads/2025/06/vacanza-piscina-villa-felicia.jpg"
   },
   {
     "id": "la-vecchia-fontana",
@@ -2267,7 +2342,8 @@
     "source_section": "🍝 CASUAL RESTAURANTS & TRATTORIE",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://img02.restaurantguru.com/c378-La-Vecchia-Fontana-Avola-facade.jpg"
   },
   {
     "id": "ristorante-basarico",
@@ -2297,7 +2373,8 @@
     "source_section": "🍝 CASUAL RESTAURANTS & TRATTORIE",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": null
   },
   {
     "id": "orti-villadorata",
@@ -2329,7 +2406,8 @@
     "source_section": "⭐ FINE DINING",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://countryhouse.villadorata.com/wp-content/uploads/2025/07/2025-Ristorante-Orti-Villadorata@AndreaCastiglione-15.jpg"
   },
   {
     "id": "ritrovino",
@@ -2359,7 +2437,8 @@
     "source_section": "🍷 BARS, APERITIVO & NIGHTLIFE",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://www.ritrovinonoto.it/wp-content/uploads/2025/03/wine-bar-in-noto-sicily.jpg"
   },
   {
     "id": "enoteca-emilys-wine",
@@ -2389,7 +2468,8 @@
     "source_section": "🍷 BARS, APERITIVO & NIGHTLIFE",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": null
   },
   {
     "id": "cantina-marabino",
@@ -2420,7 +2500,8 @@
     "source_section": "🍇 WINE TASTINGS & WINERIES",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://www.winetelling.it/wp-content/uploads/20240329_144109_resize_27-225x300.jpg"
   },
   {
     "id": "organic-citrus-tour",
@@ -2450,7 +2531,8 @@
     "source_section": "👩‍🍳 COOKING CLASSES & FOOD EXPERIENCES",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://www.listocitrusfarm.it/wp-content/uploads/2025/04/orange-tree-plantation-scaled.jpg"
   },
   {
     "id": "ricotta-farm-tour",
@@ -2465,7 +2547,7 @@
     "drive_time_range": null,
     "drive_minutes_max": null,
     "distance_km": null,
-    "rating": 5.0,
+    "rating": 5,
     "review_count": 2,
     "price_level": null,
     "closed_days": null,
@@ -2480,7 +2562,8 @@
     "source_section": "👩‍🍳 COOKING CLASSES & FOOD EXPERIENCES",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://www.threefarmsisland.com/wp-content/uploads/2021/03/ricotta-in-a-farm.jpg"
   },
   {
     "id": "villa-romana-del-tellaro",
@@ -2510,7 +2593,8 @@
     "source_section": "🏛️ BAROQUE TOWNS & CULTURE",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://parchiarcheologici.regione.sicilia.it/siracusa-eloro-villa-tellaro-akrai/wp-content/uploads/sites/15/2022/12/mosaico-tellaro-news.jpg"
   },
   {
     "id": "museo-del-papiro",
@@ -2543,7 +2627,8 @@
     "source_section": "🏛️ BAROQUE TOWNS & CULTURE",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://museodelpapiro.it/wp-content/uploads/2025/03/ingresso2-1024x858.jpg"
   },
   {
     "id": "cava-carosello-grotta-degli-eroi",
@@ -2573,7 +2658,8 @@
     "source_section": "🥾 NATURE & HIKING",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://www.escursionismo.it/wp-content/uploads/2019/09/concerie.jpg"
   },
   {
     "id": "grotta-di-calafarina",
@@ -2604,7 +2690,8 @@
     "source_section": "🥾 NATURE & HIKING",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://glnbdtlftdlvofuhqmjo.supabase.co/storage/v1/object/public/il-borghista-backend/legacy/da-fare/7864c1df-9578-4305-81d7-b052139636d1.jpg"
   },
   {
     "id": "agriturismo-val-di-noto",
@@ -2634,6 +2721,7 @@
     "source_section": "🐴 MORE ACTIVE / ADVENTURE OPTIONS",
     "last_verified_date": "2026-07-23",
     "top_pick": false,
-    "top_pick_reason": null
+    "top_pick_reason": null,
+    "photo_url": "https://agriturismovaldinoto.com/wp-content/uploads/2019/05/esterno.jpg"
   }
 ]
