@@ -11,10 +11,13 @@ export async function render(container) {
     const res = await fetch("./data/places.json");
     placesCache = await res.json();
   }
-  renderExplore(container);
+  renderChrome(container);
 }
 
-function renderExplore(container) {
+// Rebuilds the whole view, including the search input and filter chips.
+// Only called on tab entry or when a filter chip is clicked — never on
+// every keystroke, so the search input never loses focus mid-typing.
+function renderChrome(container) {
   const categories = [...new Set(placesCache.map((p) => p.category))];
 
   const categoryChips = [
@@ -26,6 +29,40 @@ function renderExplore(container) {
     }),
   ].join("");
 
+  container.innerHTML = `
+    <section class="explore">
+      <h1>Explore</h1>
+      <input type="search" class="explore__search" placeholder="Search places…" value="${escapeHtml(state.search)}" />
+      <div class="filter-row">
+        ${categoryChips}
+        <button type="button" class="filter-chip tag-wine ${state.topPicksOnly ? "is-active" : ""}" data-toppicks="1">🏆 Top Picks</button>
+      </div>
+      <p class="explore__count"></p>
+      <div class="place-list"></div>
+    </section>
+  `;
+
+  container.querySelector(".explore__search").addEventListener("input", (e) => {
+    state.search = e.target.value;
+    renderList(container);
+  });
+  container.querySelectorAll(".filter-chip[data-cat]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      state.category = btn.dataset.cat;
+      renderChrome(container);
+    });
+  });
+  container.querySelector("[data-toppicks]")?.addEventListener("click", () => {
+    state.topPicksOnly = !state.topPicksOnly;
+    renderChrome(container);
+  });
+
+  renderList(container);
+}
+
+// Updates only the count + card list — leaves the search input and filter
+// chips untouched so typing doesn't get interrupted by a DOM rebuild.
+function renderList(container) {
   const filtered = placesCache.filter((p) => {
     if (state.category !== "all" && p.category !== state.category) return false;
     if (state.topPicksOnly && !p.top_pick) return false;
@@ -36,37 +73,10 @@ function renderExplore(container) {
     return true;
   });
 
-  const cardsHtml = filtered.length
+  container.querySelector(".explore__count").textContent = `${filtered.length} place${filtered.length === 1 ? "" : "s"}`;
+  container.querySelector(".place-list").innerHTML = filtered.length
     ? filtered.map(placeCardHtml).join("")
     : `<p class="view-empty__hint">No places match — try clearing a filter.</p>`;
-
-  container.innerHTML = `
-    <section class="explore">
-      <h1>Explore</h1>
-      <input type="search" class="explore__search" placeholder="Search places…" value="${escapeHtml(state.search)}" />
-      <div class="filter-row">
-        ${categoryChips}
-        <button type="button" class="filter-chip tag-wine ${state.topPicksOnly ? "is-active" : ""}" data-toppicks="1">🏆 Top Picks</button>
-      </div>
-      <p class="explore__count">${filtered.length} place${filtered.length === 1 ? "" : "s"}</p>
-      <div class="place-list">${cardsHtml}</div>
-    </section>
-  `;
-
-  container.querySelector(".explore__search").addEventListener("input", (e) => {
-    state.search = e.target.value;
-    renderExplore(container);
-  });
-  container.querySelectorAll(".filter-chip[data-cat]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      state.category = btn.dataset.cat;
-      renderExplore(container);
-    });
-  });
-  container.querySelector("[data-toppicks]")?.addEventListener("click", () => {
-    state.topPicksOnly = !state.topPicksOnly;
-    renderExplore(container);
-  });
 }
 
 function placeCardHtml(p) {

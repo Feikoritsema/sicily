@@ -1,4 +1,4 @@
-const CACHE_NAME = "sicily-shell-v1";
+const CACHE_NAME = "sicily-shell-v2";
 
 const PRECACHE_URLS = [
   "./",
@@ -46,13 +46,23 @@ self.addEventListener("activate", (event) => {
   );
 });
 
-// Cache-first for the precached app shell + static JSON; network passthrough
-// for everything else (Supabase's REST/Realtime traffic is never cached).
+// Network-first with cache fallback for same-origin requests: an online user
+// always gets the latest deployed code (this app iterates a lot before the
+// trip, and a stale cache-first policy would silently pin them to old code
+// past a hard refresh, since Cache Storage isn't cleared by that). Offline,
+// the last successfully fetched copy serves instead. Supabase's REST/Realtime
+// traffic is a different origin and never touches this cache.
 self.addEventListener("fetch", (event) => {
   const url = new URL(event.request.url);
   if (url.origin !== location.origin) return;
 
   event.respondWith(
-    caches.match(event.request).then((cached) => cached || fetch(event.request))
+    fetch(event.request)
+      .then((response) => {
+        const copy = response.clone();
+        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
+        return response;
+      })
+      .catch(() => caches.match(event.request))
   );
 });
