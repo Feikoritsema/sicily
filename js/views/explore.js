@@ -1,4 +1,4 @@
-import { escapeHtml } from "../util.js";
+import { escapeHtml, humanizeTag, retryStateHtml } from "../util.js";
 import { categoryMeta, isClosedToday, CATEGORY_META } from "../categories.js";
 import { votesStore } from "../votes.js";
 import { dayPlanStore } from "../day-plan.js";
@@ -13,7 +13,7 @@ let placesCache = null;
 let listenersAttached = false;
 // mode: "list" | "detail" | "swipe" — swipe mode manages its own rendering
 // entirely (see openSwipeMode), so refresh()/render() just leave it alone.
-const state = { category: "all", topPicksOnly: false, search: "", selectedId: null, mode: "list" };
+const state = { category: "all", topPicksOnly: false, lowEffortOnly: false, search: "", selectedId: null, mode: "list" };
 
 // Doc-sourced places (static, read-only) + user-added ones (Supabase-backed)
 // merged into one list — a custom place is deliberately the same shape, so
@@ -22,13 +22,22 @@ function allPlaces() {
   return [...placesCache, ...customPlacesStore.all()];
 }
 
-export async function render(container) {
+export async function render(container, { isActive } = {}) {
   container.innerHTML = `<section class="explore"><h1>Explore</h1><p class="view-empty__hint">Loading places…</p></section>`;
 
-  placesCache = await loadPlaces();
+  try {
+    placesCache = await loadPlaces();
+  } catch {
+    container.innerHTML = retryStateHtml("Explore");
+    container.querySelector("[data-retry-load]")?.addEventListener("click", () => render(container, { isActive }));
+    return;
+  }
+
   await votesStore.load();
   await dayPlanStore.load();
   await customPlacesStore.load();
+
+  if (isActive && !isActive()) return;
 
   if (!listenersAttached) {
     listenersAttached = true;
@@ -96,6 +105,7 @@ function renderChrome(container) {
       <div class="filter-row">
         ${categoryChips}
         <button type="button" class="filter-chip tag-wine ${state.topPicksOnly ? "is-active" : ""}" data-toppicks="1">🏆 Top Picks</button>
+        <button type="button" class="filter-chip tag-nightlife ${state.lowEffortOnly ? "is-active" : ""}" data-loweffort="1">😌 Low-Effort, No Drive</button>
       </div>
       <div class="explore-actions-row">
         <button type="button" class="add-place-toggle">➕ Add a place</button>
@@ -126,6 +136,10 @@ function renderChrome(container) {
     state.topPicksOnly = !state.topPicksOnly;
     renderChrome(container);
   });
+  container.querySelector("[data-loweffort]")?.addEventListener("click", () => {
+    state.lowEffortOnly = !state.lowEffortOnly;
+    renderChrome(container);
+  });
   wireAddPlaceForm(container);
 
   renderList(container);
@@ -137,6 +151,7 @@ function renderList(container) {
   const filtered = allPlaces().filter((p) => {
     if (state.category !== "all" && p.category !== state.category) return false;
     if (state.topPicksOnly && !p.top_pick) return false;
+    if (state.lowEffortOnly && !(p.tags || []).includes("low_effort_no_drive")) return false;
     if (state.search) {
       const haystack = `${p.name} ${p.description || ""} ${p.why_it_fits || ""} ${(p.tags || []).join(" ")}`.toLowerCase();
       if (!haystack.includes(state.search.toLowerCase())) return false;
@@ -183,7 +198,7 @@ function renderDetail(container) {
   // distance (e.g. "10 min (4.4 km)") — distance_km is the same figure
   // parsed out separately for comparisons, not a second value to display.
   const drive = p.drive_time_range ? escapeHtml(p.drive_time_range) : "";
-  const tags = (p.tags || []).map((t) => `<span class="chip">${escapeHtml(t)}</span>`).join("");
+  const tags = (p.tags || []).map((t) => `<span class="chip">${escapeHtml(humanizeTag(t))}</span>`).join("");
   const fallbackPhoto = fallbackPhotoFor(meta.group);
   const heroPhoto = p.photo_url || fallbackPhoto;
 

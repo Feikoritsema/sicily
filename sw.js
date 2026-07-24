@@ -1,4 +1,4 @@
-const CACHE_NAME = "sicily-shell-v2";
+const CACHE_NAME = "sicily-shell-v4";
 
 const PRECACHE_URLS = [
   "./",
@@ -11,6 +11,8 @@ const PRECACHE_URLS = [
   "./js/supabase-config.js",
   "./js/data-service.js",
   "./js/sync-queue.js",
+  "./js/reconcile.js",
+  "./js/quick-polls.js",
   "./js/local-store.js",
   "./js/util.js",
   "./js/categories.js",

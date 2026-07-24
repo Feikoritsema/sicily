@@ -38,6 +38,19 @@ export const tripSettingsStore = {
     return settings;
   },
 
+  // See people.js's reconcile() for why this exists (§7.4 re-sync on reconnect/foreground).
+  async reconcile() {
+    if (!settings) return;
+    try {
+      const rows = await dataService.list("tripSettings");
+      settings = rows[0] || settings;
+      localStore.setCachedTable("tripSettings", settings);
+      notify();
+    } catch {
+      // offline or failed — keep current in-memory state, next trigger retries
+    }
+  },
+
   subscribe() {
     if (unsubscribe) return;
     unsubscribe = dataService.subscribe("tripSettings", (payload) => {

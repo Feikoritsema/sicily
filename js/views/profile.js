@@ -1,16 +1,17 @@
 import { localStore } from "../local-store.js";
-import { KNOWN_NAMES } from "../constants.js";
+import { KNOWN_NAMES, TRIP_START, TRIP_END, VILLA } from "../constants.js";
 import { escapeHtml } from "../util.js";
 import { peopleStore } from "../people.js";
 import { tripSettingsStore } from "../trip-settings.js";
 
 let listenersAttached = false;
 
-export async function render(container, { onNamePicked } = {}) {
+export async function render(container, { onNamePicked, isActive } = {}) {
   const currentName = localStore.getProfileName();
 
   if (!currentName) {
-    container.innerHTML = `<section class="view-empty"><h1>Group Info</h1>${renderNamePicker()}</section>`;
+    container.innerHTML = renderWelcome();
+    peopleStore.load(); // warm in background so a returning person can be matched by submit time
     wireNamePicker(container, onNamePicked);
     return;
   }
@@ -19,6 +20,8 @@ export async function render(container, { onNamePicked } = {}) {
 
   await peopleStore.load();
   await tripSettingsStore.load();
+
+  if (isActive && !isActive()) return;
 
   container.innerHTML = `
     <section class="lists">
@@ -48,32 +51,105 @@ export async function render(container, { onNamePicked } = {}) {
   renderGrocery(container.querySelector(".grocery-section"));
 }
 
+function tripDateRange() {
+  const fmtShort = { month: "short", day: "numeric" };
+  const start = new Date(TRIP_START).toLocaleDateString("en-US", fmtShort);
+  const end = new Date(TRIP_END).toLocaleDateString("en-US", { ...fmtShort, year: "numeric" });
+  return `${start} – ${end}`;
+}
+
+// First-run only (see the `!currentName` branch above) — a warm one-time
+// welcome instead of dropping a first-timer straight into a bare name form
+// with zero context on what the trip or the app even is.
+function renderWelcome() {
+  const features = [
+    ["🏡", "Today", "Your daily rundown — what's planned, closures, siesta hours."],
+    ["🗺️", "Explore", "Browse every place we've found, vote 👍/👎, add your own."],
+    ["📅", "Day Plan", "See what's assigned to each of the 9 days."],
+    ["🧾", "Lists", "Packing, shared gear, and the shopping list."],
+    ["ℹ️", "Info", "Villa details, emergency numbers, and practical stuff."],
+  ];
+
+  return `
+    <section class="welcome">
+      <p class="welcome-kicker">🍋 Benvenuti!</p>
+      <h1>Sicily Trip 2026</h1>
+      <p class="welcome-intro">
+        You're headed to <strong>${escapeHtml(VILLA.name)}</strong> in Noto — <strong>${tripDateRange()}</strong>.
+        Nine days of beaches, wineries, baroque towns, and a lot of good food, planned together by the whole group.
+      </p>
+
+      <p class="welcome-intro">This app is where the planning actually happens:</p>
+
+      <ul class="welcome-features">
+        ${features
+          .map(
+            ([emoji, title, desc]) => `
+          <li>
+            <span class="welcome-features__icon">${emoji}</span>
+            <div><strong>${title}</strong><p>${desc}</p></div>
+          </li>`
+          )
+          .join("")}
+      </ul>
+
+      <p class="welcome-note">💬 Everything you vote, add, or change here is shared with the whole group instantly — no need to double check with anyone.</p>
+
+      <h2 class="lists-heading">What should we call you?</h2>
+      ${renderNamePicker()}
+    </section>
+  `;
+}
+
 function renderNamePicker() {
   const buttons = KNOWN_NAMES.map((n) => `<button type="button" data-name="${escapeHtml(n)}">${escapeHtml(n)}</button>`).join("");
   return `
     <form id="name-picker-form">
-      <p>Pick your name (no password — just for attribution):</p>
+      <p class="view-empty__hint">No password — just your name, so votes and changes are attributed to you.</p>
       ${buttons ? `<div class="name-picker__list">${buttons}</div>` : ""}
       <input type="text" name="name" placeholder="Type your name" autocomplete="off" />
       <button type="submit">Continue</button>
+      <p class="name-picker__error" hidden>Couldn't save your name — your browser's storage may be full or blocked. Try freeing up space, or a different browser/device.</p>
     </form>
   `;
 }
 
+// Resumes as an existing person if their name matches case-insensitively/whitespace-
+// insensitively (e.g. localStorage got cleared, or a returning device retypes "egbert "
+// for "Egbert") — reuses that person's existing row instead of forking a fresh one.
+async function resolveReturningName(typed) {
+  const normalized = typed.trim().toLowerCase();
+  const people = await peopleStore.load();
+  const match = people.find((p) => p.name.trim().toLowerCase() === normalized);
+  return match ? match.name : typed.trim();
+}
+
 function wireNamePicker(container, onNamePicked) {
   const form = container.querySelector("#name-picker-form");
-  form.addEventListener("submit", (e) => {
+  const errorEl = form.querySelector(".name-picker__error");
+
+  const commit = (resolved) => {
+    if (localStore.setProfileName(resolved)) {
+      onNamePicked?.(resolved);
+    } else {
+      errorEl.hidden = false;
+    }
+  };
+
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const input = form.querySelector("input[name=name]");
-    const picked = input.value.trim();
-    if (!picked) return;
-    localStore.setProfileName(picked);
-    onNamePicked?.(picked);
+    const typed = input.value.trim();
+    if (!typed) return;
+    errorEl.hidden = true;
+    const resolved = await resolveReturningName(typed);
+    commit(resolved);
   });
   form.querySelectorAll("button[data-name]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      localStore.setProfileName(btn.dataset.name);
-      onNamePicked?.(btn.dataset.name);
+    btn.addEventListener("click", async () => {
+      errorEl.hidden = true;
+      const resolved = await resolveReturningName(btn.dataset.name);
+      commit(resolved);
     });
   });
 }
@@ -114,14 +190,19 @@ function renderMyInfo(section, name) {
         <input type="text" name="insurance_info" value="${escapeHtml(me.insurance_info || "")}" placeholder="Provider + policy/assistance line" />
       </label>
       <button type="submit">Save</button>
+      <p class="my-info-status" aria-live="polite"></p>
     </form>
   `;
 
   const form = section.querySelector(".my-info-form");
-  form.addEventListener("submit", (e) => {
+  const status = section.querySelector(".my-info-status");
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const data = new FormData(form);
-    peopleStore.save({
+    status.textContent = "Saving…";
+    status.className = "my-info-status";
+
+    const synced = await peopleStore.save({
       name,
       dietary_restrictions: data.get("dietary_restrictions").trim() || null,
       flight_arrival: data.get("flight_arrival") || null,
@@ -130,22 +211,34 @@ function renderMyInfo(section, name) {
       comfortable_night_driving: data.get("comfortable_night_driving") === "on",
       insurance_info: data.get("insurance_info").trim() || null,
     });
+
+    status.textContent = synced ? "✅ Saved" : "⏳ Saved offline — will sync once back online";
+    status.className = synced ? "my-info-status my-info-status--ok" : "my-info-status my-info-status--pending";
   });
 }
 
 function renderOthers(section, myName) {
   const others = peopleStore.all().filter((p) => p.name !== myName);
+  // No real auth in this app (implementation_plan.md §6) — restricting the
+  // delete affordance to Feiko is a soft guard against casual mis-taps
+  // wiping a real trip participant, not a security boundary.
+  const canDelete = myName.trim().toLowerCase() === "feiko";
 
   const rows = others
     .map(
       (p) => `
-      <li class="packing-item">
+      <li class="packing-item shared-item">
         <div>
           <strong>${escapeHtml(p.name)}</strong>
           ${p.dietary_restrictions ? `<p class="assignment-note">🍽 ${escapeHtml(p.dietary_restrictions)}</p>` : ""}
           ${p.special_occasion ? `<p class="assignment-note">🎉 ${escapeHtml(p.special_occasion)}</p>` : ""}
           ${p.comfortable_night_driving ? `<p class="assignment-note">🚗 Comfortable driving at night</p>` : ""}
         </div>
+        ${
+          canDelete
+            ? `<div class="shared-item__actions"><button type="button" class="person-remove" data-name="${escapeHtml(p.name)}" aria-label="Remove ${escapeHtml(p.name)}">🗑</button></div>`
+            : ""
+        }
       </li>`
     )
     .join("");
@@ -154,6 +247,13 @@ function renderOthers(section, myName) {
     <h2 class="lists-heading">Everyone Else</h2>
     <ul class="packing-list">${rows || `<li class="view-empty__hint">Nobody else has filled in their info yet.</li>`}</ul>
   `;
+
+  section.querySelectorAll(".person-remove").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      if (!confirm(`Remove "${btn.dataset.name}" from the group? This can't be undone.`)) return;
+      peopleStore.remove(btn.dataset.name);
+    });
+  });
 }
 
 function renderGrocery(section) {

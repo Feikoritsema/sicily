@@ -4,14 +4,32 @@
 import { dataService } from "./data-service.js";
 
 const QUEUE_KEY = "sicily:syncQueue";
-const RETRY_DELAYS_MS = [5000, 20000, 60000];
+let replaying = false;
 
 function readQueue() {
-  return JSON.parse(localStorage.getItem(QUEUE_KEY) || "[]");
+  const raw = localStorage.getItem(QUEUE_KEY);
+  if (!raw) return [];
+  try {
+    return JSON.parse(raw);
+  } catch {
+    // Corrupted queue (interrupted write, manual tampering) — an unguarded
+    // throw here used to blank the entire app on boot, since pending() is
+    // the first thing boot() calls (see context/error_handling_audit.md).
+    console.error("sicily: corrupted sync queue — resetting");
+    localStorage.removeItem(QUEUE_KEY);
+    return [];
+  }
 }
 
 function writeQueue(queue) {
-  localStorage.setItem(QUEUE_KEY, JSON.stringify(queue));
+  try {
+    localStorage.setItem(QUEUE_KEY, JSON.stringify(queue));
+  } catch (err) {
+    // Quota exceeded etc. — the queue is also the app's last-resort safety
+    // net for a failed write, so losing it silently would be worse than
+    // just logging and moving on; there's nothing else to fall back to here.
+    console.error("sicily: failed to persist sync queue", err);
+  }
   notifyListeners(queue);
 }
 
@@ -37,19 +55,39 @@ export const syncQueue = {
   },
 
   async replay() {
-    let queue = readQueue();
-    if (queue.length === 0) return;
+    // Re-entrancy guard: replay() is called both once on app boot and on every
+    // `online` event, so a flaky connection can trigger two overlapping calls.
+    if (replaying) return;
+    replaying = true;
 
-    const remaining = [];
-    for (const entry of queue) {
-      try {
-        await applyEntry(entry);
-      } catch (err) {
-        entry.attempts = (entry.attempts || 0) + 1;
-        remaining.push(entry);
+    try {
+      const queue = readQueue();
+      if (queue.length === 0) return;
+
+      const succeededIds = new Set();
+      const bumpedAttempts = new Map();
+      for (const entry of queue) {
+        try {
+          await applyEntry(entry);
+          succeededIds.add(entry.id);
+        } catch {
+          bumpedAttempts.set(entry.id, (entry.attempts || 0) + 1);
+        }
       }
+
+      // Re-read fresh here rather than reusing the `queue` snapshot from
+      // above: `await applyEntry(...)` yields to the event loop on every
+      // iteration, so another part of the app can call enqueue() (its own
+      // read-modify-write of the same key) while this loop is still running.
+      // Writing back a stale snapshot at the end would silently erase
+      // whatever that concurrent enqueue() added.
+      const latest = readQueue()
+        .filter((e) => !succeededIds.has(e.id))
+        .map((e) => (bumpedAttempts.has(e.id) ? { ...e, attempts: bumpedAttempts.get(e.id) } : e));
+      writeQueue(latest);
+    } finally {
+      replaying = false;
     }
-    writeQueue(remaining);
   },
 };
 

@@ -1,4 +1,4 @@
-import { escapeHtml } from "../util.js";
+import { escapeHtml, retryStateHtml } from "../util.js";
 import { localStore } from "../local-store.js";
 import { sharedItemsStore } from "../shared-items.js";
 import { shoppingListStore } from "../shopping-list.js";
@@ -36,17 +36,25 @@ function pickDefaultTab() {
   return today >= SHOPPING_DEFAULT_FROM ? "shopping" : "packing";
 }
 
-export async function render(container) {
+export async function render(container, { isActive } = {}) {
   if (activeTab === null) activeTab = pickDefaultTab();
   container.innerHTML = `<section class="view-empty"><h1>Lists</h1><p class="view-empty__hint">Loading…</p></section>`;
 
-  if (!templateCache) {
-    const res = await fetch("./data/packing-template.json");
-    templateCache = await res.json();
+  try {
+    if (!templateCache) {
+      const res = await fetch("./data/packing-template.json");
+      templateCache = await res.json();
+    }
+  } catch {
+    container.innerHTML = retryStateHtml("Lists");
+    container.querySelector("[data-retry-load]")?.addEventListener("click", () => render(container, { isActive }));
+    return;
   }
   await sharedItemsStore.load();
   await shoppingListStore.load();
   ensureSeeded();
+
+  if (isActive && !isActive()) return;
 
   const tabButtons = SUBTABS.map(([key, label]) => `<button type="button" class="lists-subtab ${activeTab === key ? "is-active" : ""}" data-tab="${key}">${label}</button>`).join("");
 
@@ -109,6 +117,14 @@ function ensureSeeded() {
 function renderPacking(section) {
   const packing = localStore.getPersonalPacking();
 
+  if (!packing) {
+    section.innerHTML = `
+      <h2 class="lists-heading">Personal Packing</h2>
+      <p class="view-empty__hint">Couldn't load your packing list — your browser's storage may be full or blocked.</p>
+    `;
+    return;
+  }
+
   const categoryOptions = CATEGORY_ORDER.map((c) => `<option value="${c}">${escapeHtml(CATEGORY_LABELS[c])}</option>`).join("");
 
   const categorySections = CATEGORY_ORDER.filter((c) => (packing[c] || []).length > 0)
@@ -157,27 +173,31 @@ function renderPacking(section) {
     if (!label) return;
 
     const state = localStore.getPersonalPacking();
+    if (!state) return; // corrupted/unavailable — nothing to add to
     state[category] = state[category] || [];
     state[category].push({ id: crypto.randomUUID(), label, checked: false, custom: true });
-    localStore.setPersonalPacking(state);
-    renderPacking(section);
+    if (localStore.setPersonalPacking(state)) renderPacking(section);
   });
 
   section.querySelectorAll(".packing-check").forEach((cb) => {
     cb.addEventListener("change", () => {
       const state = localStore.getPersonalPacking();
-      const item = state[cb.dataset.category]?.find((i) => i.id === cb.dataset.id);
-      if (item) item.checked = cb.checked;
-      localStore.setPersonalPacking(state);
+      const item = state?.[cb.dataset.category]?.find((i) => i.id === cb.dataset.id);
+      if (!item) {
+        cb.checked = !cb.checked; // nothing to persist against — revert the click
+        return;
+      }
+      item.checked = cb.checked;
+      if (!localStore.setPersonalPacking(state)) cb.checked = !cb.checked; // write failed — revert so the DOM doesn't lie
     });
   });
 
   section.querySelectorAll(".packing-remove").forEach((btn) => {
     btn.addEventListener("click", () => {
       const state = localStore.getPersonalPacking();
+      if (!state) return;
       state[btn.dataset.category] = (state[btn.dataset.category] || []).filter((i) => i.id !== btn.dataset.id);
-      localStore.setPersonalPacking(state);
-      renderPacking(section);
+      if (localStore.setPersonalPacking(state)) renderPacking(section);
     });
   });
 }
@@ -208,7 +228,7 @@ function renderShared(section) {
           </div>
           <div class="shared-item__actions">
             ${claimAction}
-            <button type="button" class="list-item-remove" data-id="${item.id}" aria-label="Remove item">🗑</button>
+            <button type="button" class="list-item-remove" data-id="${item.id}" data-name="${escapeHtml(item.name)}" aria-label="Remove item">🗑</button>
           </div>
         </li>`;
     })
@@ -249,7 +269,10 @@ function renderShared(section) {
   });
 
   section.querySelectorAll(".list-item-remove").forEach((btn) => {
-    btn.addEventListener("click", () => sharedItemsStore.remove(btn.dataset.id));
+    btn.addEventListener("click", () => {
+      if (!confirm(`Remove "${btn.dataset.name}"? Everyone in the group will lose it.`)) return;
+      sharedItemsStore.remove(btn.dataset.id);
+    });
   });
 }
 
@@ -266,7 +289,7 @@ function renderShopping(section) {
             ${escapeHtml(item.item)}${item.quantity ? ` <span class="chip">${escapeHtml(item.quantity)}</span>` : ""}
             ${item.requested_by ? `<span class="view-empty__hint"> — ${escapeHtml(item.requested_by)}</span>` : ""}
           </label>
-          <button type="button" class="list-item-remove" data-id="${item.id}" aria-label="Remove item">🗑</button>
+          <button type="button" class="list-item-remove" data-id="${item.id}" data-name="${escapeHtml(item.item)}" aria-label="Remove item">🗑</button>
         </li>`
     )
     .join("");
@@ -309,9 +332,18 @@ function renderShopping(section) {
   });
 
   section.querySelectorAll(".list-item-remove").forEach((btn) => {
-    btn.addEventListener("click", () => shoppingListStore.remove(btn.dataset.id));
+    btn.addEventListener("click", () => {
+      if (!confirm(`Remove "${btn.dataset.name}"? Everyone in the group will lose it.`)) return;
+      shoppingListStore.remove(btn.dataset.id);
+    });
   });
 
-  section.querySelector(".shopping-clear-checked")?.addEventListener("click", () => shoppingListStore.clearChecked());
-  section.querySelector(".shopping-clear-all")?.addEventListener("click", () => shoppingListStore.clearAll());
+  section.querySelector(".shopping-clear-checked")?.addEventListener("click", () => {
+    if (!confirm("Clear all checked items? This can't be undone.")) return;
+    shoppingListStore.clearChecked();
+  });
+  section.querySelector(".shopping-clear-all")?.addEventListener("click", () => {
+    if (!confirm("Clear the entire shopping list for everyone? This can't be undone.")) return;
+    shoppingListStore.clearAll();
+  });
 }

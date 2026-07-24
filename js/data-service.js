@@ -1,6 +1,13 @@
 // The only file that talks to Supabase directly (see implementation_plan.md §7.1).
 // Thin wrappers per table, plus a subscribe() helper for Realtime. Every table
 // mirrors implementation_plan.md §4.2 exactly — field names match the SQL in §6.
+//
+// Conflict handling: every store's Realtime/optimistic merge (`applyChange` in
+// people.js/votes.js/day-plan.js/etc.) is a plain last-write-wins overwrite by
+// row key — no version/updated_at check, no merge. This is a deliberate,
+// accepted tradeoff for 5 trusted people sharing a low-write-volume trip
+// planner (§7.4), not an oversight — flagging here explicitly so it reads as
+// examined rather than a silent gap.
 
 import { supabase } from "./supabase-config.js";
 
@@ -13,6 +20,8 @@ const TABLES = {
   tripSettings: "trip_settings",
   people: "people",
   customPlaces: "custom_places",
+  quickPolls: "quick_polls",
+  quickPollVotes: "quick_poll_votes",
 };
 
 async function selectAll(table) {

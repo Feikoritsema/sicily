@@ -42,6 +42,19 @@ export const votesStore = {
     return votes;
   },
 
+  // See people.js's reconcile() for why this exists (§7.4 re-sync on reconnect/foreground).
+  async reconcile() {
+    if (!votes) return;
+    try {
+      const fresh = await dataService.list("votes");
+      votes = fresh;
+      localStore.setCachedTable("votes", fresh);
+      notify();
+    } catch {
+      // offline or failed — keep current in-memory state, next trigger retries
+    }
+  },
+
   subscribe() {
     if (unsubscribe) return;
     unsubscribe = dataService.subscribe("votes", (payload) => {
@@ -58,6 +71,10 @@ export const votesStore = {
   myVoteFor(placeId, personName) {
     const row = votes?.find((v) => v.place_id === placeId && v.person_name === personName);
     return row ? row.value : 0;
+  },
+
+  hasAnyVoteBy(personName) {
+    return (votes || []).some((v) => v.person_name === personName);
   },
 
   // Toggles: voting the same direction again clears the vote.

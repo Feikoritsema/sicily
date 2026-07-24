@@ -40,6 +40,19 @@ export const customPlacesStore = {
     return places;
   },
 
+  // See people.js's reconcile() for why this exists (§7.4 re-sync on reconnect/foreground).
+  async reconcile() {
+    if (!places) return;
+    try {
+      const fresh = await dataService.list("customPlaces");
+      places = fresh;
+      localStore.setCachedTable("customPlaces", fresh);
+      notify();
+    } catch {
+      // offline or failed — keep current in-memory state, next trigger retries
+    }
+  },
+
   subscribe() {
     if (unsubscribe) return;
     unsubscribe = dataService.subscribe("customPlaces", (payload) => {

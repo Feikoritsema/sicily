@@ -39,6 +39,19 @@ export const dayPlanStore = {
     return assignments;
   },
 
+  // See people.js's reconcile() for why this exists (§7.4 re-sync on reconnect/foreground).
+  async reconcile() {
+    if (!assignments) return;
+    try {
+      const fresh = await dataService.list("dayPlanAssignments");
+      assignments = fresh;
+      localStore.setCachedTable("dayPlanAssignments", fresh);
+      notify();
+    } catch {
+      // offline or failed — keep current in-memory state, next trigger retries
+    }
+  },
+
   subscribe() {
     if (unsubscribe) return;
     unsubscribe = dataService.subscribe("dayPlanAssignments", (payload) => {
@@ -146,9 +159,27 @@ export const dayPlanDaysStore = {
     return days;
   },
 
+  // See people.js's reconcile() for why this exists (§7.4 re-sync on reconnect/foreground).
+  async reconcile() {
+    if (!days) return;
+    try {
+      const fresh = await dataService.list("dayPlanDays");
+      days = fresh;
+      localStore.setCachedTable("dayPlanDays", fresh);
+      notifyDays();
+    } catch {
+      // offline or failed — keep current in-memory state, next trigger retries
+    }
+  },
+
   subscribe() {
     if (daysUnsubscribe) return;
     daysUnsubscribe = dataService.subscribe("dayPlanDays", (payload) => {
+      if (payload.eventType === "DELETE") {
+        days = days.filter((d) => d.date !== payload.old.date);
+        notifyDays();
+        return;
+      }
       const row = payload.new;
       const idx = days.findIndex((d) => d.date === row.date);
       if (idx >= 0) days[idx] = row;

@@ -1,5 +1,5 @@
 import { TRIP_DATES } from "../constants.js";
-import { escapeHtml } from "../util.js";
+import { escapeHtml, retryStateHtml } from "../util.js";
 import { loadPlaces, placesById } from "../places-data.js";
 import { categoryMeta, isClosedOnDate } from "../categories.js";
 import { dayPlanStore, dayPlanDaysStore } from "../day-plan.js";
@@ -11,13 +11,22 @@ const SLOT_LABEL = { morning: "Morning", afternoon: "Afternoon", evening: "Eveni
 let listenersAttached = false;
 const state = { date: null };
 
-export async function render(container) {
+export async function render(container, { isActive } = {}) {
   container.innerHTML = `<section class="view-empty"><h1>Day Plan</h1><p class="view-empty__hint">Loading…</p></section>`;
 
-  await loadPlaces();
+  try {
+    await loadPlaces();
+  } catch {
+    container.innerHTML = retryStateHtml("Day Plan");
+    container.querySelector("[data-retry-load]")?.addEventListener("click", () => render(container, { isActive }));
+    return;
+  }
+
   await dayPlanStore.load();
   await dayPlanDaysStore.load();
   await peopleStore.load();
+
+  if (isActive && !isActive()) return;
 
   if (!state.date) state.date = pickDefaultDate();
 

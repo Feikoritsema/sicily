@@ -13,6 +13,9 @@ export const VILLA = {
   phone: "+39 333 2631840",
 };
 
+// Placeholder — swap for the real shared playlist link once Feiko sends it.
+export const SPOTIFY_PLAYLIST_URL = "https://open.spotify.com/playlist/";
+
 // No traveler names are hardcoded here on purpose — the doc never names the
 // 5 travelers, so the profile view's name picker starts empty and falls back
 // to "type your name" until people have picked once (see js/views/profile.js).

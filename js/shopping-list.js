@@ -37,6 +37,19 @@ export const shoppingListStore = {
     return items;
   },
 
+  // See people.js's reconcile() for why this exists (§7.4 re-sync on reconnect/foreground).
+  async reconcile() {
+    if (!items) return;
+    try {
+      const fresh = await dataService.list("shoppingList");
+      items = fresh;
+      localStore.setCachedTable("shoppingList", fresh);
+      notify();
+    } catch {
+      // offline or failed — keep current in-memory state, next trigger retries
+    }
+  },
+
   subscribe() {
     if (unsubscribe) return;
     unsubscribe = dataService.subscribe("shoppingList", (payload) => {

@@ -1,4 +1,4 @@
-import { escapeHtml } from "../util.js";
+import { escapeHtml, retryStateHtml } from "../util.js";
 import { renderMarkdown } from "../markdown.js";
 import { VILLA } from "../constants.js";
 import { peopleStore } from "../people.js";
@@ -7,16 +7,24 @@ let practicalCache = null;
 let eventsCache = null;
 let listenersAttached = false;
 
-export async function render(container) {
+export async function render(container, { isActive } = {}) {
   container.innerHTML = `<section class="view-empty"><h1>Info</h1><p class="view-empty__hint">Loading…</p></section>`;
 
-  if (!practicalCache) {
-    practicalCache = await fetch("./data/practical-info.json").then((r) => r.json());
-  }
-  if (!eventsCache) {
-    eventsCache = await fetch("./data/events.json").then((r) => r.json());
+  try {
+    if (!practicalCache) {
+      practicalCache = await fetch("./data/practical-info.json").then((r) => r.json());
+    }
+    if (!eventsCache) {
+      eventsCache = await fetch("./data/events.json").then((r) => r.json());
+    }
+  } catch {
+    container.innerHTML = retryStateHtml("Info");
+    container.querySelector("[data-retry-load]")?.addEventListener("click", () => render(container, { isActive }));
+    return;
   }
   await peopleStore.load();
+
+  if (isActive && !isActive()) return;
 
   container.innerHTML = `
     <section class="info">
