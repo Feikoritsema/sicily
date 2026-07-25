@@ -1,11 +1,11 @@
-const CACHE_NAME = "sicily-shell-v4";
+const CACHE_NAME = "sicily-shell-v6";
 
 const PRECACHE_URLS = [
   "./",
   "./index.html",
   "./manifest.json",
   "./css/styles.css",
-  "./fonts/fraunces-variable-latin.woff2",
+  "./fonts/bricolage-grotesque-variable-latin.woff2",
   "./js/app.js",
   "./js/constants.js",
   "./js/supabase-config.js",
@@ -13,6 +13,7 @@ const PRECACHE_URLS = [
   "./js/sync-queue.js",
   "./js/reconcile.js",
   "./js/quick-polls.js",
+  "./js/fact-game.js",
   "./js/local-store.js",
   "./js/util.js",
   "./js/categories.js",
@@ -39,6 +40,7 @@ const PRECACHE_URLS = [
   "./data/events.json",
   "./data/packing-template.json",
   "./data/shared-items-template.json",
+  "./data/fact-game.json",
   "./favicon.svg",
   "./apple-touch-icon.png",
   "./icon-any-192.png",

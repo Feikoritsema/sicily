@@ -1,0 +1,3068 @@
+[
+  {
+    "question": "How many liters of wine, per person (age 15+), did Italians drink on average in 2024?",
+    "answer": "~42.7 liters",
+    "note": "OIV (International Organisation of Vine and Wine) methodology, which counts population 15+; a lower \"whole population\" figure of ~26.3 L/person also circulates depending on methodology used.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "What global rank does Italy hold for total volume of wine consumed (not per capita) in 2024?",
+    "answer": "3rd — about 2.23 billion liters, behind the United States (3.33 billion) and France (2.30 billion)",
+    "note": "Industry reporting citing OIV/Statista-sourced 2024 consumption data.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many hectoliters of wine did Italy produce in 2024, reclaiming the title of world's largest wine producer?",
+    "answer": "~44 million hectoliters (43.96 million)",
+    "note": "OIV 2024 world wine production outlook; Italy overtook France after 2023's weather-hit low.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many hectares of vineyard does Italy have in total?",
+    "answer": "~728,000 hectares",
+    "note": "Cited alongside 2024 OIV/industry production figures; Italy was the only top-7 wine nation to grow its vineyard area that year.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "Which Italian wine region produced the most wine by volume in 2024, and how many hectoliters?",
+    "answer": "Veneto, with ~8.73 million hectoliters",
+    "note": "Regional breakdown of Italy's 2024 harvest (Emilia-Romagna 7.55M, Puglia 6.46M followed).",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many hectares of vineyard does Sicily have — making it Italy's largest wine-producing region by area?",
+    "answer": "~98,000 hectares (242,000 acres)",
+    "note": "Wine Folly/wine-trade regional data on Sicily's DOC system (23 DOCs + 1 DOCG).",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many hectares of Nero d'Avola — Sicily's signature red grape — are planted across the island?",
+    "answer": "~18,000–18,800 hectares",
+    "note": "Multiple wine-trade sources; one specific figure is 18,812 ha, equal to 15.8% of Sicily's total vineyard area.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "What percentage of Sicily's red-grape vineyard area is planted with Nero d'Avola?",
+    "answer": "~45%",
+    "note": "Same viticulture-of-Sicily sourcing as above.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many DOC/DOCG wine designations does Sicily have in total?",
+    "answer": "24 (23 DOC + 1 DOCG)",
+    "note": "Sicily's sole DOCG is Cerasuolo di Vittoria (the Nero d'Avola/Frappato blend); it covers just ~152 hectares of vineyard.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "In what year did merchant John Woodhouse create the fortified style of Marsala wine that made it famous in Britain?",
+    "answer": "1773",
+    "note": "Widely documented history of Marsala wine; Woodhouse began mass commercial production in 1796.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many kilograms of pasta does the average Italian eat per year — the highest of any country?",
+    "answer": "~23.3 kg",
+    "note": "International Pasta Organisation / AIDEPI 2024 figures; some sources round to 23–26 kg depending on year.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many tonnes of pasta does Italy produce annually, and what share of world production is that?",
+    "answer": "~4.2 million tonnes — about 25% of global production",
+    "note": "2024 global pasta production reached 17 million tonnes total; Italy remains the single largest producer, ahead of Turkey and the US.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "What percentage of Italy's pasta production is exported abroad?",
+    "answer": "Nearly 60% (2.42 million tonnes, worth about €4 billion)",
+    "note": "Italian Food/AIDEPI export data; top destinations are Germany, the US, the UK, France and Japan.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "Roughly how many distinct pasta shapes exist across Italy's regions?",
+    "answer": "~350 is the most commonly cited estimate (other counts range from ~300 up to 1,300+ if every regional name-variant is counted separately)",
+    "note": "Food-history sources agree on wide variance because the same shape often has different names town to town — presented here as an approximate range, not a single hard figure.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many kilograms of pizza does the average Italian eat per year?",
+    "answer": "~7.6 kg per person",
+    "note": "Consumption-statistics aggregators citing national dietary data; for comparison, Norway's per-capita figure is actually higher (~11.4 kg).",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "Roughly how many pizzerias operate in Italy, employing how many pizza workers?",
+    "answer": "~63,000 pizzerias, employing ~100,000 people",
+    "note": "Italian pizza-industry statistics reporting.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "In what year did chef Raffaele Esposito, according to popular legend, create the Pizza Margherita for Queen Margherita of Savoy in Naples?",
+    "answer": "1889",
+    "note": "The date/visit are historically documented, though food historians note the tomato-mozzarella-basil combination itself was already common in Naples decades earlier (described in an 1866 cookbook) — so the \"invention\" story is likely more legend than literal fact, only the date is solid.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "Roughly how many coffee bars are there in Italy?",
+    "answer": "~162,000",
+    "note": "Italian Federation of Public Exercises (FIPE) estimate, cited in hospitality-trade reporting.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "Roughly how many cups of coffee are served per day in Italy?",
+    "answer": "~95 million",
+    "note": "Industry/trade-press coffee-market reporting; works out to about 1.6 cups per person per day nationally.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "What percentage of Italians drink coffee at all?",
+    "answer": "~97%",
+    "note": "Same coffee-culture consumption surveys; ~74% drink it daily.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "In what year was the first patented espresso machine created, and by whom?",
+    "answer": "1901, by Luigi Bezzera in Milan (patent filed November 19, 1901)",
+    "note": "Widely documented espresso-machine history; Bezzera sold the patent to Desiderio Pavoni in 1903, who helped popularize it at the 1906 Milan World's Fair.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "Roughly how many gelaterias operate in Italy today?",
+    "answer": "Recent estimates range from ~36,000 to ~39,000",
+    "note": "Gelato-industry statistics reports (2026 data); the whole gelato-related industry is valued at over €4 billion and employs 100,000+ people. Presented as a range since sources vary.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many tonnes of olive oil did Italy produce in the 2024/25 season?",
+    "answer": "~248,000 tonnes",
+    "note": "A notably weak harvest year — this dropped Italy as low as 5th in world rankings (behind Spain, Turkey, Tunisia, Greece) for that specific season, versus its more typical 2nd–3rd place; the 2025/26 season is projected to recover to ~325,000 tonnes.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many hectares of olive groves does Sicily have, and what share of Italy's total is that?",
+    "answer": "~177,000 hectares (176,974 ha) — about 15.5% of Italy's total olive-growing area",
+    "note": "Regional agricultural data reported via olive-oil trade press, 2024.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many tonnes of certified DOP/IGP olive oil did Sicily produce in 2024?",
+    "answer": "~16,190 tonnes (+31.1% vs. 2023), worth about €194 million",
+    "note": "Sicilian olive-oil certification body data reported via Gift/Great Italian Food Trade.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many separate PDO (Protected Designation of Origin) olive oil labels does Sicily hold?",
+    "answer": "6 — Monti Iblei, Valli Trapanesi, Val di Mazara, Monte Etna, Valle del Belice, and Valdemone",
+    "note": "Regional PDO registry as reported in Sicilian food-trade sources.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many tonnes of certified IGP Pachino tomatoes were produced in 2024?",
+    "answer": "~9,000 tonnes (certified figure), from 150+ registered producers",
+    "note": "Consortium data presented at Macfrut 2025 trade fair; broader (non-certified) regional tomato production around Pachino runs far higher, into the hundreds of thousands of tonnes, so the ~9,000t figure specifically refers to IGP-certified product.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many wheels of Parmigiano Reggiano are produced in Italy each year?",
+    "answer": "~4 million (4.014 million in 2023)",
+    "note": "Parmigiano Reggiano Consortium production data; up from 3.7 million wheels in 2018.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How big is Sicily, the largest island in the Mediterranean, in square kilometers?",
+    "answer": "25,708 km²",
+    "note": "Standard geographic reference data (Britannica/Understanding Italy).",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "What is Sicily's current population?",
+    "answer": "~4.8 million (official figures put it at roughly 4.775–4.8 million as of the mid-2020s)",
+    "note": "ISTAT (Italy's national statistics institute) regional data.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "At its narrowest point, how wide is the Strait of Messina separating Sicily from mainland Italy?",
+    "answer": "3.1 km (between Torre Faro and Villa San Giovanni)",
+    "note": "Standard geographic references; at the city of Messina itself the strait widens to about 5.1 km.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How long is Italy's total coastline?",
+    "answer": "~7,600 km (some sources say ~7,900 km when every small island is included)",
+    "note": "Geographic reference data; ranked the 5th-longest coastline in Europe.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many countries border the Mediterranean Sea?",
+    "answer": "21",
+    "note": "Standard geographic/political reference (includes Italy, France, Spain, Greece, Turkey, Egypt, Libya, Tunisia, Morocco, Algeria, and others).",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "What is the total surface area of the Mediterranean Sea?",
+    "answer": "~2.5 million km²",
+    "note": "Standard oceanographic reference data.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "What is the deepest point in the Mediterranean Sea, and how deep is it?",
+    "answer": "The Calypso Deep, in the Ionian Sea (Hellenic Trench) — 5,267 meters",
+    "note": "Oceanographic survey data; located about 63 km southwest of Pylos, Greece.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "What is the average depth of the Mediterranean Sea?",
+    "answer": "~1,500 meters",
+    "note": "Standard oceanographic reference — relatively shallow compared to the world's oceans overall.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How far is it from Sicily to Malta?",
+    "answer": "~181 km (98 nautical miles)",
+    "note": "Standard distance-calculation references.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How far is it from Sicily to the Tunisian coast?",
+    "answer": "~348 km (188 nautical miles) to Tunis",
+    "note": "Standard distance-calculation references.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "Into how many administrative regions is Italy divided?",
+    "answer": "20",
+    "note": "Standard constitutional/geographic reference; 5 of the 20 hold special autonomous status (including Sicily itself).",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many main islands make up the Aeolian archipelago north of Sicily?",
+    "answer": "7 — Lipari, Vulcano, Salina, Stromboli, Filicudi, Alicudi and Panarea",
+    "note": "UNESCO World Heritage listing (inscribed December 2000); plus five smaller islets.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How long is the Cavagrande del Cassibile canyon, near Avola/Noto?",
+    "answer": "~10 km long",
+    "note": "Sicilian nature-reserve reference sources; considered the largest natural canyon in Europe.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How deep is the Cavagrande del Cassibile canyon at its most dramatic point?",
+    "answer": "Commonly cited as ~300 meters deep (one source puts the maximum, near Avola's belvedere, as high as ~500 meters)",
+    "note": "Sicilian nature-reserve sources vary somewhat on the exact maximum — presented as an approximate range rather than one precise figure.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "What is Mount Etna's current elevation, per the record measurement taken in September 2024?",
+    "answer": "3,403 meters",
+    "note": "INGV (Italy's National Institute of Geophysics and Volcanology) measurement of the Voragine crater — the highest elevation ever recorded on Etna, a height that shifts with each summit eruption.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "What is Mount Etna's circumference at its base?",
+    "answer": "~140 km",
+    "note": "Standard volcanological reference data (Britannica and related sources).",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "What is Mount Etna's diameter at its base?",
+    "answer": "~35 km",
+    "note": "Same volcanological reference sources.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How large an area does Mount Etna (the whole volcanic edifice) cover?",
+    "answer": "~1,190 km²",
+    "note": "Standard volcano-geography references.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How large is the specific area of Mount Etna inscribed as a UNESCO World Heritage Site, and in what year was it listed?",
+    "answer": "~19,237 hectares, inscribed in 2013",
+    "note": "UNESCO World Heritage Centre listing (site #1427) — covers the most strictly protected and scientifically important part of the Parco dell'Etna.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "For roughly how many years has the volcano Stromboli, in the Aeolian Islands, been almost continuously erupting in its current active phase?",
+    "answer": "Since 1934 — over 90 years of near-continuous activity (volcanologists also cite a much longer-term pattern of ~2,000 years of intermittent but frequent activity, hence its nickname \"Lighthouse of the Mediterranean\")",
+    "note": "Volcano-monitoring/geology sources; day-to-day, Stromboli produces roughly 300–500 small explosive bursts per day.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "What magnitude was the catastrophic 1693 earthquake that destroyed Noto and much of southeastern Sicily?",
+    "answer": "An estimated magnitude 7.4 — the most powerful earthquake in recorded Italian history",
+    "note": "Seismological/historical reference sources (Wikipedia's well-cited 1693 Sicily earthquake entry, cross-referenced against academic summaries).",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many towns and cities were destroyed by the 1693 earthquake, later to be rebuilt in the Baroque style seen today?",
+    "answer": "At least 70",
+    "note": "Same historical seismology sourcing as above — this is the direct origin of Noto's, Ragusa's, Modica's and Scicli's unified late-Baroque look.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "In what year was Syracuse founded as a Greek colony from Corinth?",
+    "answer": "734 BC",
+    "note": "Classical-history reference sources (World History Encyclopedia, Britannica); settled first on the island of Ortigia.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many towns make up the \"Late Baroque Towns of the Val di Noto\" UNESCO World Heritage listing, and in what year was it inscribed?",
+    "answer": "8 towns, inscribed in 2002 — Caltagirone, Militello Val di Catania, Catania, Modica, Noto, Palazzolo Acreide, Ragusa and Scicli",
+    "note": "UNESCO World Heritage Centre official listing (site #1024).",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "For roughly how many years did Arab (Islamic) rule of Sicily last?",
+    "answer": "~264 years (827–1091 AD)",
+    "note": "Historical references on the Emirate of Sicily; conquest was gradual, with the last Muslim-held city (Noto itself) falling in 1091.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "For how many years did the Kingdom of the Two Sicilies exist, before Italian unification?",
+    "answer": "45 years (1816–1861)",
+    "note": "Historical reference sources; ended when Garibaldi's conquest led to a plebiscite joining the Kingdom of Sardinia.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many rock-cut tombs make up the Necropolis of Pantalica, near Syracuse?",
+    "answer": "Commonly cited as \"5,000+\", though a more recent careful count suggests closer to ~4,000",
+    "note": "UNESCO/archaeological sources disagree somewhat on the exact figure — presented here as an approximate range rather than a single hard number, mostly dating from the 13th–7th centuries BC.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many major Greek temples make up the Valley of the Temples at Agrigento?",
+    "answer": "8 (built roughly 510–430 BC)",
+    "note": "Archaeological/UNESCO-site reference sources; some sources count as few as 7 or as many as 9 depending on whether smaller ruins are included.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "In what year did the dome of Noto's Cathedral of San Nicolò catastrophically collapse?",
+    "answer": "March 13, 1996",
+    "note": "Well-documented structural-failure case (Wikipedia's Noto Cathedral entry); caused by unremedied weakening from a 1990 earthquake plus earlier structural alterations.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many years was Noto Cathedral closed for reconstruction after its 1996 collapse?",
+    "answer": "11 years — it reopened on June 15, 2007",
+    "note": "Same source as above; reconstruction work itself ran 1999–2007.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many square meters of Roman mosaics survive at the Villa Romana del Casale in Piazza Armerina, Sicily?",
+    "answer": "~3,500 m²",
+    "note": "UNESCO/archaeological reference sources — considered the richest, largest, and best-preserved in-situ collection of Roman mosaics anywhere, spread across 48 rooms, dating to the early 4th century AD.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "What is the traditional legendary founding date of Rome?",
+    "answer": "April 21, 753 BC",
+    "note": "The date was calculated by the Roman scholar Varro in the 1st century BC and became the accepted official date, still marked with festivals today; archaeological evidence broadly supports an 8th-century-BC founding period.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many defendants were tried in Sicily's landmark 1986–87 \"Maxi Trial\" against Cosa Nostra?",
+    "answer": "475 defendants",
+    "note": "Historical/legal reference sources on the Palermo Maxi Trial; verdict delivered December 16, 1987.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many of the Maxi Trial's 475 defendants were ultimately convicted?",
+    "answer": "360",
+    "note": "Same Maxi Trial sourcing — a landmark moment in Italy's anti-mafia prosecution efforts.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "In what year did Mount Vesuvius erupt and destroy Pompeii?",
+    "answer": "79 AD (the eruption occurred on August 24)",
+    "note": "Standard classical/volcanological historical sources.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "In what year did Mount Vesuvius last erupt?",
+    "answer": "1944 (during WWII — the eruption destroyed dozens of Allied aircraft at a nearby airbase)",
+    "note": "Standard volcanological history references.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many UNESCO World Heritage Sites does Italy have in total — more than any other country?",
+    "answer": "60–61 (the exact count depends on the year; Italy passed 60 after the Via Appia Antica was inscribed in July 2024)",
+    "note": "UNESCO World Heritage Centre official statistics; China is the runner-up.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many UNESCO World Heritage Sites are located specifically in Sicily?",
+    "answer": "7 — the Aeolian Islands, Mount Etna, Villa Romana del Casale, Syracuse & the Necropolis of Pantalica, the Val di Noto Baroque towns, the Arab-Norman sites of Palermo/Monreale/Cefalù, and Agrigento's archaeological park",
+    "note": "Sicily-focused UNESCO travel/heritage reference sources, cross-checked against the official Italy list.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "In what year was Sicily's Opera dei Pupi puppet theatre first given UNESCO recognition (later formally inscribed as Intangible Cultural Heritage)?",
+    "answer": "First proclaimed a UNESCO \"Masterpiece\" in 2001; formally inscribed on the Representative List of Intangible Cultural Heritage in 2008",
+    "note": "UNESCO's official Intangible Cultural Heritage listing.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "In what year was the \"Mediterranean diet\" inscribed as UNESCO Intangible Cultural Heritage, and how many countries share the designation?",
+    "answer": "First inscribed in 2010 (with Greece, Italy, Morocco and Spain), expanded in 2013 to 7 countries total (adding Cyprus, Croatia and Portugal)",
+    "note": "UNESCO's official Intangible Cultural Heritage listing for the Mediterranean Diet.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many Michelin-starred restaurants does the 2026 Michelin Guide Italy list in total?",
+    "answer": "394",
+    "note": "Michelin Guide's official 2026 Italy announcement (revealed November 2025 in Parma).",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many of those are three-star restaurants?",
+    "answer": "15 (plus 38 two-star and 341 one-star restaurants)",
+    "note": "Same official 2026 Michelin Guide Italy breakdown; 25 restaurants were newly starred that year.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "What is Italy's total population as of 2024?",
+    "answer": "~58.9 million (58,934,177 as of December 31, 2024, per one official count)",
+    "note": "Italian demographic statistics (Macrotrends/Statista, cross-referenced); Italy's population has been in gradual decline for several years.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "What was Italy's total fertility rate in 2024 — one of the lowest in the world?",
+    "answer": "1.18 births per woman",
+    "note": "Demographic statistics well below the EU average of 1.38.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "Roughly how many international tourists visited Italy in 2024?",
+    "answer": "Estimates vary by methodology: one widely cited figure is 71.2 million (a 5% rise over 2023's 67.9 million, and 10.4% above the pre-pandemic 2019 peak of 64.5 million); another broader counting method puts the figure closer to 89 million",
+    "note": "Statista/tourism-industry reporting — presented as a range because of genuinely different counting methodologies (overnight vs. same-day visitors) across sources.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How much did international tourists spend in Italy in 2024?",
+    "answer": "Over $58.7 billion",
+    "note": "Tourism-economics reporting; a 19% increase over 2019 (pre-pandemic) levels.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many visitors did Rome's Colosseum draw in 2024?",
+    "answer": "Almost 15 million",
+    "note": "Tourism-statistics reporting, citing Colosseum Archaeological Park data; up from 12.2 million in 2023 and 7.5 million pre-pandemic (2019). This far exceeds the ~9 million annual visitors to the Louvre in Paris.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many visitors did the Pompeii archaeological site draw in 2024?",
+    "answer": "Over 4 million (4.3 million per final 2024 figures)",
+    "note": "Statista/Pompeii Sites official visitor data.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "What daily visitor cap did Pompeii introduce in November 2024 to combat overtourism?",
+    "answer": "20,000 visitors per day",
+    "note": "Widely reported policy change (The Local Italy, Malay Mail and others), introduced November 15, 2024, alongside personalized ticketing.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many tourists visited Sicily in 2024?",
+    "answer": "Over 21.5 million",
+    "note": "Sicilian regional tourism statistics — a 4% increase over 2023, with foreign arrivals specifically up 11%; Palermo province recorded the most arrivals.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many spectators could the ancient Greek Theatre at Neapolis, Syracuse, hold?",
+    "answer": "~15,000",
+    "note": "Archaeological/tourism reference sources; the theatre is carved directly into the limestone hillside and remains in use for performances today.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "What is the diameter of the Greek Theatre's semicircular seating area (cavea)?",
+    "answer": "~138 meters",
+    "note": "Same archaeological reference sourcing — first built in the 5th century BC, then enlarged in the Hellenistic period (3rd century BC).",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many hearts does an octopus have?",
+    "answer": "3",
+    "note": "One pumps blood to the body, two pump blood to the gills (Britannica, Smithsonian).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many suckers does a giant Pacific octopus have across all its arms?",
+    "answer": "Around 1,920–2,240 (roughly 240–280 per arm × 8 arms)",
+    "note": "Each sucker is packed with chemoreceptors that let the octopus \"taste\" by touch (Harvard Gazette).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many teeth does a garden snail have on its radula (its tooth-covered \"tongue\")?",
+    "answer": "Over 14,000 (estimates range roughly 12,000–25,000 depending on species)",
+    "note": "They aren't traditional teeth — they're chitin denticles arranged in rows on a ribbon-like organ (BBC Science Focus).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What's the top recorded diving speed of a peregrine falcon, the fastest animal on Earth?",
+    "answer": "Around 240 mph (a falcon named \"Frightful\" was clocked at 242 mph in 1999)",
+    "note": "Guinness World Records lists it as the fastest bird in a dive.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many years can a tardigrade (\"water bear\") survive without any water at all?",
+    "answer": "Up to about 30 years",
+    "note": "Achieved via cryptobiosis — it expels its water, curls into a \"tun,\" and rehydrates back to life in hours (NSF, ScienceAlert).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Roughly how many named species (and subspecies) of ants have scientists described?",
+    "answer": "More than 15,700 (some estimate the true total could be double that)",
+    "note": "National Geographic; total individual ants on Earth is separately estimated at ~20 quadrillion.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many bones does a shark have in its body?",
+    "answer": "Zero — its whole skeleton is cartilage (roughly 200–400 cartilage pieces instead)",
+    "note": "Cartilage is about half as dense as bone, helping sharks swim faster and stay buoyant (Natural History Museum).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many hearts does an earthworm have?",
+    "answer": "10 (five pairs of \"aortic arches\" that act like hearts)",
+    "note": "They're not true hearts, but muscular vessels that pump blood in a wave-like rhythm (A-Z Animals).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many times its own bodyweight in force does a mantis shrimp's punch deliver?",
+    "answer": "Over 2,500 times its body weight, with acceleration around 10,400 g",
+    "note": "That's roughly 2,000x the acceleration of a 330-mph dragster; the strike can crack aquarium glass (Guinness World Records, National Geographic).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how much does a blue whale's heart weigh?",
+    "answer": "Around 400 pounds (180 kg) — roughly the size of a small golf cart",
+    "note": "It pumps about 60 gallons of blood per beat, audible from up to 2 miles away (NOAA Fisheries).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How long can a cockroach survive after losing its head?",
+    "answer": "Roughly 1–2 weeks",
+    "note": "It breathes through holes in its body segments, not its head, and eventually dies of dehydration, not decapitation (Scientific American).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many eyes does a honeybee have?",
+    "answer": "5 (two large compound eyes plus three small simple eyes called ocelli)",
+    "note": "The ocelli sit in a triangle atop the head and help bees orient using sunlight (IFLScience).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many neck vertebrae does a giraffe have?",
+    "answer": "7 — the same number as a human",
+    "note": "Each giraffe vertebra is just far longer (up to 10 inches) rather than more numerous (Snopes, Save Giraffes Now).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What's the top speed a cheetah can reach, the fastest land animal?",
+    "answer": "About 70 mph",
+    "note": "They can only sustain it for roughly 20–30 seconds before overheating (Cheetah Conservation Fund).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many hours a day does a koala typically sleep?",
+    "answer": "18 to 22 hours",
+    "note": "Their eucalyptus diet is low-energy and mildly toxic, requiring extended digestion/rest (Australian Koala Foundation).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Dolphins can stay alert for roughly how many days straight without normal sleep?",
+    "answer": "At least 15 days",
+    "note": "They sleep with only half their brain at a time (unihemispheric sleep), keeping one eye open (Smithsonian Magazine).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many stomach compartments does a cow have?",
+    "answer": "4 (rumen, reticulum, omasum, abomasum) — but it's technically one stomach, not four separate ones",
+    "note": "The rumen acts as a giant fermentation vat for digesting tough plant fiber (Britannica).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What's the maximum number of eggs a queen honeybee can lay in a single day?",
+    "answer": "Up to about 2,000 (top-performing queens have been recorded near 3,000)",
+    "note": "She only sustains peak output during spring build-up season (beekeeping references).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many muscles does a cat have in each ear?",
+    "answer": "32",
+    "note": "That lets each ear rotate up to 180 degrees independently — compare 3 in a human ear (Catster).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many described species of shark are there?",
+    "answer": "Around 500 (some counts push past that as new species are found)",
+    "note": "Including rays, the cartilaginous fish group tops 1,000 species (Ocean Conservancy).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How long can some land snails hibernate (estivate) in a single stretch when conditions are bad?",
+    "answer": "Up to about 3 years",
+    "note": "They seal themselves in their shell with a mucus layer to conserve moisture (A-Z Animals).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Roughly what's the ratio of chickens to humans on Earth right now?",
+    "answer": "About 3-to-1 (roughly 26 billion chickens vs. ~8.2 billion people)",
+    "note": "Chickens are the most numerous bird on the planet by a huge margin (The Humane League, Carnegie Museum).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many species of beetles have scientists formally described?",
+    "answer": "Around 400,000",
+    "note": "Beetles alone make up roughly 40% of all described insect species and 25% of all known life forms (Smithsonian Magazine).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Roughly how many dogs are estimated to exist in the world today?",
+    "answer": "About 900 million",
+    "note": "Most are free-ranging/community dogs rather than pets — only ~470 million are kept as pets (World Animal Foundation).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "A centipede's name implies 100 legs — how many pairs of legs can centipede species actually have?",
+    "answer": "Anywhere from 15 to 177 pairs (always an odd number of pairs, so never exactly 100 legs)",
+    "note": "The common house centipede has just 15 pairs = 30 legs total (Snopes).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Honey found in ancient Egyptian tombs and still technically edible — how old was it?",
+    "answer": "Over 3,000 years old",
+    "note": "Honey's low water content, acidity, and natural hydrogen peroxide make it nearly impossible for bacteria to grow (Smithsonian-linked sources, multiple archaeology write-ups).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many stars are estimated to be in our Milky Way galaxy?",
+    "answer": "Somewhere between 100 billion and 400 billion",
+    "note": "The range is wide because the galaxy's dense core is hard to see through, even with powerful telescopes (ESA/Gaia mission scientist).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Which is longer — a day on Venus or a year on Venus?",
+    "answer": "A day (243 Earth days) is longer than its year (224.7 Earth days)",
+    "note": "Caused by Venus's extremely slow, backward (retrograde) rotation (Universe Today, Space.com).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many active satellites were orbiting Earth as of 2025?",
+    "answer": "Roughly 11,000–15,000 (estimates vary by source and whether inactive satellites are included)",
+    "note": "More than 60% are part of SpaceX's Starlink constellation alone (ESA tracking, Pixalytics).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "As of 2026, about how many confirmed moons does Jupiter have?",
+    "answer": "Over 100 (the officially recognized count keeps climbing as more are found)",
+    "note": "IAU counted 97 in April 2025 and 100+ by 2026 — the number is a moving target (NASA, IAU).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "As of 2026, how many confirmed moons does Saturn have — the most of any planet?",
+    "answer": "285",
+    "note": "A batch of 128 small moons was confirmed in March 2025, with more added since (Space.com, Minor Planet Center).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many Earths could you fit inside the volume of the Sun?",
+    "answer": "About 1.3 million",
+    "note": "By mass, it would take \"only\" about 330,000 Earths (Universe Today, IFLScience).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Roughly how fast does the International Space Station travel, in mph?",
+    "answer": "About 17,500 mph — completing about 16 orbits of Earth every 24 hours",
+    "note": "That means astronauts see about 16 sunrises and sunsets a day (NASA).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many human beings have ever walked on the Moon?",
+    "answer": "12 — all men, all part of NASA's Apollo missions (1969–1972)",
+    "note": "Neil Armstrong and Buzz Aldrin were first; Eugene Cernan was the last, in 1972 (Space.com).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many minutes does it take sunlight to reach Earth?",
+    "answer": "About 8 minutes 20 seconds",
+    "note": "Based on Earth's average distance of ~150 million km from the Sun (BBC Sky at Night).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many times does the average person blink in a single day?",
+    "answer": "Roughly 14,000–20,000 times (varies by blink-rate estimate used)",
+    "note": "Adults blink about 15–17 times per minute while awake (All About Vision, Cleveland Clinic).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many facial muscles does it typically take to produce a smile?",
+    "answer": "About 10–12 for an average smile (a big toothy grin can engage up to 43)",
+    "note": "There's no single agreed number since smile types vary so much (HowStuffWorks).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "A newborn baby has more bones than an adult — about how many more?",
+    "answer": "Nearly 100 more (babies have 275–300 bones vs. an adult's 206)",
+    "note": "Many fuse together during growth via a process called ossification (Cleveland Clinic).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many liters of saliva does the average adult produce in a day?",
+    "answer": "Roughly 1–2 liters",
+    "note": "Estimates across studies range from about 0.5 to 1.5+ liters (Cleveland Clinic).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many neurons does the average human brain contain?",
+    "answer": "About 86 billion",
+    "note": "They form roughly 100 trillion connections; the old \"100 billion\" figure was never actually peer-reviewed (Herculano-Houzel research, BrainFacts.org).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Roughly how many times does a human heart beat over an average lifetime?",
+    "answer": "About 2.5 to 3 billion times",
+    "note": "Based on ~70–75 beats/minute over a 70–80 year life (LiveScience).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how fast does human scalp hair grow per month?",
+    "answer": "About half an inch (1.25 cm)",
+    "note": "Growth rate varies notably by ethnicity and genetics (American Academy of Dermatology, via LiveScience).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many taste buds does the average adult have?",
+    "answer": "Commonly cited as around 10,000, though studies show a wide range (roughly 2,000–10,000)",
+    "note": "The number naturally declines with age (CK-12, BioNumbers database).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many individual hairs does the average human head have?",
+    "answer": "Roughly 100,000 to 150,000",
+    "note": "Blondes tend to have the most strands, redheads the fewest (Hims health resources).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many liters of air can the average pair of adult lungs hold at full capacity?",
+    "answer": "About 6 liters",
+    "note": "Normal breathing only uses a small fraction of total lung capacity (American Lung Association-adjacent sources).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Roughly what percentage of an adult male's body weight is made up of skeleton?",
+    "answer": "About 14% (roughly 10–12% for adult females)",
+    "note": "A living skeleton weighs more than a \"dry\" one due to marrow, blood vessels, and other tissue (BioNumbers database).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how fast can the droplets from a human sneeze travel?",
+    "answer": "Up to about 100 mph",
+    "note": "Despite the force, a single sneeze burns only a handful of calories (health/physiology explainer sources).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "The human body is often said to contain how many miles of blood vessels?",
+    "answer": "The commonly cited figure is about 60,000 miles — enough to circle the Earth twice",
+    "note": "Newer research argues the real figure for an average body is more like 5,600–11,800 miles; the 60,000 number comes from older, likely overestimated calculations (3D4Medical, Texas Vascular Institute).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How tall was Robert Wadlow, the tallest person in verified medical history?",
+    "answer": "8 feet 11.1 inches (2.72 m)",
+    "note": "Caused by a pituitary condition; he was last measured in 1940 (Guinness World Records).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "True or false setup — about how many years closer in time is Cleopatra to the Moon landing than to the building of the Great Pyramid of Giza? (Answer: the actual gap in years to the Moon landing)",
+    "answer": "About 2,000 years (vs. roughly 2,500 years back to the pyramids being built)",
+    "note": "The Great Pyramid was completed around 2560 BC; Cleopatra was born in 69 BC; Apollo 11 landed in 1969 AD (WorldAtlas, HistoryFacts).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Oxford University's teaching predates the founding of the Aztec capital Tenochtitlán by roughly how many years?",
+    "answer": "More than 200 years (Oxford teaching dates to 1096; Tenochtitlán was founded in 1325)",
+    "note": "Oxford has no exact founding date, but 1096 is the earliest documented teaching record there (Smithsonian Magazine).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Woolly mammoths were still alive on a remote island when a famous ancient monument was already built — how many years ago did the last ones die out?",
+    "answer": "About 4,000 years ago (they survived on Wrangel Island until roughly 1650 BC)",
+    "note": "That's nearly 1,000 years after the Great Pyramid of Giza was completed (~2560 BC) (World History sources).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many wives did England's King Henry VIII have?",
+    "answer": "6",
+    "note": "Immortalized in the rhyme \"divorced, beheaded, died, divorced, beheaded, survived\" (Historic Royal Palaces).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "In what year was the first literal computer \"bug\" (an actual moth) found and recorded?",
+    "answer": "1947",
+    "note": "Found in a relay of Harvard's Mark II computer and taped into the logbook; the term \"bug\" itself predates this, dating to Thomas Edison's era (Computer History Museum).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how old is the oldest verified living tree on Earth?",
+    "answer": "Over 5,000 years old (a bristlecone pine in California; the famous named specimen \"Methuselah\" is about 4,850+ years old)",
+    "note": "That predates the Egyptian pyramids (Guinness World Records, Forbes).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many emails are sent and received globally per day (as of 2025–2026)?",
+    "answer": "Roughly 376–400+ billion",
+    "note": "Estimates continue climbing year over year; a large share is spam (Demandsage, EmailToolTester).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many photos are taken worldwide every single day?",
+    "answer": "Roughly 5.3 billion",
+    "note": "Smartphones account for the vast majority of all photos taken (Photutorial).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many hours of video are uploaded to YouTube every single minute?",
+    "answer": "About 500 hours",
+    "note": "That's roughly 82 years' worth of new footage uploaded every 24 hours (multiple industry statistics trackers).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many text messages (SMS) are sent worldwide every day?",
+    "answer": "Roughly 25 billion (over 350 billion if messaging apps like WhatsApp are included)",
+    "note": "WhatsApp alone accounts for about 150 billion messages a day (industry telecom statistics).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many books does the U.S. Library of Congress hold in its catalog?",
+    "answer": "More than 25 million cataloged books (its full collection of all item types tops 173 million)",
+    "note": "Books are only a portion of its holdings, which also include recordings, maps, and manuscripts (loc.gov).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many cups of coffee are consumed worldwide every day?",
+    "answer": "Around 2.25 billion cups",
+    "note": "About 60% of coffee drinkers have at least 1–2 cups daily (coffee industry statistics).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How much honey does a single honeybee produce in its entire lifetime?",
+    "answer": "About 1/12 of a teaspoon",
+    "note": "It takes roughly 12 worker bees' lifetime output to make just one teaspoon of honey (Carolina Honeybees, Bee Professor).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What's the record number of hot dogs (and buns) eaten in Nathan's Famous 10-minute contest?",
+    "answer": "76, set by Joey Chestnut in 2021",
+    "note": "He won his 18th title in 2026 by eating 66 hot dogs (ESPN, Fox News).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many pizzas do Americans buy in a single year?",
+    "answer": "Over 3 billion (roughly 4 billion including frozen pizzas)",
+    "note": "That works out to about 350 pizza slices sold every second in the US (industry pizza-consumption statistics).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many bananas are eaten worldwide every year, making it the most-consumed fruit on Earth?",
+    "answer": "Over 100 billion",
+    "note": "That's roughly 274 million bananas eaten every single day globally (Soocial, FAO data).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many gallons of water does it take to produce just one pound of beef?",
+    "answer": "Around 1,800 gallons",
+    "note": "About 98% of that water goes toward growing the animal's feed crops, not direct drinking water (Water Footprint Network).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many Scoville Heat Units does a Carolina Reaper — once the world's hottest pepper — average?",
+    "answer": "About 1.64 million SHU (individual peppers have measured up to 2.2 million)",
+    "note": "That's up to roughly 440x hotter than a typical jalapeño, which averages about 5,000 SHU (Guinness World Records).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many Big Macs does McDonald's sell worldwide every year?",
+    "answer": "Roughly 900 million to 1 billion",
+    "note": "McDonald's has never officially confirmed the exact figure (industry estimates).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What's the size, in square feet, of the largest pizza ever made (a Guinness World Record)?",
+    "answer": "About 13,957 square feet",
+    "note": "Made by content creator Airrack and Pizza Hut in Los Angeles in January 2023, using nearly 9,000 lbs of cheese and dough combined (Guinness World Records).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What's the current men's 100m world record time, set by Usain Bolt?",
+    "answer": "9.58 seconds",
+    "note": "Set at the 2009 World Athletics Championships in Berlin.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "On average, how many dimples does a golf ball have?",
+    "answer": "About 336 (typical range across brands is roughly 250–500)",
+    "note": "A Titleist Pro V1 has 352; dimples affect aerodynamic lift and drag (Golf.com).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What's the fastest tennis serve ever officially recorded?",
+    "answer": "163.7 mph, by Australian Sam Groth in 2012",
+    "note": "The fastest at an official ATP Tour event (as opposed to a Challenger event) is John Isner's 157.0 mph (Wikipedia, ATP records).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many total Olympic medals did swimmer Michael Phelps win across his career?",
+    "answer": "28 (including 23 gold — both the most of any Olympian ever)",
+    "note": "He won a record 8 gold medals at a single Games (Beijing 2008) (Olympics.com).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How long did the longest professional tennis match in history last?",
+    "answer": "11 hours 5 minutes, spread across 3 days",
+    "note": "John Isner beat Nicolas Mahut 70–68 in the final set at Wimbledon 2010 (Guinness World Records).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How deep is the deepest known point in Earth's oceans (Challenger Deep, in the Mariana Trench)?",
+    "answer": "Roughly 35,900–36,070 feet (about 10,935–10,994 meters)",
+    "note": "That's more than 2 km deeper than Mount Everest is tall (Smithsonian Ocean, LiveScience).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many countries does the United Nations officially recognize today?",
+    "answer": "195 (193 UN member states plus 2 observer states — Vatican City and Palestine)",
+    "note": "Some counts reach 197 when including partially recognized states like Kosovo and Taiwan (Worldometer).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Which continent is technically the largest desert in the world — bigger even than the Sahara?",
+    "answer": "Antarctica, at about 14.2 million km² (vs. the Sahara's ~9.2 million km²)",
+    "note": "Deserts are defined by low precipitation, not heat — Antarctica gets under 50mm of precipitation a year (Mappr, National Geographic).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What's the hottest air temperature ever officially recorded on Earth?",
+    "answer": "134°F (56.7°C), recorded in Death Valley, California, in July 1913",
+    "note": "Certified by the World Meteorological Organization after a previously claimed hotter Libya reading was invalidated (NOAA/NCEI).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Sweden is the country with the most islands in the world — roughly how many does it have?",
+    "answer": "Over 267,000 (by Sweden's own broad definition; a stricter EU definition counts just 24)",
+    "note": "Fewer than 1,000 of Sweden's islands are inhabited (Wikipedia, Scandinavia Facts).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Which country has the longest coastline in the world, and roughly how long is it?",
+    "answer": "Canada, at somewhere between about 202,000 km and 243,000 km depending on measurement method",
+    "note": "The wide range comes from the \"coastline paradox\" — coastlines are fractal and hard to measure precisely (WorldAtlas).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many time zones does Russia span — the most of any country?",
+    "answer": "11",
+    "note": "10 of them are contiguous; the 11th covers the Kaliningrad exclave (Wikipedia/Time in Russia).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How tall is the Burj Khalifa in Dubai, the world's tallest building?",
+    "answer": "828 meters (2,717 ft)",
+    "note": "More than twice the height of the Empire State Building (Guinness World Records).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "On average, how many steps does a person around the world walk in a day?",
+    "answer": "About 5,000 steps",
+    "note": "Based on a 2017 Stanford smartphone-tracking study of over 700,000 people; national averages vary widely, from ~3,500 in Indonesia to ~6,900 in Hong Kong (American Institute for Cancer Research).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many trees are estimated to exist on Earth right now?",
+    "answer": "About 3.04 trillion",
+    "note": "That's roughly 422 trees per person, though the total has dropped by about 46% since the dawn of human civilization (Yale-led global study, 2015).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many hours per day does the average person globally spend on their smartphone?",
+    "answer": "Around 3 hours 52 minutes globally (US average runs closer to 4.5–5+ hours)",
+    "note": "Figures continue climbing year over year across most countries (Priori Data, Demandsage).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many keys does a standard piano have?",
+    "answer": "88 (52 white, 36 black)",
+    "note": "Some specialty pianos have been built with as many as 108 keys (Yamaha, Classic FM).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "A captive \"immortal jellyfish\" studied by a Japanese scientist reverted from adult back to its baby polyp stage and regrew into an adult again — how many times did it do this over about two years?",
+    "answer": "11 times",
+    "note": "Species is Turritopsis dohrnii; the process is called transdifferentiation. Researcher Shin Kubota's colony repeated the cycle 11 times (Wikipedia, citing published observations).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many individual muscles does an elephant's trunk contain?",
+    "answer": "Up to about 150,000 muscle fascicles",
+    "note": "The trunk has no bones at all and very little fat — it's almost entirely muscle (Wikipedia/Britannica-sourced elephant anatomy).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How long is an elephant's pregnancy (gestation period)?",
+    "answer": "About 18 to 22 months (up to nearly 2 years) — the longest of any mammal",
+    "note": "Compare a human's roughly 9 months (Wikipedia).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What's the highest recorded heart rate of a hummingbird, in beats per minute?",
+    "answer": "Up to 1,260 bpm, recorded in a blue-throated hummingbird",
+    "note": "Their hearts can beat over 20 times per second at peak exertion (Wikipedia).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many years can a Greenland shark live — making it the longest-living vertebrate known?",
+    "answer": "An estimated 272 to 510 years (the oldest individual studied was estimated at about 392 years old)",
+    "note": "Determined via radiocarbon dating of proteins in the shark's eye lens, published in Science, 2016 (Nielsen et al.).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What's the maximum voltage an electric eel can generate to stun prey?",
+    "answer": "Up to 860 volts",
+    "note": "That record belongs to the species Electrophorus voltai, described as the strongest bioelectric generator in nature (Wikipedia).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many teeth can a shark shed and regrow over its entire lifetime?",
+    "answer": "Roughly 35,000 teeth (for ground sharks, order Carcharhiniformes)",
+    "note": "Sharks continuously grow and lose rows of teeth throughout their lives (Wikipedia).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How wide can a giant squid's eyeball get — the largest eye of any living creature?",
+    "answer": "Up to about 27 cm (11 inches) in diameter, with a pupil around 9 cm (3.5 in) across",
+    "note": "Only extinct ichthyosaurs are known to have had larger eyes (Wikipedia).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "From how far away can other blue whales hear a blue whale's calls underwater?",
+    "answer": "Up to about 1,000 miles away",
+    "note": "Blue whales are the loudest animals on Earth; their low-frequency calls travel enormous distances through water (NOAA Fisheries).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How far away is the Andromeda Galaxy, our nearest large galactic neighbor?",
+    "answer": "About 2.5 million light-years",
+    "note": "Despite the distance, it's the most distant object visible to the naked eye (Wikipedia).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "In roughly how many billion years might the Milky Way and Andromeda galaxies collide?",
+    "answer": "Current estimates put it at up to about 10 billion years from now, with roughly a 50% chance of happening at all",
+    "note": "Older estimates said ~4 billion years, but newer Gaia spacecraft velocity data lowered the merger probability and pushed the timeline out (Wikipedia).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "As of mid-2026, how many confirmed exoplanets (planets orbiting other stars) have astronomers found?",
+    "answer": "6,316 confirmed exoplanets, in 4,725 planetary systems",
+    "note": "The count keeps climbing steadily as new detection methods and telescopes come online (Wikipedia, NASA Exoplanet Archive data).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "A teaspoon of neutron star material would weigh about how many times the mass of the Great Pyramid of Giza?",
+    "answer": "About 900 times",
+    "note": "That teaspoon would have a mass of roughly 5.5 trillion kilograms — neutron stars are the densest objects in the universe besides black holes (Wikipedia).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many light-years away is Proxima Centauri, the closest known star to our Sun (besides the Sun itself)?",
+    "answer": "About 4.25 light-years",
+    "note": "That's still around 25 trillion miles / 40 trillion km — humanity's fastest spacecraft would take tens of thousands of years to get there (Wikipedia, Gaia Data Release 3).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Pando, a single aspen tree colony in Utah connected by one shared root system, is considered one of the largest/oldest living organisms on Earth — about how many acres does it cover?",
+    "answer": "About 106 acres (roughly 43 hectares) — and an estimated 6,000 metric tons",
+    "note": "Recent habitat modeling suggests it could be up to 16,000 years old, though estimates vary widely (Wikipedia).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "A single honey fungus (Armillaria ostoyae) organism discovered in an Oregon forest — one of the largest living organisms ever found — covers about how many acres?",
+    "answer": "About 2,200 acres (3.5 square miles)",
+    "note": "Nicknamed the \"Humongous Fungus,\" it's estimated to be around 8,000 years old and could weigh up to 35,000 tons (Wikipedia).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What's the fastest non-tornadic surface wind speed ever recorded on Earth?",
+    "answer": "408 km/h (253 mph), a gust measured on Barrow Island, Western Australia, during Tropical Cyclone Olivia on 10 April 1996",
+    "note": "Ratified by the WMO Evaluation Panel in 2010 after confirming the anemometer was sound (Wikipedia).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What's the lowest natural air temperature ever reliably recorded on Earth?",
+    "answer": "−89.2°C (−128.6°F), at Vostok Station, Antarctica, on 21 July 1983",
+    "note": "Cold enough that exposed skin can get frostbite within minutes (Wikipedia — Vostok Station).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What's the largest hailstone (by diameter) ever officially recorded?",
+    "answer": "20 cm (7.9 inches) across — nearly the size of a basketball — which fell in Vivian, South Dakota, on 23 July 2010",
+    "note": "A separate hailstone that fell in Bangladesh in 1986 holds the weight record at 1.02 kg (2.2 lb) (Wikipedia — Hail).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "The 1883 eruption of Krakatoa produced what's considered the loudest sound in recorded history — how far away was it heard?",
+    "answer": "Up to about 4,800 km (3,000 miles) away, on Rodrigues Island near Mauritius; the pressure wave itself circled the globe more than 3 times",
+    "note": "Measured at 172-180 decibels from 160 km away — loud enough to rupture sailors' eardrums on ships 64 km from the blast (Wikipedia — 1883 eruption of Krakatoa).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "The 1958 Lituya Bay event in Alaska produced the tallest wave ever recorded (a \"megatsunami\") — how tall was it?",
+    "answer": "524 metres (1,720 feet) — taller than the Empire State Building — as a landslide dropped about 80 million tons of rock and ice into the bay",
+    "note": "Triggered by an earthquake on 9 July 1958 (Wikipedia — Megatsunami).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Scientists have formally described about 1 million insect species — but how many total insect species are estimated to actually exist on Earth?",
+    "answer": "As many as 5.5 million species",
+    "note": "Insects alone may make up around half of all known eukaryote species on the planet (Wikipedia — Insect).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "A snapping pistol shrimp's claw-clap creates a cavitation bubble that can briefly reach what temperature — nearly as hot as what?",
+    "answer": "Over 5,000 Kelvin (about 4,700°C) — nearly as hot as the surface of the Sun (about 5,772 K)",
+    "note": "The snap is also loud enough to stun or kill small prey (Wikipedia — Pistol shrimp).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What's the record number of legs found on a single millipede — despite the name meaning \"thousand feet\"?",
+    "answer": "1,306 legs, on a specimen of the species Eumillipes persephone, discovered in Australia",
+    "note": "More legs than any other creature known on Earth (Wikipedia — Millipede).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How long can a sperm whale hold its breath on its longest recorded dives?",
+    "answer": "Up to about 120 minutes (2 hours), diving as deep as 2,250 metres (7,380 feet)",
+    "note": "Made possible by a flexible ribcage, huge oxygen-storing myoglobin reserves, and extra-rich blood (Wikipedia — Sperm whale).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "A female ocean sunfish (Mola mola) can release how many eggs at once — more than any other known vertebrate?",
+    "answer": "Up to 300 million eggs at a time",
+    "note": "Despite this, only a tiny fraction ever survive to adulthood (Wikipedia — Ocean sunfish).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "In 2022, a young bar-tailed godwit flew nonstop from Alaska to Tasmania, setting a world record. How far did it fly without stopping once?",
+    "answer": "13,560 km (8,435 miles), over 11 days and 1 hour, without landing to rest, eat, or drink",
+    "note": "The bird, tagged \"B6,\" beat the previous nonstop-flight record (Wikipedia — Bar-tailed godwit).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How fast can the fastest-growing bamboo species grow in a single day, under ideal conditions?",
+    "answer": "Up to about 91 cm (36 inches) in 24 hours — roughly 40 mm (1.5 inches) every hour, fast enough to visibly move",
+    "note": "Guinness World Record; some individual shoots of Japanese giant timber bamboo have been observed growing up to 120 cm (47 in) in a day (Wikipedia — Bamboo).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "About how many galaxies does the observable universe contain, according to current estimates?",
+    "answer": "As many as an estimated 2 trillion galaxies (though some more conservative estimates put it in the hundreds of billions)",
+    "note": "The observable universe itself spans about 93 billion light-years across (Wikipedia — Observable universe).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Bacteria cells living in and on the human body roughly match human cells in number — about how many bacteria cells does an average human body host?",
+    "answer": "An estimated 38 trillion bacteria cells, versus roughly 30-40 trillion human cells — close to a 1:1 ratio",
+    "note": "This overturned the old \"10-to-1\" bacteria-to-human-cell myth that circulated for decades (Wikipedia — Human microbiome).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What's the longest single lightning flash (\"megaflash\") ever recorded, measured by distance?",
+    "answer": "829 km (515 miles) — a single bolt that stretched across Texas, Oklahoma, Louisiana, Kansas, and Mississippi in October 2017",
+    "note": "Detected retrospectively via satellite data and confirmed as a world record in 2025 (Wikipedia — Lightning).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "A common swift can stay continuously airborne — eating, sleeping, even mating on the wing — for up to how long without ever landing?",
+    "answer": "Up to about 10 months at a stretch",
+    "note": "Non-breeding individuals only touch down again to nest; their max horizontal flight speed is about 112 km/h (69 mph) (Wikipedia — Common swift).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What's the fastest speed ever reached by a human-made object — NASA's Parker Solar Probe, during its closest pass by the Sun?",
+    "answer": "About 690,000 km/h (430,000 mph), or roughly 191 km per second",
+    "note": "Reached in December 2024; at that speed you could cross the continental US in under 30 seconds (Wikipedia — Parker Solar Probe).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Olympus Mons on Mars is the largest known volcano in the solar system. How tall is it compared to Mount Everest?",
+    "answer": "About 21.3 km (13.2 miles) tall — roughly 2.5 times the height of Mount Everest above sea level",
+    "note": "Measured via NASA's Mars Orbiter Laser Altimeter (Wikipedia — Olympus Mons).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What's the deepest known cave on Earth, and how deep does it go?",
+    "answer": "Krubera Cave in Georgia (the country), reaching 2,224 metres (7,297 feet) deep",
+    "note": "Depth confirmed via a 2024 resurvey and dive at the bottom sump — deep enough to swallow more than seven Eiffel Towers stacked on top of each other (Wikipedia — Krubera Cave).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Naked mole-rats are tiny (30-35 grams) but live remarkably long for a rodent — what's the longest recorded lifespan for one?",
+    "answer": "Over 37 years — by far the longest-lived rodent known (the next-longest, the African porcupine, tops out around 28 years)",
+    "note": "They're also famously resistant to cancer and largely immune to pain from acid or chili-pepper burns (Wikipedia — Naked mole-rat).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Rafflesia arnoldii produces the largest single flower of any plant on Earth — how wide and how heavy can one bloom get?",
+    "answer": "Over 100 cm (about 40 inches) across — one record specimen measured 111 cm — and weighing up to 10 kg (22 lb)",
+    "note": "It's also famous for smelling like rotting meat to attract carrion flies (Wikipedia — Rafflesia).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "A star-nosed mole has 22 tentacles on its nose and is famous for eating incredibly fast — what's the record time from touching a piece of food to swallowing it?",
+    "answer": "As little as 120 milliseconds (its brain decides whether something is edible in about 8 milliseconds — one of the fastest reactions in the animal kingdom)",
+    "note": "Average time is 227 milliseconds; the mole is effectively blind and hunts entirely by touch (Wikipedia — Star-nosed mole).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Sharks have been evolving for hundreds of millions of years — about how many distinct species of shark are known today?",
+    "answer": "More than 500 species, spread across 13 different orders",
+    "note": "They range from the 17 cm dwarf lanternshark to the whale shark, which can exceed 12 metres (Wikipedia — Shark).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What is the heaviest heart ever recorded in any animal, belonging to a stranded blue whale?",
+    "answer": "180 kg (about 400 lb) — roughly the weight of a baby grand piano",
+    "note": "Measured from a stranded North Atlantic blue whale; it's the largest known heart of any animal, living or extinct (Wikipedia — Blue whale).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "The wandering (snowy) albatross has the longest confirmed wingspan of any living bird — how wide?",
+    "answer": "Up to 3.7 metres (12 ft 2 in) tip to tip",
+    "note": "Unverified reports claim specimens over 5 metres, but 3.7 m is the confirmed record (Wikipedia — Wandering albatross).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Gray whales make the longest annual migration of any mammal on Earth — how far is the round trip between Arctic feeding grounds and Mexican breeding lagoons?",
+    "answer": "Between 16,000 and 22,000 km (9,900-13,700 miles) round trip",
+    "note": "They average about 120 km (75 miles) a day at roughly 8 km/h (5 mph) (Wikipedia — Gray whale).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What's the largest iceberg ever recorded — bigger than an entire European country?",
+    "answer": "An Antarctic tabular iceberg spotted in 1956, measuring 335 by 97 km (208 by 60 miles) — larger than the entire country of Belgium",
+    "note": "Sighted by the USS Glacier on 12 November 1956 in the South Pacific (Wikipedia — Iceberg).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What's the longest a total solar eclipse can theoretically last, from start to end of totality?",
+    "answer": "7 minutes 32 seconds maximum — the longest actually observed in the 20th century was 7 minutes 8 seconds, in 1955",
+    "note": "In 1973, scientists aboard a Concorde jet chased the Moon's shadow and stretched their observed totality to about 74 minutes (Wikipedia — Solar eclipse).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "The Bay of Fundy in Canada has the largest tides on Earth. What's the biggest tidal range ever recorded there?",
+    "answer": "21.6 metres (71 feet) — recorded in October 1869, when a storm surge coincided with an unusually high spring tide",
+    "note": "The typical daily tidal range there is still a massive 16 metres (52 ft) (Wikipedia — Bay of Fundy).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How tall is Angel Falls in Venezuela, the world's tallest waterfall?",
+    "answer": "979 metres (3,212 ft) total height, including a single uninterrupted plunge of 807 metres (2,648 ft) — nearly 20 times taller than Niagara Falls",
+    "note": "Water falls so far that much of it evaporates into mist before reaching the bottom (Wikipedia — Angel Falls).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Lake Baikal in Siberia is the world's deepest lake — how deep does it go, and what share of the planet's unfrozen fresh water does it hold?",
+    "answer": "1,642 metres (5,387 ft) deep, holding about 19% of all the unfrozen fresh water on Earth",
+    "note": "That's more fresh water than all five of North America's Great Lakes combined (Wikipedia — Lake Baikal).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Mammoth Cave in Kentucky is the longest known cave system in the world — how many miles of passageways have been mapped so far?",
+    "answer": "More than 426 miles (686 km) surveyed as of 2025 — and explorers keep finding more",
+    "note": "The next-longest known cave system in the world is barely a quarter of that length (Wikipedia — Mammoth Cave National Park).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How big can the General Sherman Tree in California get — the largest known living single-stem tree on Earth by volume?",
+    "answer": "About 1,487 cubic metres (52,500 cubic feet) of wood, standing 83.8 m (275 ft) tall with a base 11.1 m (36.5 ft) across",
+    "note": "It's neither the tallest nor the widest nor the oldest tree species — just the biggest by sheer volume (Wikipedia — General Sherman (tree)).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What's the record length for a king cobra, the world's longest venomous snake?",
+    "answer": "5.85 metres (19.2 feet) — nearly 4 metres longer than the average adult human is tall",
+    "note": "Its venom glands can hold enough neurotoxin to deliver an unusually large dose per bite (Wikipedia — King cobra).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What's the heaviest capybara ever recorded — the world's largest living rodent?",
+    "answer": "91 kg (201 lb), a wild female found in Brazil",
+    "note": "That's roughly the size of an adult human, for an animal in the same family as guinea pigs (Wikipedia — Capybara).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What's the smallest bat species in the world, and how much does it weigh?",
+    "answer": "Kitti's hog-nosed bat (\"bumblebee bat\"), just 29-33 mm long and weighing about 2 grams — roughly the weight of a small paperclip",
+    "note": "It's a contender for smallest mammal on Earth by body length, though the Etruscan shrew may be lighter by mass (Wikipedia — Bumblebee bat).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How long can a giant Gippsland earthworm — a real species native to Australia — grow?",
+    "answer": "Up to 3 metres (10 feet) long, though they're typically closer to 1 metre",
+    "note": "They're so large you can reportedly hear them squelching underground and have to dig several feet down to find them (Wikipedia — Giant Gippsland earthworm).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "The lion's mane jellyfish has the longest tentacles of any known animal — how long can they stretch?",
+    "answer": "Up to 36.6 metres (120 feet) in the longest documented specimen — longer than a blue whale",
+    "note": "Most trail a still-impressive 30 metres (100 ft) or more (Wikipedia — Lion's mane jellyfish).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "In 2021, scientists sequenced the oldest DNA ever recovered, from mammoth teeth found frozen in Siberia. How old was it?",
+    "answer": "Up to 1.65 million years old — more than a million years older than any previously sequenced DNA",
+    "note": "It revealed a previously unknown mammoth lineage, from teeth found at Krestovka, eastern Siberia (Wikipedia — Woolly mammoth).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Inside Mexico's \"Cave of Crystals\" (Naica Cave), some of the largest natural crystals ever found were discovered — how big was the largest?",
+    "answer": "11.4 metres (37.4 feet) long and weighing about 12 tonnes",
+    "note": "The cave itself was so hot and humid (up to 58°C/136°F) that explorers could only survive inside for around 10 minutes wearing special cooling suits (Wikipedia — Cave of the Crystals).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How long can totality last during the longest possible total lunar eclipse?",
+    "answer": "Up to about 107 minutes — well under 2 hours, though the entire eclipse event (partial phases included) can stretch up to nearly 4 hours (236 minutes)",
+    "note": "Compare to a total solar eclipse, whose totality maxes out at just 7.5 minutes (Wikipedia — Lunar eclipse).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How long is a single day (one full rotation) on Jupiter, the solar system's biggest planet?",
+    "answer": "Just 9.93 hours — under 10 hours, despite Jupiter being over 11 times wider than Earth",
+    "note": "Jupiter's extremely fast spin is also why it visibly bulges at its equator (Wikipedia — Jupiter).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Monarch butterflies migrate every year from the northeastern US and Canada to central Mexico — how far can that single journey be?",
+    "answer": "Between 1,200 and 2,800 miles (or more)",
+    "note": "No single butterfly makes the round trip — it takes multiple generations, none of which have ever flown the route before (Wikipedia — Monarch butterfly).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "In some deep-sea anglerfish species, males are dramatically smaller than females and permanently fuse to them. In the most extreme known species, how much bigger is the female than the tiny male?",
+    "answer": "Roughly 7-8 times longer — males mature at just 6.2-7.3 mm, females at about 50.5 mm (Photocorynus spiniceps)",
+    "note": "The male bites onto the female and eventually fuses into her body, living the rest of his life as an attached sperm-producing parasite (Wikipedia — Anglerfish).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How much did the largest colossal squid ever recorded weigh?",
+    "answer": "495 kg (1,091 lb) — caught in the Ross Sea off Antarctica in 2007, now on display in New Zealand",
+    "note": "It's the heaviest cephalopod (squid/octopus relative) ever recorded, though some beaks found in sperm whale stomachs suggest even bigger ones may exist (Wikipedia — Colossal squid).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What's the deepest a human has ever dived underwater unassisted by breathing equipment (the \"no-limits\" freediving world record)?",
+    "answer": "214 metres (702 feet), set by Herbert Nitsch of Austria in 2012 off Santorini, Greece",
+    "note": "At that depth, water pressure is over 20 times what it is at the surface (Wikipedia — Freediving).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What's the largest snowflake ever recorded?",
+    "answer": "38 cm (15 inches) wide, reportedly observed at Fort Keogh, Montana, in January 1887",
+    "note": "Guinness World Records lists it, though the claim is well outside normally documented snowflake sizes of 7.5-10 cm and hasn't been independently re-verified (Wikipedia — Snowflake).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What's the highest-grossing film of all time worldwide (unadjusted for inflation)?",
+    "answer": "Avatar (2009), at $2,923,710,708",
+    "note": "Wikipedia \"List of highest-grossing films\"; Avengers: Endgame is #2 at $2,799,439,100 — a gap of about $124 million, or under 5%.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "How many days did it take Avatar to become the fastest film ever to reach $1 billion at the worldwide box office (on its original 2009-2010 release)?",
+    "answer": "19 days",
+    "note": "Wikipedia \"Avatar (2009 film)\" — it went on to become the first film ever to cross $2 billion, on January 31, 2010.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What's the most expensive film ever made, by official production budget?",
+    "answer": "Star Wars: The Force Awakens (2015), with a net budget of $536 million",
+    "note": "Wikipedia \"List of most expensive films\" — exact figures are murky industry-wide due to secretive Hollywood accounting; Jurassic World Dominion ($531M) and The Rise of Skywalker ($490M) are close behind.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "Titanic (1997) cost about $200 million to make — roughly how many times over did it earn that back at the worldwide box office?",
+    "answer": "About 11 times — it grossed $2.264 billion worldwide",
+    "note": "Wikipedia \"Titanic (1997 film)\".",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "How many total films has Marvel Studios released in the Marvel Cinematic Universe (MCU) as of 2026?",
+    "answer": "37 films",
+    "note": "Wikipedia \"List of Marvel Cinematic Universe films\" — combined they've grossed over $32.4 billion worldwide, making it by far the highest-grossing film franchise ever.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What's the combined worldwide box office of the entire Marvel Cinematic Universe (37 films)?",
+    "answer": "About $32.487 billion",
+    "note": "Wikipedia \"List of Marvel Cinematic Universe films\".",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What's the combined worldwide box office of the original Lord of the Rings trilogy (all 3 films)?",
+    "answer": "About $2.96 billion ($2,963,938,509)",
+    "note": "Wikipedia \"The Lord of the Rings (film series)\".",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "How long is the extended edition of the Lord of the Rings trilogy if you watched all three films back to back?",
+    "answer": "682 minutes — 11 hours and 22 minutes",
+    "note": "Wikipedia \"The Lord of the Rings (film series)\"; the theatrical cuts combined run 557 minutes (9h17m).",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "How many theatrical Star Wars films have been released in total (Skywalker Saga plus anthology/spin-off films)?",
+    "answer": "13 films",
+    "note": "Wikipedia \"Star Wars\" — combined they've grossed over $10 billion, making Star Wars the third-highest-grossing film franchise ever.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "The 8-film Harry Potter series earned how much combined at the worldwide box office?",
+    "answer": "About $7.7 billion",
+    "note": "Wikipedia \"Harry Potter (film series)\" — the 8 films run 1,179 minutes combined (about 19 hours 39 minutes).",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "The Fast & Furious franchise (10 films released so far) has earned roughly how much combined worldwide?",
+    "answer": "About $7.48 billion ($7,476,903,108)",
+    "note": "Wikipedia \"Fast & Furious\" — it's Universal's biggest franchise and the 8th highest-grossing film series ever.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What's the record for most Academy Awards (Oscars) won by a single film?",
+    "answer": "11 — a three-way tie between Ben-Hur (1959), Titanic (1997), and The Lord of the Rings: The Return of the King (2003)",
+    "note": "Wikipedia \"List of Academy Award records\". Notably, Return of the King won all 11 categories it was nominated in — a perfect sweep.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "Who holds the record for the most Academy Awards (Oscars) won by any individual, across all categories, in history?",
+    "answer": "Walt Disney, with 22 wins",
+    "note": "Wikipedia \"List of Academy Award records\" — from a record 59 nominations, spanning animated shorts, documentaries, and special awards.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "Who holds the record for most Grammy Awards ever won by a single person?",
+    "answer": "Beyoncé, with 35 wins",
+    "note": "Wikipedia \"List of Grammy Award records\" — conductor Sir Georg Solti is second with 31.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What's the best-selling album of all time?",
+    "answer": "Michael Jackson's \"Thriller\" (1982), with an estimated 70 million copies sold worldwide",
+    "note": "Wikipedia \"List of best-selling albums\" — AC/DC's \"Back in Black\" (50 million) is #2.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What's the most-streamed song of all time on Spotify?",
+    "answer": "\"Blinding Lights\" by The Weeknd, with over 5.5 billion streams (5.512 billion)",
+    "note": "Wikipedia \"List of most-streamed songs on Spotify\", as of July 2026 — Ed Sheeran's \"Shape of You\" is #2 at just over 5.02 billion.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "Taylor Swift's Eras Tour became the highest-grossing concert tour in history — roughly how much did it gross in total?",
+    "answer": "About $2.077 billion, across 149 shows and roughly 10.1 million attendees",
+    "note": "Official figures from Taylor Swift Touring, reported by the New York Times — the first tour ever to cross both $1 billion and $2 billion.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "How much did each of the six main Friends cast members earn per episode by the show's final two seasons?",
+    "answer": "$1 million per episode, each",
+    "note": "Wikipedia \"Friends\" — up from $75,000/episode in season 3; the show ran 10 seasons and 236 episodes total.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What's the most-viewed video in YouTube history?",
+    "answer": "\"Baby Shark Dance\" by Pinkfong, with over 17 billion views (17.06 billion as of mid-2026)",
+    "note": "Wikipedia \"List of most-viewed YouTube videos\" — it overtook \"Despacito\" for the top spot in November 2020 and was the first video ever to reach 10 billion views.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "Who has the most-subscribed individual YouTube channel in the world?",
+    "answer": "MrBeast, with over 509 million subscribers (as of July 2026)",
+    "note": "Wikipedia \"List of most-subscribed YouTube channels\" — PewDiePie is a distant second among individuals at 110 million.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "Who has the most-followed personal Instagram account in the world?",
+    "answer": "Cristiano Ronaldo, with 676 million followers",
+    "note": "Wikipedia \"List of most-followed Instagram accounts\" — Lionel Messi is second at 512 million.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "Who has the most-followed TikTok account in the world?",
+    "answer": "Khaby Lame, with 162.3 million followers",
+    "note": "Wikipedia \"List of most-followed TikTok accounts\" — the Italy/Senegal-based creator, famous for silent reaction videos, overtook Charli D'Amelio for the top spot in June 2022.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What Guinness World Record did a 2013 Japanese TV broadcast of a Studio Ghibli film set on Twitter?",
+    "answer": "Most tweets per second ever recorded: 143,199 tweets in a single second, during a broadcast of \"Castle in the Sky\" on 2 August 2013",
+    "note": "Guinness World Records / Wikipedia — fans traditionally tweet the film's \"balse\" spell line in unison during a key scene.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "How many seasons and episodes does The Simpsons have, making it the longest-running scripted primetime series in US TV history?",
+    "answer": "37 seasons and 808 episodes (and still airing)",
+    "note": "Wikipedia \"List of longest-running scripted American primetime television series\" — it premiered December 17, 1989.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What's the most-watched Super Bowl in US television history by total viewership?",
+    "answer": "Super Bowl LI (2017), with 172 million total viewers tuning in at some point during the broadcast",
+    "note": "Wikipedia \"Super Bowl television ratings\" — that's the record for largest total viewership of any US TV broadcast ever. (By average-audience measurement, Super Bowl LIX in 2025 set the record instead, at 127.7 million.)",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "The Beatles are the best-selling music act in history — roughly how many records have they sold worldwide?",
+    "answer": "Over 600 million units",
+    "note": "Wikipedia \"The Beatles\" — they also hold the record for most Billboard Hot 100 number-one singles by any act, with 20.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "How many Billboard Hot 100 #1 singles has Mariah Carey had as a solo artist — the most of any solo act in history?",
+    "answer": "19 number-one singles",
+    "note": "Wikipedia \"Mariah Carey\".",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "Mariah Carey's \"All I Want for Christmas Is You\" holds a Billboard chart record — what is it?",
+    "answer": "The longest-running #1 single of all time on the Billboard Hot 100, with 22 total weeks at number one (accumulated across multiple holiday seasons)",
+    "note": "Wikipedia \"Mariah Carey\" — it had also sold over 16 million copies worldwide as of 2017, making it the best-selling holiday single by a woman.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "Who holds the record for the most Academy Award acting nominations of all time?",
+    "answer": "Meryl Streep, with 21 nominations (and 3 wins)",
+    "note": "Wikipedia \"Meryl Streep\".",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "Who was the highest-paid actor in the world in 2024, and how much did he earn that year?",
+    "answer": "Dwayne \"The Rock\" Johnson, with $103 million",
+    "note": "Forbes, via Wikipedia \"List of highest-paid actors\" — Adam Sandler topped the list in both 2023 ($97M) and 2025 ($60M).",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "How many official James Bond films have been released in total (including the two non-Eon productions)?",
+    "answer": "27 films",
+    "note": "Wikipedia \"James Bond (film series)\" — 25 from the main Eon Productions series plus 2 outside it (1967's \"Casino Royale\" and 1983's \"Never Say Never Again\"). Combined nominal box office is about $7.8 billion.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "The 2019 photorealistic remake of The Lion King cost roughly how much to make, and how much did it gross worldwide?",
+    "answer": "Budget of $250-260 million; worldwide gross of $1.662 billion",
+    "note": "Wikipedia \"The Lion King (2019 film)\" — it was the highest-grossing animated film ever until Inside Out 2 passed it in September 2024.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What's the best-selling video game of all time?",
+    "answer": "It's disputed — Tetris (520 million copies across all versions/platforms since the 1980s) vs. Minecraft (400 million copies as one ongoing title); Guinness World Records, the BBC and others favor Minecraft, while Britannica, Forbes and IGN favor Tetris",
+    "note": "Wikipedia \"List of best-selling video games\" — Grand Theft Auto V is a distant third at 230 million.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "Rumored development costs for Grand Theft Auto VI reportedly reach how much, which would make it the most expensive video game ever made?",
+    "answer": "An estimated $1-2 billion (unofficial/unverified — Rockstar has never confirmed a figure)",
+    "note": "Wikipedia \"Grand Theft Auto VI\".",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What's the highest-grossing film of all time once you adjust for inflation?",
+    "answer": "Gone with the Wind (1939), with an inflation-adjusted gross of about $4.557 billion in today's dollars",
+    "note": "Wikipedia \"List of highest-grossing films adjusted for inflation\" — that's over $1.6 billion more than Avatar's unadjusted (nominal) total of $2.92 billion.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What was the production budget of Barbie (2023), and how much did it gross worldwide?",
+    "answer": "Budget of $128-145 million; worldwide gross of $1.448 billion",
+    "note": "Wikipedia \"Barbie (2023 film)\" — it became Warner Bros.' highest-grossing film ever.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "How many Primetime Emmy Awards did Game of Thrones win across its run — a record for a drama series?",
+    "answer": "59 Emmy Awards",
+    "note": "Wikipedia \"Game of Thrones\" — including 4 wins for Outstanding Drama Series.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "Amazon spent how much producing just the first season of \"The Lord of the Rings: The Rings of Power,\" reportedly making it one of the most expensive seasons of television ever made?",
+    "answer": "About $465 million",
+    "note": "Wikipedia \"The Rings of Power\" — on top of the roughly $250 million Amazon paid just for the TV rights in 2017; the overall series budget was expected to eventually exceed $1 billion.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "How many seasons and episodes has Saturday Night Live aired since its 1975 premiere?",
+    "answer": "51 seasons and 1,008 episodes (as of 2026)",
+    "note": "Wikipedia \"Saturday Night Live\".",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "The Phantom of the Opera became the longest-running show in Broadway history before closing in 2023 — how many total performances did it give?",
+    "answer": "13,981 performances over 35 years (1988-2023)",
+    "note": "Wikipedia \"The Phantom of the Opera (1986 musical)\" — more than 3,500 performances ahead of the second-place show; it was also the first Broadway show ever to hit 10,000 performances (in 2012).",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "Who was the highest-paid musician in the world in 2025, and roughly how much did they earn that year?",
+    "answer": "The Weeknd, with about $298 million",
+    "note": "Wikipedia \"List of highest-paid musicians\" (Forbes-sourced) — for comparison, Bruce Springsteen topped the list in 2021 with $435 million, largely from selling his song catalog to Sony that year.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "How many Grammy Awards did Michael Jackson win across his career?",
+    "answer": "13 Grammy Awards",
+    "note": "Wikipedia \"Michael Jackson\" — he's also sold an estimated 500+ million records worldwide as a solo artist, one of the best-selling music artists ever.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "Adele's album \"25\" broke a US sales record in 2015 — how many copies did it sell in its first week alone?",
+    "answer": "3.38 million copies",
+    "note": "Wikipedia \"Adele\" — the largest single sales week for any album since Nielsen began tracking sales in 1991.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "How many Grammy Awards has Adele won across her career?",
+    "answer": "16 Grammy Awards",
+    "note": "Wikipedia \"Adele\" — alongside 12 Brit Awards, an Oscar, an Emmy and a Golden Globe (an \"EGOT\"-adjacent haul).",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What's the highest-grossing media franchise of all time when you count everything — box office, merchandise, video games, etc.?",
+    "answer": "Pokémon, at roughly $115 billion in total revenue (mostly from merchandise/retail sales, at $103.6 billion)",
+    "note": "Wikipedia \"List of highest-grossing media franchises\" — Mickey Mouse & Friends is a distant second at $61.2 billion, with Winnie-the-Pooh third at $50.2 billion.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What was Oppenheimer's (2023) production budget vs. its worldwide box office gross?",
+    "answer": "Budget of $100 million; worldwide gross of $976.8 million — nearly a billion-dollar hit for a 3-hour R-rated biopic about physics",
+    "note": "Wikipedia \"Oppenheimer (film)\" — it also won 7 Oscars (including Best Picture) from 13 nominations.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What was Top Gun: Maverick's (2022) worldwide box office gross — the highest-grossing film of Tom Cruise's entire career?",
+    "answer": "$1.503 billion",
+    "note": "Wikipedia \"Top Gun: Maverick\" — on a budget of $170-177 million; it was the #2 film of 2022 behind only Avatar: The Way of Water.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "How many paid subscriber memberships does Netflix have worldwide as of early 2026?",
+    "answer": "325 million, across more than 190 countries",
+    "note": "Wikipedia \"Netflix\" — the most-subscribed video-on-demand streaming service in the world.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "How many monthly active users does Spotify have worldwide as of early 2026?",
+    "answer": "About 761 million monthly active users, of which 293 million are paying Premium subscribers",
+    "note": "Wikipedia \"Spotify\" — Spotify added a record 38 million new users in a single quarter (Q4 2025) on the way to that total.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "The Bible is by far the best-selling book of all time — roughly how many copies have been sold and distributed?",
+    "answer": "An estimated 5 to 7 billion copies, as of 2021",
+    "note": "Wikipedia \"List of best-selling books\" — for comparison, the best-selling individual novel excluding religious/political texts, Charles Dickens's \"A Tale of Two Cities,\" has sold over 200 million.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "The Harry Potter book series has sold how many copies worldwide, across all 7 books?",
+    "answer": "More than 600 million copies",
+    "note": "Wikipedia \"List of best-selling books\" — the first book alone, \"Harry Potter and the Philosopher's Stone,\" has sold over 120 million copies by itself.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "The manga \"One Piece\" is the best-selling comic series in history — how many copies has it sold worldwide as of 2026?",
+    "answer": "Over 600 million copies in circulation",
+    "note": "Wikipedia \"One Piece\" — it's the only manga series where every one of its 100+ published volumes has individually sold over 1 million copies.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What's the longest movie ever made with a legitimate theatrical release (not counting experimental gallery-only films)?",
+    "answer": "\"Resan\" (\"The Journey,\" 1987) by Peter Watkins, at 14 hours and 33 minutes (873 minutes)",
+    "note": "Wikipedia \"List of longest films\" — a documentary about the nuclear arms race, told through interviews across 14 countries.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "BTS became the first all-South Korean act to top the Billboard Hot 100. How many US Billboard Hot 100 number-one singles did they rack up — the fastest pace since a legendary British band did it in the 1960s?",
+    "answer": "Six number-one singles — accumulated at the fastest pace since The Beatles did it between 1964 and 1966",
+    "note": "Wikipedia \"BTS\" — their song \"Dynamite\" (2020) was the first.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "\"The Jazz Singer\" (1927), the first movie with synchronized sound and singing, cost how much to make — and how much did it gross?",
+    "answer": "Budget of $422,000; worldwide gross of about $2.6 million",
+    "note": "Wikipedia \"The Jazz Singer\" — it single-handedly kicked off the death of silent films across Hollywood.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What's the most-liked Instagram post of all time?",
+    "answer": "Lionel Messi's photo celebrating Argentina's 2022 World Cup win, with over 74.6 million likes",
+    "note": "Wikipedia \"List of most-liked Instagram posts,\" as of July 2026 — posted 18 December 2022.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What's the longest-running scripted TV series in US history by total episode count — a soap opera that ran for 57 years?",
+    "answer": "\"Guiding Light,\" with 15,762 episodes (1952-2009) — and it had already run as a radio show since 1937, for 72 years total across both formats",
+    "note": "Wikipedia \"List of longest-running United States television series.\"",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What's the peak attendance ever recorded at San Diego Comic-Con, the world's biggest pop-culture convention?",
+    "answer": "Over 130,000 attendees, a level reached every year since 2010",
+    "note": "Wikipedia \"San Diego Comic-Con\" — the convention center is filled to capacity at that number.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What's the highest total attendance ever recorded at Coachella, across both of its back-to-back festival weekends?",
+    "answer": "250,000 attendees, in 2017 (grossing $114.6 million)",
+    "note": "Wikipedia \"Coachella\" — the single-day record is 96,500, set in 2014.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What's the most-watched series finale of a scripted TV show in US history?",
+    "answer": "MAS*H's \"Goodbye, Farewell and Amen\" (1983), watched by an estimated 106-125 million viewers",
+    "note": "Wikipedia \"MAS*H (TV series)\" — it held the all-time US broadcast viewership record until the 2010 Super Bowl surpassed it, 27 years later.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "Walt Disney's \"Snow White and the Seven Dwarfs\" (1937), the first full-length hand-drawn animated feature ever released, cost about how much to make?",
+    "answer": "About $1.5 million ($1,488,422.74) — roughly $34 million in today's dollars",
+    "note": "Wikipedia \"Snow White and the Seven Dwarfs (1937 film)\" — Disney originally budgeted just $250,000 and had to take out a bank loan to finish it; skeptics nicknamed it \"Disney's Folly\" before it became a massive hit.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "How much revenue did Grand Theft Auto V generate in its first 24 hours on sale in 2013 — a record at the time?",
+    "answer": "$800 million in the first day, and $1 billion within its first three days",
+    "note": "Wikipedia \"Grand Theft Auto V\" — it was the fastest-selling entertainment product in history at the time of release.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "The League of Legends World Championship final peaked at how many concurrent viewers in 2021 — a record for esports?",
+    "answer": "73.86 million concurrent viewers (with an average audience of 30.6 million)",
+    "note": "Wikipedia \"League of Legends World Championship\" — more than 60% higher than the 2018 and 2019 finals, which peaked at 44 million each.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "The Broadway musical \"Wicked\" became the first show ever to earn over $5 million in a single week. In what year did it first cross $1 billion in total Broadway revenue?",
+    "answer": "2016",
+    "note": "Wikipedia \"Wicked (musical)\" — its London West End production has separately run for over 7,400 performances.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "Beyoncé holds the record for most Grammy Awards won in a single night by a female artist — how many did she win at the 2010 ceremony?",
+    "answer": "6 Grammy Awards in one night",
+    "note": "Wikipedia \"Beyoncé\" — for the album \"I Am... Sasha Fierce\" and the song \"Single Ladies,\" among others.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "BTS's music video for \"Butter\" set the record for most-viewed YouTube video in its first 24 hours — how many views did it rack up in just one day?",
+    "answer": "108.2 million views",
+    "note": "Wikipedia \"Butter (song)\" — it broke the record previously held by BTS's own song \"Dynamite.\"",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What's the oldest surviving motion picture film in the world, and how long does it run?",
+    "answer": "\"Roundhay Garden Scene\" (1888), just 2.11 seconds long",
+    "note": "Wikipedia \"Roundhay Garden Scene\" — filmed by French inventor Louis Le Prince in Leeds, England, on 14 October 1888, years before commercial cinema existed.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "In what year was the Cannes Film Festival first officially held?",
+    "answer": "1946 (though it was originally supposed to launch in 1939, cancelled the day after its opening gala when Germany invaded Poland)",
+    "note": "Wikipedia \"Cannes Film Festival.\"",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "The Call of Duty video game franchise has generated how much total revenue since launch, as of 2022?",
+    "answer": "$30 billion — from over 500 million copies sold",
+    "note": "Wikipedia \"Call of Duty\" — it also has over 100 million monthly active players across all platforms.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "Saturday Night Live has received more Primetime Emmy nominations than any other TV program in history — how many, as of 2022?",
+    "answer": "More than 305 nominations (and 84 wins)",
+    "note": "Wikipedia \"Saturday Night Live.\"",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What's the most expensive painting ever sold at auction — and how much did it go for?",
+    "answer": "\"Salvator Mundi\" by Leonardo da Vinci, sold for $450.3 million in November 2017",
+    "note": "Wikipedia, \"List of most expensive paintings\" — bought by a Saudi prince, at Christie's New York.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "A single Willem de Kooning painting called \"Interchange\" sold privately for how much in 2015, once making it the most expensive painting ever sold at the time?",
+    "answer": "$300 million",
+    "note": "Wikipedia, \"List of most expensive paintings.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "Paul Cézanne's \"The Card Players\" sold privately in 2011 for over how much, making it (at the time) one of the most expensive paintings ever sold?",
+    "answer": "Over $250 million (reportedly around $250-259 million)",
+    "note": "Wikipedia, \"List of most expensive paintings\" — bought by the royal family of Qatar.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "Paul Gauguin's \"Nafea Faa Ipoipo\" (When Will You Marry?) sold in 2014 for how much?",
+    "answer": "$210 million",
+    "note": "Wikipedia, \"List of most expensive paintings.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What's the most expensive car ever sold at auction, and how much did it go for?",
+    "answer": "A 1955 Mercedes-Benz 300 SLR Uhlenhaut Coupe, sold for $143,000,000 in May 2022",
+    "note": "Wikipedia, \"List of most expensive cars sold at auction\" — one of only two ever built.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "A rare 1962 Ferrari 250 GTO sold at auction in 2018 for how much?",
+    "answer": "$48,405,000",
+    "note": "Wikipedia, \"List of most expensive cars sold at auction.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What's the largest lottery jackpot ever won in the US (Powerball), and when?",
+    "answer": "$2.04 billion, won in California in November 2022",
+    "note": "Wikipedia, \"Powerball\" — winner took a lump sum of $997.6 million after taxes/discount.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What are the odds of winning the Powerball jackpot, expressed as 1 in how many?",
+    "answer": "1 in 292,201,338",
+    "note": "Wikipedia, \"Powerball.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What's the largest Mega Millions jackpot ever won, and when?",
+    "answer": "$1.602 billion, won in Florida in August 2023",
+    "note": "Wikipedia, \"Mega Millions\" — winner took a cash option of $794.2 million.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "How much did a first-class US postage stamp cost in 1900?",
+    "answer": "2 cents",
+    "note": "Wikipedia, \"History of United States postage rates\" (rate set in 1885, held through the 1910s).",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "How much does a first-class US postage stamp cost today, as of mid-2026?",
+    "answer": "82 cents (increased July 12, 2026)",
+    "note": "Wikipedia, \"History of United States postage rates\" — a 41x increase from the 2-cent stamp of 1900.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "How much did a first-class US postage stamp cost in 1970?",
+    "answer": "6 cents (it had just risen to 6 cents in January 1968; it jumped to 8 cents in May 1971)",
+    "note": "Wikipedia, \"History of United States postage rates.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "During the peak of Weimar Germany's 1923 hyperinflation, how many German marks did it take to buy 1 US dollar?",
+    "answer": "About 4.2 trillion marks",
+    "note": "Wikipedia, \"Hyperinflation in the Weimar Republic,\" November 1923.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "In Berlin in 1922, a loaf of bread cost about 160 marks. By late 1923, at the peak of hyperinflation, what did that same loaf cost?",
+    "answer": "About 200 billion marks",
+    "note": "Wikipedia, \"Hyperinflation in the Weimar Republic.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "Zimbabwe's central bank issued a banknote worth how much, at the peak of its 2008 hyperinflation — its highest-ever denomination?",
+    "answer": "100 trillion Zimbabwean dollars (and it still couldn't cover a bus fare)",
+    "note": "Wikipedia, \"Hyperinflation in Zimbabwe.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "At its November 2008 peak, Zimbabwe's monthly inflation rate hit roughly what percentage?",
+    "answer": "About 79.6 billion percent per month (equivalent to prices doubling roughly every day)",
+    "note": "Wikipedia, \"Hyperinflation in Zimbabwe.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "Hungary's pengő suffered the worst hyperinflation ever recorded, after WWII. At its peak, prices doubled roughly every how many hours?",
+    "answer": "About every 15 hours",
+    "note": "Wikipedia, \"Pengő\" — the largest banknote ever issued anywhere was Hungary's 100 quintillion (10^20) pengő note.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What was the total construction cost of the Burj Khalifa, the world's tallest building?",
+    "answer": "About $1.5 billion",
+    "note": "Wikipedia, \"Burj Khalifa,\" per developer Emaar Properties (2009 estimate).",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "The Channel Tunnel between the UK and France went massively over budget. By roughly what percentage did final costs exceed the original budget?",
+    "answer": "About 80% over budget (final cost £4.65 billion vs. an original £2.6 billion budget)",
+    "note": "Wikipedia, \"Channel Tunnel.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "How much did the US spend completing the Panama Canal in the early 1900s (in dollars of the time)?",
+    "answer": "About $500 million (roughly $16.1 billion in 2025 dollars)",
+    "note": "Wikipedia, \"Panama Canal.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "Mukesh Ambani's private home in Mumbai, \"Antilia\" — often cited as the most expensive private residence in the world — cost about how much to build?",
+    "answer": "Nearly $2 billion to build (2006-2010); valued at about $4.6 billion by 2023",
+    "note": "Wikipedia, \"Antilia (building).\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "China's Three Gorges Dam, the largest power station in the world, cost about how much to build?",
+    "answer": "About $31.8 billion",
+    "note": "Wikipedia, \"Three Gorges Dam.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "As of early 2026, which company became the world's most valuable, and roughly what is it worth?",
+    "answer": "Nvidia, at about $4.24 trillion",
+    "note": "Wikipedia, \"List of public corporations by market capitalization,\" Q1 2026 data.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What is the total GDP of the entire world (all countries combined), per 2026 IMF projections?",
+    "answer": "About $126.3 trillion",
+    "note": "Wikipedia, \"List of countries by GDP (nominal).\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What is the GDP of the United States, per 2026 IMF projections?",
+    "answer": "About $32.4 trillion",
+    "note": "Wikipedia, \"List of countries by GDP (nominal).\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "Tuvalu has one of the smallest national economies in the world. What is its total annual GDP?",
+    "answer": "About $65 million (2026 projection) — roughly 1/65,000th the size of Nvidia's market cap",
+    "note": "Wikipedia, \"List of countries by GDP (nominal).\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "Who topped the Forbes World's Billionaires list in 2026, and what was his net worth?",
+    "answer": "Elon Musk, at about $839 billion",
+    "note": "Wikipedia, \"The World's Billionaires,\" 2026 list.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "How many billionaires were there on the 2026 Forbes World's Billionaires list, in total?",
+    "answer": "3,428",
+    "note": "Wikipedia, \"The World's Billionaires.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What was the combined net worth of all billionaires on the 2026 Forbes list?",
+    "answer": "About $20.1 trillion",
+    "note": "Wikipedia, \"The World's Billionaires\" — up $4 trillion from 2025.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "The Hope Diamond, one of the world's most famous gems, is insured/valued at roughly how much?",
+    "answer": "Reportedly insured for about $250 million (estimates range $200-350 million); it weighs 45.52 carats",
+    "note": "Wikipedia, \"Hope Diamond,\" Smithsonian Institution.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "The \"Pink Star,\" the most expensive gemstone ever sold at auction, went for how much in 2017?",
+    "answer": "About $71.2 million (for a 59.6-carat diamond)",
+    "note": "Wikipedia, \"Pink Star (diamond)\" — bought by Chow Tai Fook Enterprises in Hong Kong.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "In the famous \"Bitcoin Pizza Day\" of May 2010, a programmer paid 10,000 bitcoins for two pizzas. At Bitcoin's later peak prices (around $100,000+/BTC), what would that same amount of bitcoin have been worth?",
+    "answer": "Over $1 billion (10,000 BTC x $100,000+)",
+    "note": "Wikipedia, \"Laszlo Hanyecz\" / Bitcoin Pizza Day — the first known commercial Bitcoin transaction.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "In December 2024, Bitcoin's price crossed what major round-number milestone for the first time?",
+    "answer": "$100,000 per coin",
+    "note": "Wikipedia, \"Bitcoin.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "When Coca-Cola first went on sale in 1886, how much did a glass cost?",
+    "answer": "5 cents",
+    "note": "Wikipedia, \"Coca-Cola\" — sold at Jacob's Pharmacy in Atlanta.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "Coca-Cola's price stayed fixed at 5 cents for how many years in a row — one of the longest fixed prices of any consumer product in US history?",
+    "answer": "About 73 years (1886 to 1959)",
+    "note": "Wikipedia, \"Coca-Cola\" — due to a bottling contract with no fixed end date.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What was the US federal minimum wage when it was first established in 1938?",
+    "answer": "25 cents per hour (about $5.72 in 2025 dollars)",
+    "note": "Wikipedia, \"Minimum wage in the United States,\" Fair Labor Standards Act.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What is the current US federal minimum wage, unchanged since 2009?",
+    "answer": "$7.25 per hour",
+    "note": "Wikipedia, \"Minimum wage in the United States.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "A Big Mac in the US cost how much in July 2008, according to the Economist's Big Mac Index?",
+    "answer": "$3.57",
+    "note": "Wikipedia, \"Big Mac Index.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "How many copies of the board game Monopoly have been sold worldwide (as of 2015 estimates)?",
+    "answer": "About 275 million",
+    "note": "Wikipedia, \"Monopoly (game)\" — licensed in more than 113 countries, printed in 46+ languages.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "A standard modern US Monopoly set (2008 edition onward) includes how much total play money?",
+    "answer": "$20,580",
+    "note": "Wikipedia, \"Monopoly (game)\" — players start the game with $1,500.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "The world's most expensive postage stamp — the British Guiana One-Cent Magenta — sold for how much at its most recent auction in 2021?",
+    "answer": "$8,307,000",
+    "note": "Wikipedia, \"British Guiana 1c magenta\" — a single tiny stamp from 1856.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "Bill Gates famously bought a handwritten notebook of Leonardo da Vinci's scientific notes (the Codex Leicester) in 1994. How much did he pay?",
+    "answer": "$30,802,500",
+    "note": "Wikipedia, \"Leicester Codex\" — the most expensive manuscript ever sold at the time.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "In what year did Apple become the first publicly traded US company ever to be valued at over $1 trillion?",
+    "answer": "2018",
+    "note": "Wikipedia, \"Apple Inc.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "Apple became the first US company to hit a $2 trillion market cap on what date?",
+    "answer": "August 19, 2020",
+    "note": "Wikipedia, \"Apple Inc.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "How much did Facebook pay to acquire Instagram in 2012, when Instagram had just 13 employees?",
+    "answer": "$1 billion",
+    "note": "Wikipedia, \"Instagram.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "How much did Facebook pay to acquire WhatsApp in 2014 — one of the largest tech acquisitions ever at the time?",
+    "answer": "$19 billion",
+    "note": "Wikipedia, \"WhatsApp.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "How much did Elon Musk pay to acquire Twitter in 2022?",
+    "answer": "$44 billion (at $54.20 per share)",
+    "note": "Wikipedia, \"Acquisition of Twitter by Elon Musk.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "As of mid-2026, what is the total US federal government debt?",
+    "answer": "About $39.28 trillion (roughly $115,000 per living American)",
+    "note": "Wikipedia, \"National debt of the United States.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "In April 2020, US oil prices did something that had never happened before in recorded history — they went negative. What was the lowest price reached, per barrel?",
+    "answer": "About -$37 per barrel (traders paid buyers to take oil off their hands due to a storage crunch)",
+    "note": "Wikipedia, \"2020 Russia-Saudi Arabia oil price war.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "Gold cost about $37 per troy ounce in 1970. What did it cost when it first crossed $4,000 an ounce, in October 2025?",
+    "answer": "Over $4,000 per troy ounce — roughly a 100x increase (about 10,700%) in 55 years",
+    "note": "Wikipedia, \"Gold as an investment.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What's the most expensive transfer fee ever paid for a single soccer player?",
+    "answer": "€222 million (about $260 million), paid by Paris Saint-Germain for Neymar in 2017",
+    "note": "Wikipedia, \"List of most expensive association football transfers.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "Who was the world's highest-paid athlete in 2026, and how much did they earn that year?",
+    "answer": "Cristiano Ronaldo, with $300 million total ($235 million salary/winnings + $65 million endorsements)",
+    "note": "Wikipedia, \"Forbes' list of the world's highest-paid athletes.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "Taylor Swift's Eras Tour became the first tour in history to cross $1 billion — and then $2 billion — in gross revenue. What was its final total gross?",
+    "answer": "About $2.077 billion",
+    "note": "Wikipedia, \"Eras Tour\" — 149 shows, 10.1 million attendees.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "When Jeff Bezos and MacKenzie Scott divorced in 2019, she received 25% of his Amazon shares. What was that stake worth at the time?",
+    "answer": "About $36 billion",
+    "note": "Wikipedia, \"Jeff Bezos\" — made her the third-richest woman in the world overnight.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "The Ford Model T cost $825 when it launched in 1909. Thanks to mass production, what had the price dropped to by 1925?",
+    "answer": "$260",
+    "note": "Wikipedia, \"Ford Model T\" — roughly a 68% price cut in 16 years, making car ownership mass-affordable.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "The world's first commercial movie theater opened in New York in 1894. What did it cost to get in and watch a row of films?",
+    "answer": "25 cents",
+    "note": "Wikipedia, \"Movie theater\" — about $9.30 in today's money.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What was the average price of a movie ticket in the US in 2013?",
+    "answer": "$8.13",
+    "note": "Wikipedia, \"Movie theater.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "When the original iPhone launched in June 2007, what was its starting price?",
+    "answer": "$499 (with a required 2-year AT&T contract)",
+    "note": "Wikipedia, \"IPhone\" — the price was cut by a third just two months later, prompting Steve Jobs to apologize and offer rebates.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "When Netflix separated its streaming and DVD plans in 2011, what was the monthly price for streaming?",
+    "answer": "$7.99 per month",
+    "note": "Wikipedia, \"Netflix.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "The Dallas Cowboys became the first sports team ever to be valued at $10 billion. What is the franchise valued at as of late 2025?",
+    "answer": "About $13 billion — the most valuable sports team in the world",
+    "note": "Wikipedia, \"Dallas Cowboys.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "In November 2025, Tesla's board approved a new pay package for Elon Musk, potentially the largest executive compensation package in corporate history. How much is it worth if he hits every goal over 10 years?",
+    "answer": "Up to $1 trillion",
+    "note": "Wikipedia, \"Tesla, Inc.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What was the total cost of hosting the (delayed) Tokyo 2020 Olympics and Paralympics combined?",
+    "answer": "About $13 billion (1.4 trillion yen); some estimates citing pandemic-related costs put total spending over $20 billion",
+    "note": "Wikipedia, \"2020 Summer Olympics\" — the most costly Olympics ever at the time.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What is Warren Buffett's net worth as of January 2026, making him one of the richest people alive?",
+    "answer": "About $148.9 billion (9th richest person in the world at the time)",
+    "note": "Wikipedia, \"Warren Buffett,\" per Forbes.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "As a teenager in Omaha, Warren Buffett and a friend bought a used pinball machine for $25 to place in a barber shop. A couple of years later (1947), how much did they sell the growing pinball-machine business for?",
+    "answer": "$1,200",
+    "note": "Wikipedia, \"Warren Buffett\" — equivalent to about $17,300 in 2025 dollars.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "How much did the United States pay Russia for the entire territory of Alaska in 1867?",
+    "answer": "$7.2 million — about 2 cents per acre at the time (roughly $132 million and 37 cents/acre in 2024 dollars)",
+    "note": "Wikipedia, \"Alaska Purchase\" — critics at the time mocked it as \"Seward's Folly,\" after Secretary of State William Seward who arranged the deal.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "How much did the United States pay France for the Louisiana Purchase in 1803, doubling the size of the country overnight?",
+    "answer": "$15 million — averaging less than 3 cents per acre, for about 828,000 square miles of land",
+    "note": "Wikipedia, \"Louisiana Purchase.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What's the most expensive watch ever sold at auction?",
+    "answer": "A Patek Philippe Grandmaster Chime, which sold for $31.19 million at Christie's Geneva in November 2019",
+    "note": "Wikipedia, \"List of most expensive watches sold at auction.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "In 2021, digital artist Beeple sold a purely digital artwork (an NFT) at Christie's for how much — the most expensive NFT ever sold?",
+    "answer": "$69.3 million, for \"Everydays: The First 5000 Days,\" paid in 42,329 Ether cryptocurrency",
+    "note": "Wikipedia, \"Everydays: The First 5000 Days.\"",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "Saffron is the world's most expensive spice by weight — what does premium-grade saffron cost per kilogram?",
+    "answer": "Often over $5,000/kg, with prices ranging $1,100-$11,000/kg depending on quality",
+    "note": "Wikipedia, \"Saffron\" — it takes about 150,000 flowers, hand-picked, to produce just 1 kilogram of dried saffron threads.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "How many transistors were on the first commercial microprocessor, the Intel 4004 (1971)?",
+    "answer": "2,300 transistors",
+    "note": "Wikipedia — Intel 4004. Its max clock speed was 740 kHz, built on a 10-micrometer process.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How many transistors are packed into Apple's most powerful consumer chip, the M2 Ultra (2023)?",
+    "answer": "134 billion transistors",
+    "note": "Wikipedia — Apple M2. That's roughly 58 million times more transistors than the Intel 4004, in a chip a fraction of the size.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "The world's first hard drive, IBM's RAMAC 350 (1956), stored how much data — and about how much did it weigh?",
+    "answer": "5 million characters (about 5 MB) of storage, and it weighed over a ton (needed forklifts to move and cargo planes to ship)",
+    "note": "Wikipedia — IBM 305 RAMAC. Leased for $3,200/month (~$36,700 in 2025 dollars) — for less storage than a single modern photo.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How many vacuum tubes did ENIAC, the first general-purpose electronic computer (1945), contain?",
+    "answer": "18,000 vacuum tubes",
+    "note": "Wikipedia — ENIAC. It weighed over 30 tons, filled a 30x50-foot room (300 sq ft), and drew 150 kW of power — comparable to 150 modern homes.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "The Apollo Guidance Computer that flew astronauts to the Moon ran at what clock speed?",
+    "answer": "2.048 MHz (about 1.024 MHz for actual processing)",
+    "note": "Wikipedia — Apollo Guidance Computer. It had just 2,048 words of RAM and 36,864 words of ROM, roughly comparable to a 1970s home computer.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How long is the circular tunnel of the Large Hadron Collider, the world's biggest particle accelerator?",
+    "answer": "26,659 metres (about 16.6 miles / 27 km) in circumference",
+    "note": "Wikipedia — Large Hadron Collider. Its ~10,000 superconducting magnets are cooled to 1.9 K, colder than outer space.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "Inside the LHC, protons are accelerated to what percentage of the speed of light?",
+    "answer": "About 99.9999991% of the speed of light (roughly 3.1 m/s slower than light itself)",
+    "note": "Wikipedia — Large Hadron Collider.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "The James Webb Space Telescope's primary mirror is how wide?",
+    "answer": "6.5 metres (about 21 feet) in diameter, made of 18 gold-coated hexagonal segments",
+    "note": "Wikipedia — James Webb Space Telescope. It operates below 50 K (−223°C) and cost about $9.7 billion total.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How long is the Channel Tunnel connecting England and France?",
+    "answer": "50.46 km (31.35 miles) total, with 37.9 km (23.5 miles) running underwater — the longest undersea tunnel section in the world",
+    "note": "Wikipedia — Channel Tunnel. Built 1987–1994, about 7 years of construction.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How much concrete was poured to build China's Three Gorges Dam, the world's largest power station by installed capacity?",
+    "answer": "About 27.2 million cubic metres of concrete — enough to build roughly 63 Eiffel Towers",
+    "note": "Wikipedia — Three Gorges Dam. Its generating capacity is 22.5 gigawatts.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How many chess positions per second could IBM's Deep Blue evaluate when it beat world champion Garry Kasparov in 1997?",
+    "answer": "200 million positions per second",
+    "note": "Wikipedia — Deep Blue (chess computer). It was the first computer to beat a reigning world chess champion in a formal match.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How far did the Wright brothers' first powered flight travel in 1903?",
+    "answer": "120 feet (37 metres) — shorter than the wingspan of a modern Boeing 747 — lasting just 12 seconds",
+    "note": "Wikipedia — Wright Flyer.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What year did the World Wide Web become publicly available to everyone on the internet?",
+    "answer": "1991 (23 August 1991) — and within its first two years, only about 50 websites existed worldwide",
+    "note": "Wikipedia — World Wide Web. Growth exploded after the Mosaic browser released in 1993.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "In what year and by whom was the first SMS text message sent, and what did it say?",
+    "answer": "3 December 1992, by engineer Neil Papworth over the Vodafone network — the message read \"Merry Christmas\"",
+    "note": "Wikipedia — Text messaging.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "Launched in 1977, Voyager 1 is the most distant human-made object. About how far from Earth is it now, decades later?",
+    "answer": "Roughly 172.6 AU — about 25.8 billion km (16 billion miles) — as of early 2026",
+    "note": "Wikipedia — Voyager 1. It's still moving away at about 17 km/s (over 61,000 km/h).",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "The Human Genome Project took how many years and roughly how much money to sequence the first human genome (completed 2003)?",
+    "answer": "13 years (1990–2003) and about $2.7 billion",
+    "note": "Wikipedia — Human Genome Project.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "By 2011, thanks to new sequencing technology, the cost to sequence a human genome had fallen from that original multi-billion-dollar project to about how much?",
+    "answer": "About $10,000 — a price that has continued to fall into the hundreds of dollars since",
+    "note": "Wikipedia — DNA sequencing.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "Hubble Space Telescope's primary mirror is how wide?",
+    "answer": "2.4 metres (7 ft 10 in) in diameter",
+    "note": "Wikipedia — Hubble Space Telescope. Launched in 1990, it orbits roughly 540 km above Earth.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "Graphene — a sheet of carbon just one atom thick — has what intrinsic tensile strength, making it the strongest material ever tested?",
+    "answer": "130 gigapascals (GPa)",
+    "note": "Wikipedia — Graphene. A single layer is about 0.335 nanometres thick — roughly 1/300,000th the width of a human hair.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the length of the main central span of Japan's Akashi Kaikyō Bridge, once the world's longest suspension bridge span?",
+    "answer": "1,991 metres (6,532 ft) — total bridge length 3,911 m — opened in 1998",
+    "note": "Wikipedia — Akashi Kaikyō Bridge. Held the world record until Turkey's 1915 Çanakkale Bridge overtook it in 2022.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How many satellites orbit roughly 20,200 km above Earth to make up the operational GPS constellation?",
+    "answer": "Around 31 operational satellites (minimum design was 24)",
+    "note": "Wikipedia — Global Positioning System.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "Frontier, the first supercomputer to break the \"exascale\" barrier (2022), can perform how many operations per second at peak?",
+    "answer": "2.055 exaFLOPS — over 2 quintillion calculations per second",
+    "note": "Wikipedia — Frontier (supercomputer).",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "In what year did General Motors install Unimate, the world's first industrial robot, on a car assembly line?",
+    "answer": "1961 — it lifted and welded hot die-cast metal parts onto car bodies, a job too dangerous for human workers",
+    "note": "Wikipedia — Unimate.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How long is the Panama Canal, connecting the Atlantic and Pacific oceans?",
+    "answer": "82 km (51 miles) — it took about 33 years total (counting the failed French attempt) to complete, opening in 1914",
+    "note": "Wikipedia — Panama Canal. Annual ship traffic rose from about 1,000 vessels in 1914 to nearly 15,000 by 2008.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "The Golden Gate Bridge's two main cables together use how many miles of galvanized steel wire?",
+    "answer": "About 80,000 miles (130,000 km) of wire — enough to circle the Earth more than 3 times",
+    "note": "Wikipedia — Golden Gate Bridge. Opened 1937; each tower has about 600,000 rivets.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the top operational speed of the Shanghai Maglev, the world's fastest commercial train in regular service?",
+    "answer": "431 km/h (268 mph) at its peak commercial operating speed (cruising speed was later reduced to 300 km/h); in test runs it hit 501 km/h",
+    "note": "Wikipedia — Shanghai maglev train. It covers 30 km in just over 8 minutes.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How much thrust did the Saturn V rocket's five first-stage engines produce at liftoff?",
+    "answer": "About 33,000 kN (7.5 million lbf) of thrust",
+    "note": "Wikipedia — Saturn V. It stood 111 m (363 ft) tall, taller than most skyscrapers.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "China's FAST telescope, the world's largest single-dish radio telescope, has a dish how wide?",
+    "answer": "500 metres (1,640 ft) in diameter — nearly the size of 30 football fields",
+    "note": "Wikipedia — Five-hundred-meter Aperture Spherical Telescope (FAST). Fully operational since January 2020.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "In what year did LIGO make the first-ever direct detection of gravitational waves, ripples in spacetime predicted by Einstein a century earlier?",
+    "answer": "2016 (the announcement); the actual signal was recorded on 14 September 2015",
+    "note": "Wikipedia — LIGO. It can detect a distance change smaller than 1/10,000th the width of a proton across its 4 km arms.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "In what year did Edward Jenner create the world's first vaccine, testing it against smallpox on an 8-year-old boy?",
+    "answer": "1796",
+    "note": "Wikipedia — Edward Jenner. He tested it successfully on 23 further subjects before publishing.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How many US patents did Thomas Edison hold by the end of his life?",
+    "answer": "1,093 patents — averaging roughly one new patent every 10–12 days of his adult life",
+    "note": "Wikipedia — Thomas Edison.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "When Chile's Extremely Large Telescope is completed, how wide will its primary mirror be — nearly 4x the size of any existing optical telescope?",
+    "answer": "39.3 metres (129 ft) in diameter, built from 798 hexagonal segments",
+    "note": "Wikipedia — Extremely Large Telescope.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "In what year was CERN, home of the LHC, founded — and by how many countries?",
+    "answer": "1954, founded by 12 Western European countries (it now has 25 member states)",
+    "note": "Wikipedia — CERN.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How many years passed between the Higgs boson's theoretical prediction (1964) and its experimental confirmation at the LHC?",
+    "answer": "48 years — the particle was confirmed on 4 July 2012",
+    "note": "Wikipedia — Higgs boson.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "In what year was the transistor invented at Bell Labs, and by whom?",
+    "answer": "1947, by John Bardeen, Walter Brattain, and William Shockley",
+    "note": "Wikipedia — Transistor.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "By 2018, roughly how many MOSFET transistors (a specific transistor type) had been manufactured in total — making it the most-produced human-made object in history?",
+    "answer": "More than 13 sextillion (13,000,000,000,000,000,000,000)",
+    "note": "Wikipedia — Transistor.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "Gordon Moore's famous 1965 observation — later called \"Moore's Law\" — predicted the number of components on a chip would double how often?",
+    "answer": "Originally \"every year\" in his 1965 paper; revised in 1975 to roughly every two years, a pace that held for decades",
+    "note": "Wikipedia — Moore's law.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How tall is the tallest pier of France's Millau Viaduct, the world's tallest bridge?",
+    "answer": "343 metres (1,125 ft) structural height — 13 metres taller than the Eiffel Tower",
+    "note": "Wikipedia — Millau Viaduct. Opened December 2004.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How long is the Suez Canal, connecting the Mediterranean and Red Seas?",
+    "answer": "193.3 km (120.1 miles), opened in 1869",
+    "note": "Wikipedia — Suez Canal. Over 20,600 ships passed through in 2021 alone — an average of 56 per day.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How long is the Danyang–Kunshan Grand Bridge in China, the world's longest bridge of any kind?",
+    "answer": "164.8 km (102.4 miles) — built by 10,000 workers, opened in 2011 as part of a high-speed rail line",
+    "note": "Wikipedia — Danyang–Kunshan Grand Bridge.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the power capacity of the world's most powerful wind turbine currently in operation (the DEC H26-313 in Fuzhou, China)?",
+    "answer": "26 megawatts — a single turbine that can power tens of thousands of homes",
+    "note": "Wikipedia — Wind turbine.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How fast did the Concorde supersonic jet cruise, cutting a Paris-to-New York flight down from 7-8 hours to how long?",
+    "answer": "Mach 2.02 (about 2,150 km/h / 1,330 mph) — cutting transatlantic flights to under 3.5 hours",
+    "note": "Wikipedia — Concorde.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What percentage of international internet data traffic actually travels through undersea fiber-optic cables, rather than satellites?",
+    "answer": "About 99% — satellites carry well under 1% of global data traffic",
+    "note": "Wikipedia — Submarine communications cable.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How many chemical elements are on the modern periodic table, a set completed only by 2010?",
+    "answer": "118 confirmed elements",
+    "note": "Wikipedia — Periodic table.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "In what year did Google DeepMind's AlphaGo become the first computer program to beat a top professional at Go, a game vastly more complex than chess?",
+    "answer": "2016 — AlphaGo beat 9-dan professional Lee Sedol 4 games to 1 in March 2016",
+    "note": "Wikipedia — AlphaGo. Go's branching factor is so much larger than chess's that traditional brute-force AI approaches couldn't handle it.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "In what year did Dr. Christiaan Barnard perform the world's first human-to-human heart transplant, and how many days did the patient survive?",
+    "answer": "1967 (3 December), at a hospital in Cape Town, South Africa; the patient survived 18 days before dying of pneumonia",
+    "note": "Wikipedia — Christiaan Barnard.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "Dolly the sheep, born in 1996, was the first mammal ever cloned from an adult body cell. How many attempts did it take scientists to succeed?",
+    "answer": "277 attempts — Dolly was the only lamb to survive to adulthood out of all of them",
+    "note": "Wikipedia — Dolly (sheep), Roslin Institute, Scotland.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "The world's first successful photograph was taken in 1826 by Nicéphore Niépce. How long did the exposure need to be to capture it?",
+    "answer": "At least 8 hours, and probably several days",
+    "note": "Wikipedia — Photography. Compare to modern smartphone cameras, which can capture a photo in a fraction of a millisecond.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "Sputnik 1, the first artificial satellite, launched in 1957. How long did it take to orbit Earth once, and how long did its radio signal keep transmitting before its batteries died?",
+    "answer": "About 96.2 minutes per orbit; its signal transmitted for 22 days before the batteries were depleted",
+    "note": "Wikipedia — Sputnik 1. It traveled at a peak speed of about 8 km/s (18,000 mph).",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "In 1969, the first message was sent over ARPANET (the internet's precursor) between UCLA and Stanford. What were the only two letters that made it through before the system crashed?",
+    "answer": "\"lo\" — the programmer was trying to type \"login\" when the receiving computer crashed after the second letter",
+    "note": "Wikipedia — ARPANET. The full connection was completed about an hour later.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "In what year did Alexander Fleming discover penicillin, the world's first true antibiotic, after noticing mould had killed bacteria in a lab dish he'd forgotten to clean?",
+    "answer": "1928 (3 September)",
+    "note": "Wikipedia — Penicillin. He didn't publish the finding until 1929, and it took over a decade more before it was mass-produced as a medicine.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "In what year was the first successful human organ transplant performed — a kidney, between identical twins — and how many years did the recipient go on to live?",
+    "answer": "1954; recipient Richard Herrick lived another 8 years afterward",
+    "note": "Wikipedia — Organ transplantation. Performed by Dr. Joseph Murray in Boston; using an identical twin as the donor avoided organ rejection, which wasn't yet medically solvable.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "In what year was smallpox officially declared eradicated worldwide by the WHO — the only human disease ever wiped out this way?",
+    "answer": "1980",
+    "note": "Wikipedia — Smallpox.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "In what year was CRISPR-Cas9 gene editing first successfully applied to edit human cell cultures in a lab?",
+    "answer": "2013",
+    "note": "Wikipedia — CRISPR. Its inventors, Jennifer Doudna and Emmanuelle Charpentier, won the Nobel Prize in Chemistry in 2020 for the discovery.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "El Capitan, which became the world's fastest supercomputer in late 2024, reaches what peak performance?",
+    "answer": "2.821 exaFLOPS (2.821 quintillion calculations per second) at peak — noticeably faster than Frontier's 2.055 exaFLOPS",
+    "note": "Wikipedia — El Capitan (supercomputer). Housed at Lawrence Livermore National Laboratory.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "In what year did Ada Lovelace publish what's considered the world's first computer algorithm — over a century before any working computer existed to run it?",
+    "answer": "1843, as a set of notes on Charles Babbage's never-built \"Analytical Engine\"",
+    "note": "Wikipedia — Ada Lovelace. Her \"Note G\" described a method for calculating Bernoulli numbers on the machine.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What's generally considered the first real, self-replicating computer virus to spread across a network, and what year did it appear?",
+    "answer": "\"Creeper,\" created in 1971 by Bob Thomas, which spread across ARPANET (a theoretical design existed as early as 1949, but Creeper was the first one that actually ran and spread)",
+    "note": "Wikipedia — Computer virus. It displayed the cheeky message \"I'M THE CREEPER: CATCH ME IF YOU CAN.\"",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "In what year did James Watson and Francis Crick publish their discovery of DNA's double-helix structure?",
+    "answer": "1953",
+    "note": "Wikipedia — DNA. Built on unpublished X-ray diffraction data from Rosalind Franklin's lab.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "The first COVID-19 vaccines were developed and authorized in a record-breaking amount of time — how many months did it take, from the virus's genome being sequenced to an approved vaccine?",
+    "answer": "About 11 months (genome sequenced January 2020; first vaccine authorized December 2020)",
+    "note": "Wikipedia — COVID-19 vaccine. Previously, the fastest vaccine ever developed (mumps) had taken about 4 years.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "In what year did Valentina Tereshkova become the first woman in space, and how many times did she orbit Earth on that single mission?",
+    "answer": "1963; she orbited Earth 48 times over almost 3 days aboard Vostok 6",
+    "note": "Wikipedia — Valentina Tereshkova. At 26, she remains the only woman ever to have flown a solo space mission.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "In 2019, Google's Sycamore processor became the first to demonstrate \"quantum supremacy.\" How many qubits did it use, and how long did Google claim its benchmark task would take a classical supercomputer?",
+    "answer": "53 qubits; Google claimed the classical equivalent would take about 10,000 years (though IBM disputed this, arguing 2.5 days was achievable classically)",
+    "note": "Wikipedia — Google Sycamore.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the top speed of Falcon's Flight in Saudi Arabia, which became the world's fastest roller coaster in December 2025?",
+    "answer": "250 km/h (155.3 mph), launching riders down a 158-metre drop",
+    "note": "Wikipedia — Falcon's Flight. It dethroned the previous record-holder, Ferrari World's Formula Rossa (240 km/h), which had held the title since 2010.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How tall is the KVLY-TV mast in North Dakota — in 1963 the first human-made structure ever to exceed 2,000 feet?",
+    "answer": "Originally 628.8 metres (2,063 feet) tall; reduced slightly to 605.6 m (1,987 ft) after a 2019 antenna modification",
+    "note": "Wikipedia — KVLY-TV mast. It remains one of the tallest structures ever built by humans, held up entirely by guy-wires rather than a wide base.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "In 1965, cosmonaut Alexei Leonov performed the first-ever spacewalk. How long was he outside the spacecraft?",
+    "answer": "12 minutes and 9 seconds",
+    "note": "Wikipedia — Alexei Leonov. His spacesuit ballooned so much in the vacuum of space that he had to partially deflate it just to squeeze back through the airlock.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "The shortest laser pulse ever created by scientists — recognized by the 2023 Nobel Prize in Physics — lasted how long?",
+    "answer": "43 attoseconds (43 quintillionths of a second)",
+    "note": "Wikipedia — Attosecond. Short enough to capture the movement of electrons inside atoms; there are more attoseconds in one second than seconds that have passed since the Big Bang.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "In 2012, the National Ignition Facility's laser achieved a peak power output described as 1,000 times more than the entire US uses at any instant. What was that peak power?",
+    "answer": "500 terawatts (500 trillion watts) — for a fraction of a billionth of a second",
+    "note": "Wikipedia — National Ignition Facility. The laser is aimed at a target smaller than a peppercorn to trigger nuclear fusion reactions.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "The Very Large Array radio telescope in New Mexico can reposition its antennas along Y-shaped rail tracks to change its resolution. How many antennas does it use at once, and how long is each arm of the array?",
+    "answer": "27 antennas (plus 1 spare), each 25 metres wide, spread along arms up to 21 km (13 miles) long",
+    "note": "Wikipedia — Very Large Array. Its dishes can be reconfigured into four different array sizes depending on what astronomers need to observe.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "The camera at the Vera C. Rubin Observatory, built to photograph the entire visible sky every few nights, has what resolution — the largest camera ever built?",
+    "answer": "3.2 gigapixels, built from a mosaic of 189 separate 16-megapixel sensors",
+    "note": "Wikipedia — Vera C. Rubin Observatory. That's roughly 200 times the resolution of a typical smartphone camera.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What's the fastest speed ever reached by a crewed, powered aircraft — a record set by the rocket-powered X-15 in 1967 and still unbroken?",
+    "answer": "4,520 mph (7,274 km/h), or Mach 6.7",
+    "note": "Wikipedia — North American X-15. Pilot William J. Knight set the record on 3 October 1967.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "In what year did the world's first human-made, self-sustaining nuclear chain reaction occur, under a football stadium at the University of Chicago?",
+    "answer": "1942 (2 December), inside the reactor \"Chicago Pile-1,\" led by physicist Enrico Fermi",
+    "note": "Wikipedia — Chicago Pile-1. It used no radiation shielding and no cooling system at all — the reactor was built almost entirely from graphite blocks and uranium.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  }
+]

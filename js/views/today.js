@@ -8,6 +8,7 @@ import { localStore } from "../local-store.js";
 import { votesStore } from "../votes.js";
 import { peopleStore } from "../people.js";
 import { quickPollsStore, quickPollVotesStore } from "../quick-polls.js";
+import { loadFactGame, randomFact } from "../fact-game.js";
 
 const SLOT_ORDER = ["morning", "afternoon", "evening", ""];
 const SLOT_LABEL = { morning: "Morning", afternoon: "Afternoon", evening: "Evening", "": "Unscheduled" };
@@ -17,6 +18,7 @@ let listenersAttached = false;
 let mountedContainer = null;
 let deferredInstallPrompt = null;
 let pollFormOpen = false;
+let factGameState = { fact: null, revealed: false };
 
 // #app is shared/reused across every view — a store's onChange listener fires
 // for the app's whole lifetime even after the user has navigated away from
@@ -52,6 +54,17 @@ export async function render(container, { isActive } = {}) {
   await peopleStore.load();
   await quickPollsStore.load();
   await quickPollVotesStore.load();
+
+  // Feitjesspel is a bonus/optional feature — a failed fetch shouldn't block
+  // the rest of Today (day plan, checklist, etc.) the way the critical
+  // places.json load above does, so this failure is caught locally and just
+  // means the card doesn't render, rather than the whole view failing.
+  try {
+    await loadFactGame();
+    if (!factGameState.fact) factGameState.fact = randomFact();
+  } catch {
+    // no fact pool available this session — factGameHtml() renders nothing
+  }
 
   if (isActive && !isActive()) return;
 
@@ -209,6 +222,43 @@ function wirePoll(container) {
   });
 }
 
+// A Dutch friend-group trivia tradition: someone names a fact ("how many
+// liters of wine did Italy drink in 2024?"), everyone guesses out loud, then
+// reveals the real number. Question-only until "Reveal," then a fresh fact
+// is one tap away — no scoring/multiplayer state, just "give me a random
+// fact" per the actual ask.
+function factGameHtml() {
+  const f = factGameState.fact;
+  if (!f) return "";
+
+  return `
+    <div class="fact-game-card">
+      <div class="fact-game-card__header">
+        <p class="fact-game-card__label">🎲 Feitjesspel!</p>
+        <span class="fact-game-card__category">${f.emoji} ${escapeHtml(f.category)}</span>
+      </div>
+      <p class="fact-game-card__question">${escapeHtml(f.question)}</p>
+      ${
+        factGameState.revealed
+          ? `<p class="fact-game-card__answer">${escapeHtml(f.answer)}</p>
+             ${f.note ? `<p class="fact-game-card__note">${escapeHtml(f.note)}</p>` : ""}
+             <button type="button" class="fact-game-card__next" data-next-fact>🎲 Next fact</button>`
+          : `<button type="button" class="fact-game-card__reveal" data-reveal-fact>Reveal the number</button>`
+      }
+    </div>`;
+}
+
+function wireFactGame(container) {
+  container.querySelector("[data-reveal-fact]")?.addEventListener("click", () => {
+    factGameState.revealed = true;
+    renderContent(container);
+  });
+  container.querySelector("[data-next-fact]")?.addEventListener("click", () => {
+    factGameState = { fact: randomFact(factGameState.fact), revealed: false };
+    renderContent(container);
+  });
+}
+
 // Auto-detected from real app state (not manually checked off) — each item
 // reflects something the person has actually done, so it stays honest for
 // both a brand-new person and someone who's already been using the app.
@@ -324,6 +374,7 @@ function renderContent(container) {
         ${greetingHtml()}
         ${checklistHtml()}
         ${pollHtml()}
+        ${factGameHtml()}
         ${installHintHtml()}
         <p class="today__status">${label}</p>
         ${occasionLines.map((l) => `<p class="today__status today__status--occasion">${l}</p>`).join("")}
@@ -339,6 +390,7 @@ function renderContent(container) {
     wireInstallHint(container);
     wireChecklist(container);
     wirePoll(container);
+    wireFactGame(container);
     return;
   }
 
@@ -367,6 +419,7 @@ function renderContent(container) {
       ${greetingHtml()}
       ${checklistHtml()}
       ${pollHtml()}
+      ${factGameHtml()}
       ${installHintHtml()}
       <p class="today__status">${label}</p>
       ${occasionLines.map((l) => `<p class="today__status today__status--occasion">${l}</p>`).join("")}
@@ -384,6 +437,7 @@ function renderContent(container) {
   wireInstallHint(container);
   wireChecklist(container);
   wirePoll(container);
+  wireFactGame(container);
 }
 
 function todayCardHtml(assignment, date) {
