@@ -108,8 +108,22 @@ html, body {
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
 }
 
+/* Bottom nav lives in this flex column (not `position: fixed`) so short
+   pages (an almost-empty Day Planner tab, say) don't trigger the mobile
+   Safari/Chrome bug where a fixed bottom-0 element is positioned against
+   the browser-chrome-inclusive layout viewport instead of the visible one,
+   floating the nav mid-screen instead of at the true bottom until the page
+   scrolls. `min-height: 100dvh` (falls back to 100vh) keeps the column at
+   least as tall as the *currently visible* viewport, toolbar or not. */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
 #app {
-  min-height: 100%;
+  flex: 1 0 auto;
   /* env(safe-area-inset-top) clears the Dynamic Island / notch / status bar —
      this app runs "display: standalone" with an iOS "black-translucent"
      status bar (manifest.json / index.html), meaning content is NOT
@@ -142,8 +156,9 @@ h1 { font-size: 1.4rem; margin: 0 0 0.75rem; }
 }
 
 .bottom-nav {
-  position: fixed;
-  left: 0; right: 0; bottom: 0;
+  position: sticky;
+  bottom: 0;
+  flex-shrink: 0;
   display: flex;
   justify-content: space-around;
   padding: 0.5rem 0.25rem calc(0.5rem + env(safe-area-inset-bottom));
