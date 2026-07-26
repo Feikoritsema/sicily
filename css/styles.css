@@ -964,6 +964,7 @@ h1 { font-size: 1.4rem; margin: 0 0 0.75rem; }
   touch-action: none;
   cursor: grab;
   user-select: none;
+  will-change: transform;
 }
 .swipe-card__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
 .swipe-info-btn {

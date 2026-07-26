@@ -15,6 +15,10 @@ const SWIPE_THRESHOLD = 90;
 
 export function renderSwipe(container, { places, onVote, onExit }) {
   const queue = [...places];
+  for (let i = queue.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [queue[i], queue[j]] = [queue[j], queue[i]];
+  }
   let index = 0;
   let votedCount = 0;
   let showInfo = false; // reset per card in drawCurrentCard
@@ -134,12 +138,18 @@ export function renderSwipe(container, { places, onVote, onExit }) {
   function wireDrag(cardEl, place) {
     let startX = null;
     let dragging = false;
+    let rafId = null;
+    let currentDx = 0;
+
+    const applyTransform = () => {
+      rafId = null;
+      cardEl.style.transform = `translate3d(${currentDx}px, 0, 0) rotate(${currentDx / 20}deg)`;
+    };
 
     cardEl.addEventListener("pointerdown", (e) => {
-      // Let the info button and any links inside the expanded overlay behave
-      // like normal tappable elements — don't start a drag/vote gesture there.
       if (e.target.closest(".swipe-info-btn, .swipe-card__links a")) return;
       startX = e.clientX;
+      currentDx = 0;
       dragging = true;
       cardEl.setPointerCapture(e.pointerId);
       cardEl.style.transition = "none";
@@ -147,24 +157,25 @@ export function renderSwipe(container, { places, onVote, onExit }) {
 
     cardEl.addEventListener("pointermove", (e) => {
       if (!dragging) return;
-      const dx = e.clientX - startX;
-      cardEl.style.transform = `translateX(${dx}px) rotate(${dx / 20}deg)`;
+      currentDx = e.clientX - startX;
+      if (!rafId) rafId = requestAnimationFrame(applyTransform);
     });
 
     const endDrag = (e) => {
       if (!dragging) return;
       dragging = false;
-      const dx = e.clientX - startX;
-      cardEl.style.transition = "transform 200ms ease";
+      if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
+      const dx = currentDx;
+      cardEl.style.transition = "transform 250ms cubic-bezier(0.22, 1, 0.36, 1)";
 
       if (dx > SWIPE_THRESHOLD) {
-        cardEl.style.transform = `translateX(120%) rotate(20deg)`;
-        setTimeout(() => commit(place, 1), 180);
+        cardEl.style.transform = `translate3d(120%, 0, 0) rotate(20deg)`;
+        cardEl.addEventListener("transitionend", () => commit(place, 1), { once: true });
       } else if (dx < -SWIPE_THRESHOLD) {
-        cardEl.style.transform = `translateX(-120%) rotate(-20deg)`;
-        setTimeout(() => commit(place, -1), 180);
+        cardEl.style.transform = `translate3d(-120%, 0, 0) rotate(-20deg)`;
+        cardEl.addEventListener("transitionend", () => commit(place, -1), { once: true });
       } else {
-        cardEl.style.transform = "translateX(0) rotate(0)";
+        cardEl.style.transform = `translate3d(0, 0, 0) rotate(0)`;
       }
     };
 
