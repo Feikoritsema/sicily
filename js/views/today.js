@@ -331,7 +331,7 @@ function installHintHtml() {
   if (isIOSDevice()) {
     return `
       <div class="install-hint">
-        <span>📲 Add this to your Home Screen: tap <strong>Share</strong>, then <strong>Add to Home Screen</strong> — works offline once installed.</span>
+        <span>📲 Add this to your Home Screen: tap <strong>Share</strong> (<strong>Deel</strong>) → <strong>Add to Home Screen</strong> (<strong>Zet op Beginscherm</strong>) — works offline once installed.</span>
         <button type="button" class="install-hint__dismiss" data-dismiss-install aria-label="Dismiss">✕</button>
       </div>`;
   }

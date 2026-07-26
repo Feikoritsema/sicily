@@ -178,6 +178,12 @@ function renderList(container) {
     return true;
   });
 
+  filtered.sort((a, b) => {
+    const tallyA = votesStore.tallyFor(a.id);
+    const tallyB = votesStore.tallyFor(b.id);
+    return tallyB - tallyA;
+  });
+
   container.querySelector(".explore__count").textContent = `${filtered.length} place${filtered.length === 1 ? "" : "s"}`;
   container.querySelector(".place-list").innerHTML = filtered.length
     ? filtered.map(placeCardHtml).join("")
