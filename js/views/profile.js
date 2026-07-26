@@ -63,23 +63,23 @@ function tripDateRange() {
 // with zero context on what the trip or the app even is.
 function renderWelcome() {
   const features = [
-    ["🏡", "Today", "Your daily rundown — what's planned, closures, siesta hours."],
-    ["🗺️", "Explore", "Browse every place we've found, vote 👍/👎, add your own."],
-    ["📅", "Day Plan", "See what's assigned to each of the 9 days."],
-    ["🧾", "Lists", "Packing, shared gear, and the shopping list."],
-    ["ℹ️", "Info", "Villa details, emergency numbers, and practical stuff."],
+    ["🏡", "Today", "Your daily rundown — what's on, what's closed, when siesta hits."],
+    ["🗺️", "Explore", "Every place we've found. Vote 👍/👎 so the group knows what's worth it."],
+    ["🗺️", "Routes", "Pre-planned bar-hopping walks from the villa — no car needed."],
+    ["📅", "Day Plan", "Drag and drop everything into one of the 9 days."],
+    ["🧾", "Lists", "Packing, shared gear, shopping — no one forgets the sunscreen."],
+    ["ℹ️", "Info", "Villa WiFi codes, emergency numbers, where to find the closest late-night \u00f1oquis."],
   ];
 
   return `
     <section class="welcome">
-      <p class="welcome-kicker">🍋 Benvenuti!</p>
-      <h1>Sicily Trip 2026</h1>
+      <p class="welcome-kicker">\u{1F1EE}\u{1F1F9} Benvenuto, soldato!</p>
+      <h1>Sicily 2026 — La Dolce Vita</h1>
       <p class="welcome-intro">
         You're headed to <strong>${escapeHtml(VILLA.name)}</strong> in Noto — <strong>${tripDateRange()}</strong>.
-        Nine days of beaches, wineries, baroque towns, and a lot of good food, planned together by the whole group.
+        Nine days of beaches, baroque towns, granita at 11 pm, and enough arancini to fuel a small army.
+        Everything's planned together by the whole group, right here.
       </p>
-
-      <p class="welcome-intro">This app is where the planning actually happens:</p>
 
       <ul class="welcome-features">
         ${features
@@ -93,9 +93,9 @@ function renderWelcome() {
           .join("")}
       </ul>
 
-      <p class="welcome-note">💬 Everything you vote, add, or change here is shared with the whole group instantly — no need to double check with anyone.</p>
+      <p class="welcome-note">💬 Every vote, every item you add or check — it's shared with the group instantly. No need to text anyone "hey what do you think about this place?"</p>
 
-      <h2 class="lists-heading">What should we call you?</h2>
+      <h2 class="lists-heading">Alright, what's your name, soldier?</h2>
       ${renderNamePicker()}
     </section>
   `;
@@ -105,10 +105,10 @@ function renderNamePicker() {
   const buttons = KNOWN_NAMES.map((n) => `<button type="button" data-name="${escapeHtml(n)}">${escapeHtml(n)}</button>`).join("");
   return `
     <form id="name-picker-form">
-      <p class="view-empty__hint">No password — just your name, so votes and changes are attributed to you.</p>
+      <p class="view-empty__hint">No password fuss — just your name so we know whose votes and ideas are whose.</p>
       ${buttons ? `<div class="name-picker__list">${buttons}</div>` : ""}
-      <input type="text" name="name" placeholder="Type your name" autocomplete="off" />
-      <button type="submit">Continue</button>
+      <input type="text" name="name" placeholder="Il tuo nome" autocomplete="off" />
+      <button type="submit">Continua →</button>
       <p class="name-picker__error" hidden>Couldn't save your name — your browser's storage may be full or blocked. Try freeing up space, or a different browser/device.</p>
     </form>
   `;

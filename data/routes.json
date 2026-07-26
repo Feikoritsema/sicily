@@ -1,0 +1,215 @@
+[
+  {
+    "id": "route-lido-beachfront",
+    "name": "Lido Beachfront Crawl",
+    "emoji": "🌊",
+    "transport": "walk",
+    "total_walk_min": 48,
+    "start_time": "16:30",
+    "end_time": "23:00",
+    "best_for": "No-car evening on the beach",
+    "description": "Walk from villa → minimarket picnic → upscale aperitivo → beach cocktails → dinner on the sand",
+    "stops": [
+      { "place_id": "la-bottega-minimarket", "walk_to_next_min": 5, "time_slot": "afternoon", "note": "Grab arancini, wine, snacks" },
+      { "place_id": "manna", "walk_to_next_min": 3, "time_slot": "evening", "note": "Aperitivo in historic courtyard. Prosecco, seafood crudo." },
+      { "place_id": "alta-marea", "walk_to_next_min": 3, "time_slot": "evening", "note": "Beachfront cocktails, live music" },
+      { "place_id": "a-ponente", "walk_to_next_min": null, "time_slot": "evening", "note": "Dinner on the sand — then walk 20 min back to villa" }
+    ],
+    "alternates": [
+      { "place_id": "el-pampero", "note": "Rustic alternative dinner — tables on sand, pasta con le sarde" }
+    ]
+  },
+  {
+    "id": "route-calabernardo-sunset",
+    "name": "Calabernardo Long Sunset",
+    "emoji": "🌅",
+    "transport": "walk",
+    "total_walk_min": 55,
+    "start_time": "16:00",
+    "end_time": "22:30",
+    "best_for": "Coastal walk + destination dinner, no car",
+    "description": "Walk from villa → beachfront kiosk spritz → coastal walk → legendary seafood dinner → moonlit stroll back",
+    "stops": [
+      { "place_id": "chiosco-miramare", "walk_to_next_min": 10, "time_slot": "afternoon", "note": "Aperol Spritz with your feet in the sand at this tiny promenade kiosk" },
+      { "place_id": "al-vecchio-molo", "walk_to_next_min": null, "time_slot": "evening", "note": "Rustic seafood dinner. Signature: frozen lemon slices with prosecco. Walk 25 min back to villa." }
+    ]
+  },
+  {
+    "id": "route-villa-felicia-manna",
+    "name": "Villa Felicia & Manna",
+    "emoji": "🍸",
+    "transport": "walk",
+    "total_walk_min": 46,
+    "start_time": "19:00",
+    "end_time": "23:00",
+    "best_for": "Upscale, relaxed, walking distance",
+    "description": "Walk from villa → poolside dinner in citrus grove → courtyard digestivo → late cocktails on the beach",
+    "stops": [
+      { "place_id": "villa-felicia", "walk_to_next_min": 8, "time_slot": "evening", "note": "Poolside dining in a citrus grove. ★4.8. Seafood, excellent reviews." },
+      { "place_id": "manna", "walk_to_next_min": 5, "time_slot": "evening", "note": "Digestivo in the historic courtyard. Prosecco, limoncello." },
+      { "place_id": "alta-marea", "walk_to_next_min": null, "time_slot": "evening", "note": "Late cocktail on the beach. Then walk 20 min back to villa." }
+    ]
+  },
+  {
+    "id": "route-beach-club-crawl",
+    "name": "Beach Club Crawl",
+    "emoji": "🏖️",
+    "transport": "walk",
+    "total_walk_min": 47,
+    "start_time": "16:00",
+    "end_time": "23:00",
+    "best_for": "Classic beach day into night, no car",
+    "description": "Walk from villa → beach club → lounge bar → dinner on sand → late cocktail",
+    "stops": [
+      { "place_id": "abbronzatissima-beach-club", "walk_to_next_min": 2, "time_slot": "afternoon", "note": "Sunbeds, spritz, sea views. Arrive for late afternoon sun." },
+      { "place_id": "sean-sun-lounge-bar", "walk_to_next_min": 3, "time_slot": "evening", "note": "Aperitivo on the lounge terrace. Open till 23:00." },
+      { "place_id": "el-pampero", "walk_to_next_min": 2, "time_slot": "evening", "note": "Dinner on the sand. Pasta con le sarde, grilled fish." },
+      { "place_id": "alta-marea", "walk_to_next_min": null, "time_slot": "evening", "note": "Late pizza + cocktail. Then walk 20 min back to villa." }
+    ]
+  },
+  {
+    "id": "route-pizzuta-hidden-beach",
+    "name": "Pizzuta Hidden Beach + Dinner",
+    "emoji": "🏝️",
+    "transport": "walk",
+    "total_walk_min": 50,
+    "start_time": "15:30",
+    "end_time": "22:30",
+    "best_for": "Secluded beach + sunset dinner, no car",
+    "description": "Walk from villa → secluded beach sunset → dinner on the lido terrace → late drink",
+    "stops": [
+      { "place_id": "spiaggia-della-pizzuta", "walk_to_next_min": 12, "time_slot": "afternoon", "note": "Hidden beach, often deserted. Bring drinks from La Bottega. Sunset swim." },
+      { "place_id": "lido-azzurro-hosteria-del-mare", "walk_to_next_min": 3, "time_slot": "evening", "note": "Sunset dinner on the lido terrace. Pasta, grilled fish." },
+      { "place_id": "sean-sun-lounge-bar", "walk_to_next_min": null, "time_slot": "evening", "note": "Late drink on the lounge terrace. Then walk 20 min back to villa." }
+    ]
+  },
+  {
+    "id": "route-classic-baroque",
+    "name": "Classic Baroque Evening",
+    "emoji": "🏛️",
+    "transport": "drive",
+    "start_from": "noto",
+    "total_walk_min": 30,
+    "start_time": "17:00",
+    "end_time": "23:00",
+    "best_for": "First night in Noto — hits all the icons",
+    "description": "Granita start → sunset rooftop → seafood dinner → wine bar → late-night cannolo",
+    "stops": [
+      { "place_id": "caffe-costanzo", "walk_to_next_min": 5, "time_slot": "afternoon", "note": "Almond granita with brioche, jasmine gelato" },
+      { "place_id": "gagliardi-rooftop", "walk_to_next_min": 8, "time_slot": "afternoon", "note": "Aperol Spritz with panoramic cathedral + sea views. Sunset." },
+      { "place_id": "trattoria-la-carretteria", "walk_to_next_min": 7, "time_slot": "evening", "note": "★4.5. Pasta con le sarde, caponata. Sicilian seafood." },
+      { "place_id": "ritrovino", "walk_to_next_min": 10, "time_slot": "evening", "note": "★4.7. Nero d'Avola by the glass. 320+ wine labels." },
+      { "place_id": "caffe-sicilia", "walk_to_next_min": null, "time_slot": "evening", "note": "★4.7. Cannolo filled on the spot. Late-night sweet finish." }
+    ]
+  },
+  {
+    "id": "route-sunset-to-late",
+    "name": "Sunset to Late",
+    "emoji": "🌇",
+    "transport": "drive",
+    "start_from": "noto",
+    "total_walk_min": 19,
+    "start_time": "17:30",
+    "end_time": "23:00",
+    "best_for": "Couples or small groups wanting a compact, relaxed evening",
+    "description": "Rooftop sunset → seafood dinner → wine & cheese → hidden cocktail bar",
+    "stops": [
+      { "place_id": "gagliardi-rooftop", "walk_to_next_min": 7, "time_slot": "evening", "note": "Prosecco or negroni with sunset views" },
+      { "place_id": "nache", "walk_to_next_min": 2, "time_slot": "evening", "note": "★4.7. Homemade pasta, tuna crudo. Intimate seafood." },
+      { "place_id": "il-brillo-parlante", "walk_to_next_min": 10, "time_slot": "evening", "note": "★4.8. Sicilian wine flight + cold cuts board." },
+      { "place_id": "secret-eat-drink-stay-noto", "walk_to_next_min": null, "time_slot": "evening", "note": "★4.5. Hidden courtyard, off-menu cocktails, live music." }
+    ]
+  },
+  {
+    "id": "route-pizza-wine-casual",
+    "name": "Pizza & Wine Casual",
+    "emoji": "🍕",
+    "transport": "drive",
+    "start_from": "noto",
+    "total_walk_min": 16,
+    "start_time": "13:00",
+    "end_time": "22:30",
+    "best_for": "Pizza lovers — most efficient route",
+    "description": "Pizza lunch → gelato break → spritz aperitivo → best pizza in Noto → wine nightcap",
+    "stops": [
+      { "place_id": "pizzeria-nonna-maria", "walk_to_next_min": 5, "time_slot": "afternoon", "note": "★4.6. Pizza al taglio, arancini. Great value lunch. Since 1951." },
+      { "place_id": "caffe-costanzo", "walk_to_next_min": 3, "time_slot": "afternoon", "note": "Afternoon gelato — jasmine, almond. Best gelato in Noto." },
+      { "place_id": "il-libertyno", "walk_to_next_min": 3, "time_slot": "afternoon", "note": "★4.5. Best Aperol Spritz. Calamari, smoked fish tapas." },
+      { "place_id": "ristorante-pizzeria-casamatta", "walk_to_next_min": 5, "time_slot": "evening", "note": "★4.7. Wood-fired pizza — best in Noto. Reserve." },
+      { "place_id": "ritrovino", "walk_to_next_min": null, "time_slot": "evening", "note": "★4.7. Late-night wine. 320+ labels, natural wines." }
+    ]
+  },
+  {
+    "id": "route-sweet-to-midnight",
+    "name": "Sweet Start to Midnight",
+    "emoji": "🍰",
+    "transport": "drive",
+    "start_from": "noto",
+    "total_walk_min": 35,
+    "start_time": "9:00",
+    "end_time": "22:00",
+    "best_for": "Food marathon — the full Noto culinary hit list",
+    "description": "World-famous pastry breakfast → arancini lunch → afternoon dolce → aperitivo → best pasta → digestivo",
+    "stops": [
+      { "place_id": "caffe-sicilia", "walk_to_next_min": 4, "time_slot": "morning", "note": "Breakfast granita al limone/mandorla with brioche. World-famous." },
+      { "place_id": "pasticceria-piero", "walk_to_next_min": 10, "time_slot": "afternoon", "note": "★4.1. Best arancini — ragù, spinach & ricotta. ~€2 each." },
+      { "place_id": "dolce-barocco", "walk_to_next_min": 10, "time_slot": "afternoon", "note": "★4.7. Afternoon cannoli, cassata siciliana." },
+      { "place_id": "enoteca-val-di-noto", "walk_to_next_min": 5, "time_slot": "afternoon", "note": "★4.5. Aperitivo in the Montalbano film set." },
+      { "place_id": "gastro-matto", "walk_to_next_min": 6, "time_slot": "evening", "note": "★4.6. 'Best pasta in Sicily.' Walnut-almond pasta. Reserve." },
+      { "place_id": "cantina-modica-di-san-giovanni", "walk_to_next_min": null, "time_slot": "evening", "note": "★3.8 but beloved. Mussels & pistachio pesto. Late digestivo." }
+    ]
+  },
+  {
+    "id": "route-hidden-gems",
+    "name": "All Hidden Gems",
+    "emoji": "💎",
+    "transport": "drive",
+    "start_from": "noto",
+    "total_walk_min": 15,
+    "start_time": "9:00",
+    "end_time": "23:00",
+    "best_for": "Avoiding tourist traps — most geographically efficient route",
+    "description": "Artisan bakery → street-food lunch → wine in a film set → home-style trattoria → secret cocktail bar",
+    "stops": [
+      { "place_id": "forno-piano-altro", "walk_to_next_min": 4, "time_slot": "morning", "note": "★4.7. Best pastries in Noto. Almond milk, local honey, pottery." },
+      { "place_id": "putia-del-coppo", "walk_to_next_min": 2, "time_slot": "afternoon", "note": "★4.5. Casual lunch — crispy arancini, fresh seafood." },
+      { "place_id": "enoteca-val-di-noto", "walk_to_next_min": 3, "time_slot": "afternoon", "note": "★4.5. Aperitivo in the Montalbano film set. Only Val di Noto wines." },
+      { "place_id": "trattoria-fontana-dercole", "walk_to_next_min": 6, "time_slot": "evening", "note": "★4.2. Family-run home-style. Pasta alla Norma. Baroque church views." },
+      { "place_id": "secret-eat-drink-stay-noto", "walk_to_next_min": null, "time_slot": "evening", "note": "★4.5. Hidden courtyard, off-menu cocktails, live music." }
+    ]
+  },
+  {
+    "id": "route-beach-baroque",
+    "name": "Beach + Baroque",
+    "emoji": "🌊",
+    "transport": "walk",
+    "total_walk_min": 20,
+    "start_time": "10:00",
+    "end_time": "23:00",
+    "best_for": "Best of both worlds — beach day plus Noto baroque night",
+    "description": "Walk from villa to beach → beach day → drive to Noto → sunset aperitivo → dinner → dessert",
+    "stops": [
+      { "place_id": "lido-azzurro-hosteria-del-mare", "walk_to_next_min": null, "time_slot": "morning", "note": "Beach day: sunbeds (~€20 for 2 + umbrella), swimming, lunch at the lido restaurant." }
+    ]
+  },
+  {
+    "id": "route-noto-grand-tour",
+    "name": "Noto Grand Tour",
+    "emoji": "🏆",
+    "transport": "drive",
+    "start_from": "noto",
+    "total_walk_min": 55,
+    "start_time": "17:00",
+    "end_time": "23:30",
+    "best_for": "Full Noto hit list — including newer buzzy spots",
+    "description": "Rooftop sunset → natural wine → creative dinner → crypt cocktails → wine flight → late-night secret bar",
+    "stops": [
+      { "place_id": "aria-terrace", "walk_to_next_min": 10, "time_slot": "afternoon", "note": "Sunset aperitivo. Panoramic views. Fewer crowds than Gagliardi." },
+      { "place_id": "sabbinirica-bistrot", "walk_to_next_min": 5, "time_slot": "evening", "note": "Natural wine + best panini in Noto ★4.7." },
+      { "place_id": "retablo", "walk_to_next_min": 5, "time_slot": "evening", "note": "★4.7. Creative modern Sicilian. DIY deconstructed cannoli." },
+      { "place_id": "anche-gli-angeli", "walk_to_next_min": 8, "time_slot": "evening", "note": "★4.0. Cocktails in a 17th-century church crypt. Atmospheric." },
+      { "place_id": "il-brillo-parlante", "walk_to_next_min": 12, "time_slot": "evening", "note": "★4.8. Wine flight + cold cuts. Family-run." },
+      { "place_id": "secret-eat-drink-stay-noto", "walk_to_next_min": null, "time_slot": "evening", "note": "★4.5. Final stop. Off-menu cocktails, courtyard setting." }
+    ]
+  }
+]

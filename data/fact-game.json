@@ -2238,5 +2238,1006 @@
     "note": "Wikipedia — Chicago Pile-1. It used no radiation shielding and no cooling system at all — the reactor was built almost entirely from graphite blocks and uranium.",
     "category": "Science & Tech",
     "emoji": "🔬"
+  },
+  {
+    "question": "What is the liftoff thrust of SpaceX's Starship / Super Heavy, the most powerful rocket ever built?",
+    "answer": "~74,400 kN (16.7 million lbf) — more than double the Saturn V's 34,500 kN",
+    "note": "SpaceX / New Space Economy comparison; 33 Raptor 2 engines on Super Heavy booster.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How many Starlink satellites has SpaceX launched as of mid-2026?",
+    "answer": "12,552 total launched; ~10,844 remain in orbit, ~10,839 operational",
+    "note": "KeepTrack.space satellite tracking data (July 2026).",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How far has NASA's Perseverance rover traveled on Mars as of mid-2026?",
+    "answer": "42.195 km (26.2 miles) — a full marathon, reached on June 14, 2026",
+    "note": "NASA JPL; completed on Sol 1,890 (~5 years 4 months after landing).",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How many galaxies did the Hubble Ultra Deep Field capture in a single image?",
+    "answer": "~10,000 galaxies in an 11-arcmin² patch of sky (about 1/12th the area of a full Moon)",
+    "note": "NASA / Beckwith et al., 2006; million-second exposure taken over 2003–2004.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How many stars are visible to the naked eye across the entire night sky under ideal conditions?",
+    "answer": "~6,000 (about 3,000 per hemisphere)",
+    "note": "Yale Bright Star Catalog; Sky & Telescope.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the peak power of the world's most powerful operational laser?",
+    "answer": "10 petawatts (10¹⁵ W) — the ELI-NP High Power Laser System in Măgurele, Romania",
+    "note": "ELI-NP; two independent 10 PW arms, 230 J in 23 fs pulses; operational since 2020.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What temperature will the ITER fusion reactor's plasma reach — the hottest place in the solar system?",
+    "answer": "150–300 million °C (10–20 times hotter than the Sun's core)",
+    "note": "ITER.org; plasma volume of 830 m³, reactor weight 23,000 tonnes.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the total length of all sections of the Great Wall of China ever built across its dynasties?",
+    "answer": "21,196 km (13,171 miles)",
+    "note": "UNESCO / Chinese National Cultural Heritage Administration (2012 survey).",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How deep is the Kola Superdeep Borehole, the deepest human-made hole on Earth?",
+    "answer": "12,262 m (40,230 ft) — reached in 1989, still the deepest vertical borehole ever drilled",
+    "note": "Wikipedia / BBC Future; drilling stopped in 1992 due to 180 °C temperatures.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the maximum takeoff weight of the Antonov An-225 Mriya, the heaviest aircraft ever built?",
+    "answer": "640 tonnes (705 short tons); wingspan 88.4 m — the largest wingspan of any aircraft in service",
+    "note": "Antonov Company; built to transport the Buran space shuttle; only one was ever completed.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the gross tonnage of the world's largest cruise ship, Royal Caribbean's Legend of the Seas (entered service 2026)?",
+    "answer": "248,663 gross tons; 365 m (1,197 ft) long; capacity ~7,600 passengers + 2,350 crew",
+    "note": "Royal Caribbean; third Icon-class ship, entered service July 2026.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the capacity of the world's largest solar power plant, the Gonghe Talatan Solar Park in China?",
+    "answer": "15,600 MW (15.6 GW) — covers 609 km² in Qinghai province",
+    "note": "Wikipedia / Power Magazine; ongoing expansion since 2011.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the capacity of the world's largest wind farm, the Gansu Wind Farm in China's Gobi Desert?",
+    "answer": "7,965 MW installed (planned up to 20 GW) — ~7,000 turbines across multiple sites",
+    "note": "Eland Cables / Wikipedia; largest wind farm in the world.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the capacity of the world's largest battery energy storage facility?",
+    "answer": "12.8 GWh (Envision-led AI-powered storage cluster in Inner Mongolia, Dec 2025)",
+    "note": "ESS News (Feb 2026); includes the Envision Jingyi Chagan Hada 4 GWh station.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How many articles does the English Wikipedia have as of mid-2026?",
+    "answer": "~7.2 million (7,207,349 as of July 11, 2026)",
+    "note": "Wikipedia:Size of Wikipedia; ~500 new articles added per day.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How many hostnames (websites) exist on the internet?",
+    "answer": "~1.49 billion hostnames (Netcraft, June 2026); of which ~200–400 million are actively maintained",
+    "note": "Netcraft Web Server Survey, zPlatform analysis.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How many Google searches happen per day worldwide?",
+    "answer": "~14 billion per day (5+ trillion per year); ~158,000 searches per second",
+    "note": "Google internal data disclosed Mar 2025 via Search Engine Land; Axis Intelligence analysis.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How many mobile cellular subscriptions exist worldwide?",
+    "answer": "9.2 billion (112 per 100 inhabitants); 5.8 billion unique subscribers",
+    "note": "ITU (2025); GSMA Mobile Economy Report 2026; 5G subscriptions passed 3 billion in Q1 2026.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the fastest speed ever achieved by a production car (street-legal)?",
+    "answer": "496 km/h (308 mph) — Yangwang U9 Xtreme (BYD) at ATP Papenburg, Germany, Sep 2025",
+    "note": "CarNewsChina; FastestLaps.com; Guinness record pending for 500+ km/h attempt Nov 2026.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the absolute speed record for a passenger train?",
+    "answer": "603 km/h (375 mph) — Japan's L0 Series maglev on the Yamanashi test track (April 21, 2015)",
+    "note": "Guinness World Records; Central Japan Railway Company.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the world helicopter speed record, set in 1986 and still unbroken?",
+    "answer": "400.87 km/h (249.09 mph) — Westland Lynx G-LYNX, piloted by Trevor Egginton, August 11, 1986",
+    "note": "FAI / Guinness World Records; record still stands after 40 years.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the diameter of the Pantheon's unreinforced concrete dome — still the world's largest after 1,900 years?",
+    "answer": "43.3 meters (142 ft) — the dome span equals 150 Roman feet",
+    "note": "Wikipedia — Pantheon, Rome.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How long was the Via Appia (Appian Way) from Rome to Brindisi, the queen of Roman roads?",
+    "answer": "~540–563 km (335–350 miles)",
+    "note": "Britannica, straderomane.it; built 312–191 BC.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "What was the seating capacity of the Amphitheatre of Capua, the second-largest Roman amphitheater?",
+    "answer": "~60,000 spectators (built just before the Colosseum and may have served as its model)",
+    "note": "Wikipedia — Amphitheatre of Capua.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many arches make up the Colosseum's outer facade?",
+    "answer": "240 (80 arches per floor × 3 arcaded floors)",
+    "note": "the-colosseum.net; arches were numbered to assign seat access.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many major aqueducts supplied ancient Rome, and what was their total combined length?",
+    "answer": "11 aqueducts, totaling about 500 km (310 miles)",
+    "note": "National Geographic, History Crunch; mostly underground, built 312 BC – 226 AD.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "What was the seating capacity of the Roman Colosseum?",
+    "answer": "~50,000–80,000 spectators (estimates vary; the most commonly cited midrange figure is ~65,000)",
+    "note": "Wikipedia, scholarly consensus; the largest amphitheater ever built in the ancient world.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many visitors did the Vatican Museums receive in 2024?",
+    "answer": "6,825,436 (~6.8 million) — the second most-visited museum in the world after the Louvre",
+    "note": "Wikipedia — Vatican Museums.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many visitors did the Uffizi Galleries receive in 2023?",
+    "answer": "Over 5 million (5,150,000 projected) — up 27.8% from 2022",
+    "note": "Uffizi official press release, December 2023.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How much money do tourists throw into the Trevi Fountain each year?",
+    "answer": "~€1.5–2 million (~33 tonnes of coins) — all collected by Rome's Caritas charity",
+    "note": "Reuters, Euronews (2024).",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many steps lead to the top of St. Peter's Basilica dome?",
+    "answer": "551 (or 320 if taking the elevator to the terrace)",
+    "note": "Official Vatican basilica website.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many islands does Italy have?",
+    "answer": "~450 (including 118 in the Venetian Lagoon)",
+    "note": "Wikipedia — List of islands of Italy; Statista.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many active volcanoes are there in Italy?",
+    "answer": "9 (6 in and around Sicily: Etna, Stromboli, Vulcano, Lipari, Panarea, and Pantelleria; plus Vesuvius, Campi Flegrei, and Ischia)",
+    "note": "Statista; Italy's geography overview.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many lakes are there in Italy?",
+    "answer": "Over 1,000 (up to ~1,500 depending on definition)",
+    "note": "Wikipedia — List of lakes of Italy; FAO.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many Blue Flag beaches did Italy have in 2026 — the most of any country?",
+    "answer": "525 (in 257 municipalities) — 11.6% of all Blue Flag beaches worldwide",
+    "note": "FEE Blue Flag 2026 awards; ANSA, Il Sole 24 Ore.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many churches are there in Rome?",
+    "answer": "Over 930 (up to ~1,600 including private chapels)",
+    "note": "Wikipedia — List of churches in Rome; Aleteia.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many olive trees are cultivated in Italy?",
+    "answer": "~180 million (covering ~1.2–1.35 million hectares)",
+    "note": "Italian Ministry of Agriculture (MIPAAF); Eurostat.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "What is Italy's total annual cheese production?",
+    "answer": "~1,344,110 tonnes (2023), of which ~390,000 tonnes is mozzarella",
+    "note": "CLAL.it (Eurostat data); Il Sole 24 Ore.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "What was Italy's wine export value in 2024 — a record year?",
+    "answer": "€8.136 billion (21.7 million hectoliters exported, +5.5% vs 2023)",
+    "note": "Istat via WineNews, Gambero Rosso.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many Italian restaurants exist worldwide?",
+    "answer": "~471,000 (143,852 in Italy; 137,044 in the US; 34,550 in Brazil)",
+    "note": "BoldData / companydata.com (2024).",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How much citrus fruit does Sicily produce in a typical year?",
+    "answer": "~1.47 million tonnes (about 1M tonnes of oranges, 400,000 tonnes of lemons, plus mandarins/clementines)",
+    "note": "LinkedIn/Giuseppe Grasso; ScienceDirect (DOI: 10.1002/bbb.2588); Sicily has 88,000+ ha of citrus.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many people of Italian descent live outside Italy (the Italian diaspora)?",
+    "answer": "~80 million — more than Italy's domestic population of ~59 million",
+    "note": "Ambrosetti/NIAF report (2023); Wikipedia — Italians; includes Brazil (31M+), Argentina (25M), US (17M+).",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many UNESCO Intangible Cultural Heritage elements does Italy have?",
+    "answer": "21 (10 national + 10 transnational + 1 on Register of good safeguarding practices)",
+    "note": "UNESCO ich.unesco.org; Ministero degli Affari Esteri; includes Opera dei Pupi, Neapolitan pizza, opera singing, etc.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many museums and similar institutions are open to the public in Italy?",
+    "answer": "~4,976 (4,158 museums/galleries, 282 archaeological sites, 536 monuments)",
+    "note": "Istat (2015 survey); updated 2017 figure: ~4,889.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many Ferraris and Lamborghinis were delivered globally in 2024?",
+    "answer": "Ferrari: 13,752; Lamborghini: 10,687 — combined 24,439 cars",
+    "note": "Ferrari corporate press release; Lamborghini corporate press release (both 2024 year-end).",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "What is the height of Italy's tallest skyscraper?",
+    "answer": "Allianz Tower, Milan — 260 m (850 ft) to the tip",
+    "note": "Wikipedia — List of tallest buildings in Italy; SkyscraperCenter.",
+    "category": "Italy & Sicily",
+    "emoji": "🇮🇹"
+  },
+  {
+    "question": "How many stone blocks make up the Great Pyramid of Giza, and what is its total estimated weight?",
+    "answer": "~2.3 million blocks; total weight ~5.75–6 million tonnes (the largest blocks weigh 80+ tonnes)",
+    "note": "PBS/NOVA, Guinness World Records; average block weight ~2.5 tonnes.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many Terracotta Warriors were buried in Qin Shi Huang's mausoleum?",
+    "answer": "~8,000 (including soldiers, horses, chariots, and acrobats)",
+    "note": "UNESCO, Britannica.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What was the peak population of the Roman Empire at its height?",
+    "answer": "~60–75 million people (roughly 20% of the world's population at the time)",
+    "note": "Kyle Harper, Scheidel; 1st–2nd century CE.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How much does the largest sarsen stone at Stonehenge weigh?",
+    "answer": "~30–40 tonnes (the Heel Stone is ~36 tonnes, moved over 240 km from Wales)",
+    "note": "English Heritage; Science Advances 2020.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How long ago did non-avian dinosaurs go extinct?",
+    "answer": "~66 million years ago (the Cretaceous-Paleogene extinction event)",
+    "note": "USGS, Britannica, Natural History Museum London.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many different species of dinosaurs (non-avian) have been scientifically named to date?",
+    "answer": "~1,000 species (around 1,045 valid named species as of 2025)",
+    "note": "Wikipedia — List of dinosaur genera; NHM London.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How long is the Great Barrier Reef, the world's largest coral reef system?",
+    "answer": "~2,300 km (~1,430 miles) — the only living structure visible from space",
+    "note": "Great Barrier Reef Foundation, NASA, Britannica.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many marine species are currently known to science?",
+    "answer": "~250,000 (the true total is estimated at 1–2 million)",
+    "note": "World Register of Marine Species (WoRMS) 2025.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What is the largest great white shark ever reliably recorded?",
+    "answer": "\"Deep Blue\" — ~6.1 m (20 ft) long, estimated ~2,000 kg (4,500+ lb)",
+    "note": "NOAA, OCEARCH; female spotted near Guadalupe Island, Mexico.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What is the deepest fish ever filmed, and at what depth?",
+    "answer": "A Pseudoliparis snailfish filmed at 8,336 m (27,350 ft) in the Izu-Ogasawara Trench, near Japan",
+    "note": "Jamieson et al. 2023, University of Western Australia.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What is the fastest fish in the ocean?",
+    "answer": "Sailfish — up to 110 km/h (68 mph) in short bursts",
+    "note": "NOAA Fisheries; Journal of Experimental Biology.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What is the total volume of Earth's oceans?",
+    "answer": "~1.335 billion cubic kilometers (320 million cubic miles) — 97% of Earth's water",
+    "note": "NOAA, Wikipedia.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What is the largest documented coral colony — roughly the size of a soccer field?",
+    "answer": "111 m long, covering ~3,973 m² — a Pavona clavus colony on the Great Barrier Reef",
+    "note": "Citizens of the Reef, CNN 2026.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What is the largest freshwater fish ever caught?",
+    "answer": "A Mekong giant catfish of 293 kg (646 lb), 2.7 m long (later claims of a 300 kg stingray exist)",
+    "note": "Guinness World Records; Mekong River, Thailand 2005.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What is the longest seaweed species on Earth?",
+    "answer": "Giant kelp (Macrocystis pyrifera) — up to 60 m (197 ft), growing up to 50–60 cm per day",
+    "note": "Guinness World Records.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Which marine creature carries enough venom to kill 60+ humans with a single dose?",
+    "answer": "The Australian box jellyfish (Chironex fleckeri) — each tentacle has millions of stinging cells",
+    "note": "NOAA, University of Sydney.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What is the largest known flying bird that ever existed, by wingspan?",
+    "answer": "Pelagornis sandersi — 6.4 m (21 ft) wingspan, lived 25 million years ago",
+    "note": "National Geographic, Wikipedia.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many McDonald's restaurants are there worldwide?",
+    "answer": "~45,000 (45,356 at the end of 2025)",
+    "note": "McDonald's corporate filings, Statista.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many servings of Coca-Cola beverages are consumed worldwide each day?",
+    "answer": "~1.9 billion servings",
+    "note": "The Coca-Cola Company official FAQ.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How much cheese is produced globally each year?",
+    "answer": "~22.6–23.8 million tonnes (the US alone produces ~6.2 million tonnes)",
+    "note": "FAO; IDF World Dairy Situation 2024.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How much chocolate is consumed globally each year?",
+    "answer": "~8.5 million metric tons",
+    "note": "Statista, worldmetrics.org (2023 data).",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How much rice is produced globally each year?",
+    "answer": "~800 million tonnes of paddy rice (about 520 million tonnes milled)",
+    "note": "FAO, USDA; China and India together account for ~55% of production.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Who has scored the most career goals in official men's football history, and how many?",
+    "answer": "Cristiano Ronaldo, with 974 goals (as of July 2026)",
+    "note": "messixronaldo.com; FIFA-recognized official matches only.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What is the most-watched single sporting event in history?",
+    "answer": "The 2022 FIFA World Cup Final (Argentina vs France), with an estimated 1.5 billion viewers",
+    "note": "FIFA / multiple sports media reports.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What is the most expensive pair of sneakers ever sold at auction?",
+    "answer": "$8 million — \"The Dynasty Collection\" of 8 game-worn Michael Jordan Air Jordans sold at Sotheby's in 2024",
+    "note": "Sotheby's, 2024.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What is the best-selling video game console of all time?",
+    "answer": "PlayStation 2 — over 160 million units sold worldwide",
+    "note": "Sony / Guinness World Records; it's been the console sales champion for over 20 years.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What's the most expensive music video ever made?",
+    "answer": "\"Scream\" by Michael & Janet Jackson (1995) — costing $7 million",
+    "note": "Guinness World Records / Wikipedia; shot in a custom-built set.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What was the largest free concert attendance in history?",
+    "answer": "3.5 million people — Rod Stewart's 1994 New Year's Eve concert on Copacabana Beach, Rio de Janeiro",
+    "note": "Guinness World Records.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What is the largest music festival by annual attendance?",
+    "answer": "Donauinselfest in Vienna, Austria — ~3 million visitors each year",
+    "note": "Multiple festival attendance rankings.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "Which social media platform has the most monthly active users, and how many?",
+    "answer": "Facebook — 3.07 billion monthly active users (as of early 2026)",
+    "note": "Statista / Meta Q1 2025 earnings.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "How many monthly active users does YouTube have?",
+    "answer": "2.5 billion monthly active users",
+    "note": "DataReportal Digital 2025.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "How many monthly active users does TikTok have?",
+    "answer": "2.21 billion monthly active users (as of mid-2026)",
+    "note": "DemandSage, Q2 2026.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What's the most expensive domain name ever sold?",
+    "answer": "AI.com — sold for $70 million (in 2025, by a crypto entrepreneur who'd bought it for $11M in 2021)",
+    "note": "TrueHost / DNJournal, 2025.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What's the most downloaded mobile app of all time (lifetime)?",
+    "answer": "WhatsApp — 7.8 billion total downloads",
+    "note": "AppMagic / Udonis, 2026.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What's the most expensive perfume ever sold?",
+    "answer": "Shumukh by Spirit of Dubai — $1.29 million (3 litres of fragrance in a crystal bottle with gold and diamond accents)",
+    "note": "Guinness World Records, 2026.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "What's the most expensive bottle of wine ever sold at auction?",
+    "answer": "A 1945 Domaine de la Romanée-Conti — sold for $812,500 in March 2026",
+    "note": "Acker Wines auction, March 2026.",
+    "category": "Pop Culture",
+    "emoji": "🎬"
+  },
+  {
+    "question": "Who is the world's largest private employer (non-government)?",
+    "answer": "Walmart — 2.1 million employees (as of FY2025)",
+    "note": "Walmart FY2025 annual report.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What's the largest single charitable donation ever made?",
+    "answer": "$1.5 billion — Joan Kroc's bequest to The Salvation Army (2004)",
+    "note": "Guinness World Records.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What was the total global wine production in 2024?",
+    "answer": "225.8 million hectolitres — down about 4% from 2023",
+    "note": "OIV State of the World Vine and Wine Sector in 2024.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many hectares of vineyards exist worldwide?",
+    "answer": "7.1 million hectares — a 4th consecutive year of decline",
+    "note": "OIV, 2024.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What was the total global wine consumption in 2024?",
+    "answer": "214.2 million hectolitres — the lowest since 1961",
+    "note": "OIV, 2024.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What was the total value of global wine exports in 2024?",
+    "answer": "€35.9 billion — a record high, driven by average €3.60/L pricing",
+    "note": "OIV, 2024.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How old is the earliest known chemical evidence of winemaking?",
+    "answer": "~8,000 years old (6000–5800 BCE) — from Neolithic Georgia",
+    "note": "PNAS / Penn Museum, 2017.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How old is the oldest surviving wine in liquid form, discovered near Carmona, Spain?",
+    "answer": "~2,000 years old (1st century CE) — still in liquid form, found in a Roman tomb",
+    "note": "Scientific American / University of Córdoba, 2024.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many kilometres of limestone tunnels does the world's largest wine cellar have?",
+    "answer": "200 km of tunnels (55 km in active use), holding 1.5 million bottles — Mileștii Mici, Moldova",
+    "note": "Guinness World Records.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many known grapevine varieties exist worldwide?",
+    "answer": "~10,000 known varieties, of which ~6,000 are Vitis vinifera",
+    "note": "OIV Focus Report 2017.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many wineries operate in Napa Valley, California?",
+    "answer": "~475 physical wineries, producing 9M+ cases/year under 1,000+ labels",
+    "note": "Napa Valley Vintners, 2025.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "Which country drinks the most wine per person in the world, and how much?",
+    "answer": "Portugal — 61.1 litres per capita (Italy is 2nd at 42.7 L)",
+    "note": "OIV/FAO, 2024.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What was the total global beer production in 2024?",
+    "answer": "1.875 billion hectolitres",
+    "note": "BarthHaas Report 2024/2025.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What was AB InBev's beer production in 2024 — making it the world's largest brewer?",
+    "answer": "495.5 million hectolitres (Heineken was 2nd at 240.7M hl)",
+    "note": "BarthHaas Report 2024/2025.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "When was the world's oldest continuously operating brewery founded, and where?",
+    "answer": "1040 CE — Bavarian State Brewery Weihenstephan, Germany (~986 years of continuous operation)",
+    "note": "Weihenstephaner; brewing license from 1040 is still valid.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many litres of beer does the average Czech person drink per year — the highest in the world?",
+    "answer": "148.8 litres per capita — 32nd consecutive year at #1",
+    "note": "Kirin Holdings, 2024.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many breweries were operating in the United States in 2024?",
+    "answer": "9,922 total (9,796 of which are craft breweries)",
+    "note": "Brewers Association, 2024.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What is the most expensive coin ever sold at auction?",
+    "answer": "The 1933 Saint-Gaudens Double Eagle — $18,872,250 at Sotheby's in 2021 (the only one of 13 that's legal to own)",
+    "note": "Sotheby's / Guinness World Records.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What's the largest single cash seizure ever made by law enforcement?",
+    "answer": "$205 million seized by Mexican authorities from a Mexico City villa in March 2007 (tied to drug trafficking)",
+    "note": "DEA / US News.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What is the largest corporate fine ever imposed?",
+    "answer": "BP paid roughly $61 billion total (fines, penalties, cleanup) for the 2010 Deepwater Horizon oil spill",
+    "note": "Guinness World Records / DOJ.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What is the largest bankruptcy filing in history?",
+    "answer": "Lehman Brothers — $691 billion in assets when it filed for Chapter 11 on September 15, 2008",
+    "note": "Business Model Analyst / Guinness World Records.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "Which non-state-owned company posted the highest annual profit in history, and how much?",
+    "answer": "Alphabet (Google) — ~$160 billion in trailing-12-month net income as of mid-2026",
+    "note": "Datarails / Forbes Global 2000 / Visual Capitalist 2026.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What is the most expensive handbag ever sold?",
+    "answer": "The original 1984 Jane Birkin prototype Hermès Birkin — €8.58 million (~$10.1 million) at Sotheby's Paris, July 2025",
+    "note": "CNN / Sotheby's, July 2025.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What is the most expensive hotel suite in the world, per night?",
+    "answer": "The Mark Penthouse at The Mark Hotel, New York — $114,767 per night (10,000 sq ft, five-bedroom duplex)",
+    "note": "Guinness World Records, verified April 2025.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What's the most expensive single pair of sneakers ever sold (non-Jordan-collection)?",
+    "answer": "Kanye West's Nike Air Yeezy 1 \"Prototype\" worn at the 2008 Grammys — $1.8 million in a private Sotheby's sale (2021)",
+    "note": "Sotheby's / Rolling Stone.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What is the most expensive book/manuscript ever sold?",
+    "answer": "The original printer's manuscript of the Book of Mormon (1830) — sold privately in 2017 for $35 million to the LDS Church",
+    "note": "The Guardian / Guinness World Records.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What is the richest family dynasty in the world, by estimated wealth?",
+    "answer": "The House of Saud (Saudi royal family) — estimated net worth of $1.4 trillion (fueled by oil wealth and global investments)",
+    "note": "Bloomberg's Richest Families / Financial Express 2025.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What is the total value of all gold ever mined above ground?",
+    "answer": "Approximately $30 trillion (218,000 tonnes × ~$4,300/oz at 2025/2026 prices)",
+    "note": "World Gold Council / Visual Capitalist.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What is the largest gold nugget ever found?",
+    "answer": "The \"Welcome Stranger\" nugget (1869, Victoria, Australia) — over 240 lbs (97 kg), yielding 2,284 troy oz of pure gold",
+    "note": "Guinness World Records.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What's the largest bank settlement in history?",
+    "answer": "Bank of America paid approximately $30.6 billion in total settlements tied to the 2008 subprime mortgage crisis (2012–2014)",
+    "note": "DOJ / Reuters.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What is the largest bank heist in history?",
+    "answer": "The Central Bank of Iraq robbery in March 2003 — Saddam Hussein's son withdrew $1.04 billion in cash using a signed note",
+    "note": "Multiple sources; ~$379M of that cash remains missing.",
+    "category": "Money & Business",
+    "emoji": "💰"
+  },
+  {
+    "question": "What is the longest railway line in the world?",
+    "answer": "9,289 km — the Trans-Siberian Railway, from Moscow to Vladivostok, spanning 8 time zones",
+    "note": "Wikipedia.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the longest metro/subway system by route length?",
+    "answer": "831 km — the Shanghai Metro, China (508 stations, opened 1993)",
+    "note": "Wikipedia.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the longest drivable road in the world?",
+    "answer": "~30,000 km — the Pan-American Highway, from Alaska to Argentina, passing through 14 countries",
+    "note": "Guinness World Records.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the highest bridge in the world (by deck height)?",
+    "answer": "625 m — Huajiang Canyon Bridge in Guizhou, China, a suspension bridge opened in 2025",
+    "note": "Wikipedia.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "Which hydroelectric dam holds the record for annual power generation?",
+    "answer": "Itaipu Dam (Brazil/Paraguay) — 103.1 million MWh generated in 2016 (14 GW capacity, 20 turbines)",
+    "note": "Itaipu Binacional.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the largest man-made lake (reservoir) in the world by volume?",
+    "answer": "180 km³ — Lake Kariba (Zambia/Zimbabwe), created by Kariba Dam on the Zambezi River — 4× the volume of Three Gorges",
+    "note": "Wikipedia.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the tallest statue in the world?",
+    "answer": "182 m — the Statue of Unity in Gujarat, India (honours Sardar Vallabhbhai Patel, completed 2018)",
+    "note": "Wikipedia.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the deepest subway station in the world?",
+    "answer": "116 m below ground — Hongyancun Station in Chongqing, China (requires 7–8 escalator segments to reach the surface)",
+    "note": "World Atlas; opened 2022.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the busiest airport in the world by passenger traffic (2025)?",
+    "answer": "Hartsfield-Jackson Atlanta International Airport — 106.3 million passengers (held #1 every year since 1998 except 2020)",
+    "note": "ACI World.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the longest civil airport runway in the world?",
+    "answer": "5,500 m — Qamdo Bamda Airport in Tibet, China (needs extra length because it sits at 4,334 m elevation in thin air)",
+    "note": "Guinness World Records.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the largest container ship in the world by TEU capacity?",
+    "answer": "24,346 TEU — MSC Irina-class, 400 m long, launched in 2023",
+    "note": "Wikipedia.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the largest stadium in the world by seating capacity?",
+    "answer": "132,000 seats — Narendra Modi Stadium in Ahmedabad, India (a cricket stadium, expanded/rebuilt 2020)",
+    "note": "World Atlas.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the largest land vehicle ever built?",
+    "answer": "Bagger 293 — a bucket-wheel excavator in Germany: 14,200 tonnes, 96 m tall, 225 m long",
+    "note": "Guinness World Records.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the largest building in the world by volume?",
+    "answer": "13.3 million m³ — the Boeing Everett Factory in Washington, USA (398,000 m² floor area, built 1967)",
+    "note": "Guinness World Records.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the largest shopping mall in the world by floor area?",
+    "answer": "1.95 million m² (21 million sq ft) — The Iran Mall in Tehran: 708 retail stores, a hotel, a library, and a museum",
+    "note": "World Atlas / Guinness World Records.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the longest oil pipeline in the world?",
+    "answer": "~5,500 km — the Druzhba (Friendship) Pipeline, running from Russia through 7 countries to Europe",
+    "note": "Construction Review Online.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "What is the longest outdoor escalator system in the world?",
+    "answer": "905 m — the Wushan Goddess Escalator in Chongqing, China (21 individual escalator segments climbing 242 m in elevation)",
+    "note": "Smithsonian.",
+    "category": "Science & Tech",
+    "emoji": "🔬"
+  },
+  {
+    "question": "How many bubbles are in a standard 75 cl bottle of champagne?",
+    "answer": "49 million bubbles — a figure determined by University of Reims studies",
+    "note": "University of Reims; Laurent-Perrier.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many licks does it take to get to the center of a Tootsie Pop — according to scientific studies?",
+    "answer": "252 licks (human testers) to 411 licks (using a licking machine), depending on the study",
+    "note": "Purdue University & University of Michigan studies.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many individual LEGO elements are produced each year?",
+    "answer": "36 billion — about 1,140 per second",
+    "note": "The LEGO Group; Wikipedia.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many individual parts make up a Boeing 747?",
+    "answer": "Over 6 million (about half of which are fasteners — bolts, rivets, screws)",
+    "note": "Boeing; Simple Flying.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many thunderstorms occur on Earth each day?",
+    "answer": "40,000 — about 14.6 million per year",
+    "note": "NOAA.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many lightning flashes strike Earth each day?",
+    "answer": "8.6 million — about 100 lightning flashes per second",
+    "note": "National Weather Service.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many grains of sand are on all the world's beaches — a number beyond comprehension?",
+    "answer": "7.5 quintillion (7.5 × 10¹⁸)",
+    "note": "Scientific American; University of Hawaii estimates.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many atoms are in a single grain of sand?",
+    "answer": "43 quintillion (4.3 × 10¹⁹) — more atoms in one grain of sand than grains of sand on all the world's beaches",
+    "note": "Calculation based on quartz density and Avogadro's number.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many possible unique arrangements exist in a shuffled deck of 52 cards — a number so big it's hard to even say?",
+    "answer": "80,658,175,170,943,878,571,660,636,856,403,766,975,289,505,440,883,277,824,000,000,000,000 (52! ≈ 8.07×10⁶⁷)",
+    "note": "Combinatorics; Wolfram Alpha.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many times does the average human heart beat per day?",
+    "answer": "~100,000 times (about 35 million times per year)",
+    "note": "Cleveland Clinic; Harvard Medical School.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many kilometres of nerves are in the human body?",
+    "answer": "~72 km (45 miles) of nerves, carrying signals at up to 120 m/s",
+    "note": "Various anatomical references.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "What was the most common password of 2025, and how many times was it found in breach data?",
+    "answer": "\"123456\" — used 7.6 million times globally (from a study of 2.5 TB of breached passwords)",
+    "note": "NordPass annual study 2025.",
+    "category": "Nature & World",
+    "emoji": "🌍"
+  },
+  {
+    "question": "How many letters are in the longest word in the English language — the chemical name for the protein titin?",
+    "answer": "189,819 letters (takes over 3 hours to pronounce)",
+    "note": "IUPAC chemical nomenclature; Wikipedia.",
+    "category": "Nature & World",
+    "emoji": "🌍"
   }
 ]

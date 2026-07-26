@@ -5,7 +5,9 @@ import { dataService } from "./data-service.js";
 import { localStore } from "./local-store.js";
 import { syncQueue } from "./sync-queue.js";
 
-let assignments = null; // array of {id, date, place_id, time_slot, booked}
+import { loadRoutes, routeById } from "./routes-data.js";
+
+let assignments = null; // array of {id, date, place_id, time_slot, booked, sort_order, route_id}
 let unsubscribe = null;
 const listeners = new Set();
 
@@ -65,7 +67,9 @@ export const dayPlanStore = {
   },
 
   assignmentsForDate(date) {
-    return (assignments || []).filter((a) => a.date === date);
+    const filtered = (assignments || []).filter((a) => a.date === date);
+    filtered.sort((a, b) => (a.sort_order || 0) - (b.sort_order || 0));
+    return filtered;
   },
 
   async setBooked(id, booked) {
@@ -82,19 +86,20 @@ export const dayPlanStore = {
     }
   },
 
-  async add(date, placeId, timeSlot) {
+  async add(date, placeId, timeSlot, sortOrder, routeId) {
     const tempId = `pending-${crypto.randomUUID()}`;
-    const optimisticRow = { id: tempId, date, place_id: placeId, time_slot: timeSlot || null, booked: false };
+    const optimisticRow = { id: tempId, date, place_id: placeId, time_slot: timeSlot || null, booked: false, sort_order: sortOrder ?? 0, route_id: routeId || null };
     applyChange({ eventType: "UPSERT", new: optimisticRow });
     notify();
 
     try {
-      const [saved] = await dataService.insert("dayPlanAssignments", { date, place_id: placeId, time_slot: timeSlot || null });
+      const payload = { date, place_id: placeId, time_slot: timeSlot || null, sort_order: sortOrder ?? 0, route_id: routeId || null };
+      const [saved] = await dataService.insert("dayPlanAssignments", payload);
       applyChange({ eventType: "DELETE", old: { id: tempId } });
       applyChange({ eventType: "UPSERT", new: saved });
       notify();
     } catch {
-      syncQueue.enqueue({ table: "dayPlanAssignments", op: "insert", payload: { date, place_id: placeId, time_slot: timeSlot || null } });
+      syncQueue.enqueue({ table: "dayPlanAssignments", op: "insert", payload: { date, place_id: placeId, time_slot: timeSlot || null, sort_order: sortOrder ?? 0, route_id: routeId || null } });
     }
   },
 
@@ -108,6 +113,43 @@ export const dayPlanStore = {
     } catch {
       if (removed) syncQueue.enqueue({ table: "dayPlanAssignments", op: "delete", match: { id } });
     }
+  },
+
+  async reorder(id, newSortOrder) {
+    const idx = assignments?.findIndex((a) => a.id === id);
+    if (idx == null || idx < 0) return;
+    const previous = { ...assignments[idx] };
+    applyChange({ eventType: "UPSERT", new: { ...previous, sort_order: newSortOrder } });
+    notify();
+
+    try {
+      await dataService.update("dayPlanAssignments", { id }, { sort_order: newSortOrder });
+    } catch {
+      syncQueue.enqueue({ table: "dayPlanAssignments", op: "update", match: { id }, payload: { sort_order: newSortOrder } });
+    }
+  },
+
+  async addRoute(routeId, date, startSlot) {
+    await loadRoutes();
+    const route = routeById(routeId);
+    if (!route) return;
+
+    for (let i = 0; i < route.stops.length; i++) {
+      const stop = route.stops[i];
+      const slot = stop.time_slot || startSlot || "afternoon";
+      await this.add(date, stop.place_id, slot, i, routeId);
+    }
+  },
+
+  async removeAllFromRoute(routeId, date) {
+    const toRemove = (assignments || []).filter((a) => a.route_id === routeId && a.date === date);
+    for (const a of toRemove) {
+      await this.remove(a.id);
+    }
+  },
+
+  assignmentsForRoute(routeId, date) {
+    return (assignments || []).filter((a) => a.route_id === routeId && a.date === date);
   },
 };
 

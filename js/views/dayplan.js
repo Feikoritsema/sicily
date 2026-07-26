@@ -1,6 +1,7 @@
 import { TRIP_DATES } from "../constants.js";
 import { escapeHtml, retryStateHtml } from "../util.js";
 import { loadPlaces, placesById } from "../places-data.js";
+import { loadRoutes, getRoutes } from "../routes-data.js";
 import { categoryMeta, isClosedOnDate } from "../categories.js";
 import { dayPlanStore, dayPlanDaysStore } from "../day-plan.js";
 import { peopleStore } from "../people.js";
@@ -25,6 +26,7 @@ export async function render(container, { isActive } = {}) {
   await dayPlanStore.load();
   await dayPlanDaysStore.load();
   await peopleStore.load();
+  await loadRoutes();
 
   if (isActive && !isActive()) return;
 
@@ -82,6 +84,26 @@ function renderDay(container) {
     items: assignments.filter((a) => (a.time_slot || "") === slot),
   })).filter((g) => g.items.length > 0);
 
+  const routes = getRoutes();
+  const routeListHtml = routes.length
+    ? `<button type="button" class="load-route-btn" data-load-route>🗺️ Load a route into this day</button>
+       <div class="route-picker" hidden>
+         <p class="view-empty__hint" style="margin-bottom:0.4rem;">Pick a route to add all its stops:</p>
+         ${routes.map((r) => `<button type="button" class="route-pick-btn" data-route-id="${escapeHtml(r.id)}">${r.emoji} ${escapeHtml(r.name)}</button>`).join("")}
+       </div>`
+    : "";
+
+  const loadedRouteIds = [...new Set(assignments.map((a) => a.route_id).filter(Boolean))];
+  const loadRouteCleanup = loadedRouteIds.length
+    ? `<div class="route-cleanup">
+         ${loadedRouteIds.map((rid) => {
+           const r = routes.find((x) => x.id === rid);
+           if (!r) return "";
+           return `<button type="button" class="route-cleanup-btn" data-route-id="${escapeHtml(rid)}" data-route-date="${date}">Remove ${r.emoji} ${escapeHtml(r.name)} from this day</button>`;
+         }).join("")}
+       </div>`
+    : "";
+
   const listHtml = assignments.length
     ? grouped.map(({ slot, items }) => sectionHtml(slot, items, date)).join("")
     : `
@@ -92,6 +114,8 @@ function renderDay(container) {
   body.innerHTML = `
     <textarea class="dayplan-note" placeholder="Notes for this day…">${escapeHtml(day.notes || "")}</textarea>
     ${driverWidgetHtml(day)}
+    ${routeListHtml}
+    ${loadRouteCleanup}
     ${listHtml}
   `;
 
@@ -107,11 +131,49 @@ function renderDay(container) {
     location.hash = "explore";
   });
 
+  body.querySelector("[data-load-route]")?.addEventListener("click", () => {
+    const picker = body.querySelector(".route-picker");
+    if (picker) picker.hidden = !picker.hidden;
+  });
+
+  body.querySelectorAll(".route-pick-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const routeId = btn.dataset.routeId;
+      dayPlanStore.addRoute(routeId, date);
+      btn.closest(".route-picker").hidden = true;
+    });
+  });
+
   body.querySelectorAll(".assignment-remove").forEach((btn) => {
     btn.addEventListener("click", () => dayPlanStore.remove(btn.dataset.assignmentId));
   });
   body.querySelectorAll(".assignment-booked").forEach((cb) => {
     cb.addEventListener("change", () => dayPlanStore.setBooked(cb.dataset.assignmentId, cb.checked));
+  });
+  body.querySelectorAll(".assignment-reorder-up").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const id = btn.dataset.assignmentId;
+      const current = dayPlanStore.assignmentsForDate(date).find((a) => a.id === id);
+      if (current && (current.sort_order || 0) > 0) {
+        dayPlanStore.reorder(id, (current.sort_order || 0) - 1);
+      }
+    });
+  });
+  body.querySelectorAll(".assignment-reorder-down").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const id = btn.dataset.assignmentId;
+      const current = dayPlanStore.assignmentsForDate(date).find((a) => a.id === id);
+      const maxOrder = Math.max(...dayPlanStore.assignmentsForDate(date).map((a) => a.sort_order || 0));
+      if (current && (current.sort_order || 0) < maxOrder) {
+        dayPlanStore.reorder(id, (current.sort_order || 0) + 1);
+      }
+    });
+  });
+
+  body.querySelectorAll(".route-cleanup-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      dayPlanStore.removeAllFromRoute(btn.dataset.routeId, btn.dataset.routeDate);
+    });
   });
 }
 
@@ -147,6 +209,14 @@ function assignmentCardHtml(assignment, date) {
 
   const meta = categoryMeta(place.category);
   const notes = [];
+  const walkFromVilla = place.walk_from_villa_min;
+
+  if (assignment.route_id) {
+    const route = getRoutes().find((r) => r.id === assignment.route_id);
+    if (route) {
+      notes.push(`<p class="assignment-note assignment-note--route">${route.emoji} Part of ${escapeHtml(route.name)}</p>`);
+    }
+  }
 
   if (isClosedOnDate(place, date)) {
     notes.push(`<p class="assignment-note assignment-note--warn">⚠ Closed on this day (${escapeHtml(place.closed_days.join(", "))}).</p>`);
@@ -160,6 +230,9 @@ function assignmentCardHtml(assignment, date) {
   if (place.category === "nature_hike") {
     notes.push(`<p class="assignment-note">🥾 Hiking day — check the Packing list's hiking-gear category.</p>`);
   }
+  if (walkFromVilla) {
+    notes.push(`<p class="assignment-note">🚶 ${walkFromVilla} min walk from villa${place.walk_note ? ` (${escapeHtml(place.walk_note)})` : ""}</p>`);
+  }
 
   const bookedToggle = place.booking_required
     ? `<label class="assignment-booked-label">
@@ -172,7 +245,13 @@ function assignmentCardHtml(assignment, date) {
     <article class="place-card assignment-card">
       <div class="place-card__badge tag-${meta.group}">${meta.emoji}</div>
       <div class="place-card__body">
-        <h3>${escapeHtml(place.name)}</h3>
+        <div class="assignment-header">
+          <div class="assignment-reorder">
+            <button type="button" class="assignment-reorder-up" data-assignment-id="${assignment.id}" title="Move up">↑</button>
+            <button type="button" class="assignment-reorder-down" data-assignment-id="${assignment.id}" title="Move down">↓</button>
+          </div>
+          <h3>${escapeHtml(place.name)}</h3>
+        </div>
         <p class="place-card__meta">${escapeHtml(place.location_area || "")}</p>
         ${notes.join("")}
         <div class="place-card__footer">

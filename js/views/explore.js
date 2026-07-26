@@ -8,12 +8,14 @@ import { loadPlaces } from "../places-data.js";
 import { customPlacesStore } from "../custom-places.js";
 import { fallbackPhotoFor } from "../photo-fallback.js";
 import { renderSwipe } from "./explore-swipe.js";
+import { loadRoutes, getRoutes } from "../routes-data.js";
+import { routeCardHtml, renderRouteDetail } from "./routes.js";
 
 let placesCache = null;
 let listenersAttached = false;
-// mode: "list" | "detail" | "swipe" — swipe mode manages its own rendering
-// entirely (see openSwipeMode), so refresh()/render() just leave it alone.
-const state = { category: "all", topPicksOnly: false, lowEffortOnly: false, search: "", selectedId: null, mode: "list" };
+// mode: "list" | "detail" | "swipe" | "routes" | "route-detail"
+// swipe and routes modes manage their own rendering
+const state = { category: "all", topPicksOnly: false, lowEffortOnly: false, search: "", selectedId: null, selectedRouteId: null, mode: "list" };
 
 // Doc-sourced places (static, read-only) + user-added ones (Supabase-backed)
 // merged into one list — a custom place is deliberately the same shape, so
@@ -36,6 +38,7 @@ export async function render(container, { isActive } = {}) {
   await votesStore.load();
   await dayPlanStore.load();
   await customPlacesStore.load();
+  await loadRoutes();
 
   if (isActive && !isActive()) return;
 
@@ -47,7 +50,9 @@ export async function render(container, { isActive } = {}) {
     // DOM that's no longer there (mirrors the guard in dayplan.js's renderDay).
     const refresh = () => {
       if (!container.querySelector(".explore")) return;
-      if (state.mode === "swipe") return; // swipe mode owns its own DOM; don't touch it mid-session
+      if (state.mode === "swipe") return;
+      if (state.mode === "routes") return;
+      if (state.mode === "route-detail") return;
       if (state.mode === "detail") renderDetail(container);
       else renderList(container);
     };
@@ -58,6 +63,8 @@ export async function render(container, { isActive } = {}) {
 
   if (state.mode === "swipe") openSwipeMode(container);
   else if (state.mode === "detail") renderDetail(container);
+  else if (state.mode === "routes") openRoutesMode(container);
+  else if (state.mode === "route-detail") openRouteDetail(container);
   else renderChrome(container);
 }
 
@@ -108,8 +115,9 @@ function renderChrome(container) {
         <button type="button" class="filter-chip tag-nightlife ${state.lowEffortOnly ? "is-active" : ""}" data-loweffort="1">😌 Low-Effort, No Drive</button>
       </div>
       <div class="explore-actions-row">
-        <button type="button" class="add-place-toggle">➕ Add a place</button>
+        <button type="button" class="routes-mode-toggle ${state.mode === "routes" || state.mode === "route-detail" ? "is-active" : ""}">🗺️ Routes</button>
         <button type="button" class="swipe-mode-toggle">⚡ Swipe & Vote</button>
+        <button type="button" class="add-place-toggle">➕ Add a place</button>
       </div>
       <div class="add-place-form" hidden></div>
       <p class="explore__count"></p>
@@ -120,6 +128,17 @@ function renderChrome(container) {
   container.querySelector(".swipe-mode-toggle").addEventListener("click", () => {
     state.mode = "swipe";
     openSwipeMode(container);
+  });
+
+  container.querySelector(".routes-mode-toggle").addEventListener("click", () => {
+    if (state.mode === "routes" || state.mode === "route-detail") {
+      state.mode = "list";
+      state.selectedRouteId = null;
+      renderChrome(container);
+    } else {
+      state.mode = "routes";
+      openRoutesMode(container);
+    }
   });
 
   container.querySelector(".explore__search").addEventListener("input", (e) => {
@@ -365,6 +384,58 @@ function wireDayAssignWidgets(container) {
     widget.querySelectorAll(".day-assign-remove").forEach((btn) => {
       btn.addEventListener("click", () => dayPlanStore.remove(btn.dataset.assignmentId));
     });
+  });
+}
+
+function openRoutesMode(container) {
+  const routes = getRoutes();
+  container.innerHTML = `
+    <section class="explore">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.3rem;">
+        <h1 style="margin:0;">🗺️ Routes</h1>
+        <button type="button" class="back-button" data-back-explore>← Back to Explore</button>
+      </div>
+      <p style="font-size:0.82rem;color:var(--text2);margin:0 0 0.8rem;">
+        Pre-planned sequences of places. Tap one to see the full walk/drive.
+      </p>
+      <div class="route-list">
+        ${routes.map(routeCardHtml).join("")}
+      </div>
+    </section>
+  `;
+
+  container.querySelector("[data-back-explore]").addEventListener("click", () => {
+    state.mode = "list";
+    state.selectedRouteId = null;
+    renderChrome(container);
+  });
+
+  container.querySelectorAll(".route-card").forEach((card) => {
+    card.addEventListener("click", () => {
+      state.selectedRouteId = card.dataset.routeId;
+      state.mode = "route-detail";
+      openRouteDetail(container);
+    });
+  });
+}
+
+function openRouteDetail(container) {
+  const route = getRoutes().find((r) => r.id === state.selectedRouteId);
+  if (!route) {
+    state.mode = "routes";
+    openRoutesMode(container);
+    return;
+  }
+
+  renderRouteDetail(container, route, {
+    onBack: () => {
+      state.selectedRouteId = null;
+      state.mode = "routes";
+      openRoutesMode(container);
+    },
+    onAddToDay: (routeId, date) => {
+      dayPlanStore.addRoute(routeId, date);
+    },
   });
 }
 
